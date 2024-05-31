@@ -9,6 +9,18 @@ import { GoCheckCircleFill } from "react-icons/go";
 import { IoBookSharp } from "react-icons/io5";
 import CourseCard from "../components/CourseCard";
 import courses from "../assets/courses/courses.png";
+import project1 from "../assets/home/project1.png";
+import project2 from "../assets/home/project2.png";
+import project3 from "../assets/home/project3.png";
+import project4 from "../assets/home/project4.png";
+import project5 from "../assets/home/project5.png";
+import icon1 from "../assets/home/icon1.png";
+import icon2 from "../assets/home/icon2.png";
+import icon3 from "../assets/home/icon3.png";
+import icon4 from "../assets/home/icon4.png";
+import icon5 from "../assets/home/icon5.png";
+import icon6 from "../assets/home/icon6.png";
+import peoplegroup from "../assets/home/peoplegroup.png";
 
 const Home = () => {
   return (
@@ -319,13 +331,161 @@ const Home = () => {
       </div>
 
       {/* out top projects  */}
-      <div className="p-10 px-20 min-h-screen">
+      <div className="p-10 px-20 min-h-[120vh] relative">
         <h1 className="text-4xl font-bold">
           OUR TOP <span className="text-[#FF006B]">PROJECTS</span>
         </h1>
         <h1 className="text-blue-600 text-xl font-bold">
           WHAT PROJECTS WE DO!
         </h1>
+        <div className="flex justify-end  h-screen items-center absolute z-10 ">
+          <div className="w-1/2 flex flex-col gap-5 mr-20">
+            <h1 className="text-3xl font-bold w-[70%]">
+              NEOM - LOGISTICS PARK LANDSCAPE PROJECT
+            </h1>
+            <h1 className="text-lg font-bold text-blue-600">
+              A Benchmark in Advanced BIM Implementa􀆟on
+            </h1>
+            <h1 className="pt-5 text-xl">
+              The NEOM Logistics Park project stands as a testament to our
+              expertise in handling complex and challenging projects with
+              precision and excellence. The successful implementation of
+              Building Informa􀆟on Modeling (BIM) at Level of Detail (LOD) 500
+              during the as-built stage with all COBie data integra􀆟on is one of
+              our significant achievements. This high level of detail
+              encompassed various aspects of the project, ensuring unparalleled
+              accuracy and integration.
+            </h1>
+          </div>
+        </div>
+        <div className="flex gap-5 w-1/2  flex-wrap absolute top-40 z-10">
+          <img src={project1} alt="project1" className="w-60 h-80" />
+          <img src={project2} alt="project2" className="w-60 h-80" />
+          <img src={project3} alt="project3" className="w-60 h-80" />
+          <img src={project4} alt="project4" className="w-60 h-80" />
+        </div>
+        <div className="absolute bottom-[30%] left-[15%] z-20 ">
+          <img src={project5} alt="project5" className="w-60 h-80" />
+        </div>
+        <div className="w-[110%] z-0 -left-10 top-80 absolute h-12 bg-blue-600 transform -rotate-6" />
+        <div className="w-[20%] z-0 -left-10 top-[62%] absolute h-12 bg-[#FF006B] transform -rotate-6" />
+
+        <div className="w-[20%] z-0 -left-10 top-[70%] absolute h-12 bg-[#FF006B] transform -rotate-6" />
+      </div>
+
+      {/* advantages of bim */}
+      <div className="p-10 px-20">
+        <h1 className="text-4xl font-bold">
+          ADVANTAGES OF <span className="text-[#FF006B]">BIM</span>
+        </h1>
+        <h1 className="text-blue-600 text-xl font-bold">
+          WHAT'S YOU GET FROM BIM!
+        </h1>
+        <div className="flex flex-wrap gap-16 my-16">
+          <div className="flex w-[30%] gap-5">
+            <img src={icon1} alt="wave" className="h-10 w-10" />
+
+            <div className="flex flex-col gap-3">
+              <h1 className="text-xl font-bold">Enhanced Collaboration</h1>
+              <h1>
+                BIM facilitates better communication and coordination among
+                project stakeholders.
+              </h1>
+            </div>
+          </div>
+          <div className="flex w-[30%] gap-5">
+            <img src={icon2} alt="wave" className="h-10 w-10" />
+            <div className="flex flex-col gap-3">
+              <h1 className="text-xl font-bold">Increased Efficiency</h1>
+              <h1>
+                BIM streamlines workflows by integrating various aspects of the
+                design and construction process.
+              </h1>
+            </div>
+          </div>
+          <div className="flex w-[30%] gap-5">
+            <img src={icon3} alt="wave" className="h-10 w-10" />
+            <div className="flex flex-col gap-3">
+              <h1 className="text-xl font-bold">Lifecycle Management</h1>
+              <h1>
+                BIM supports the en􀆟re lifecycle of a building, from initial
+                design and construction to maintenance.
+              </h1>
+            </div>
+          </div>
+          <div className="flex w-[30%] gap-5">
+            <img src={icon4} alt="wave" className="h-10 w-10" />
+            <div className="flex flex-col gap-3">
+              <h1 className="text-xl font-bold">Cost Savings</h1>
+              <h1>
+                BIM helps in accurate cost es􀆟ma􀆟on and budget management by
+                providing detailed quantity take-offs.
+              </h1>
+            </div>
+          </div>
+          <div className="flex w-[30%] gap-5">
+            <img src={icon5} alt="wave" className="h-10 w-10" />
+            <div className="flex flex-col gap-3">
+              <h1 className="text-xl font-bold">Better Visualization</h1>
+              <h1>
+                The 3D models generated by BIM provide a clear and detailed
+                visual representation of the project.
+              </h1>
+            </div>
+          </div>
+          <div className="flex w-[30%] gap-5">
+            <img src={icon6} alt="wave" className="h-10 w-10" />
+            <div className="flex flex-col gap-3">
+              <h1 className="text-xl font-bold">Enhanced Quality Control</h1>
+              <h1>
+                BIM ensures higher quality construction by enabling precise
+                planning and execution, minimizing errors.
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* company details */}
+      <div className="p-10 px-20 relative">
+        <div className="flex justify-end min-h-screen">
+          <div className="w-1/2 flex flex-col gap-3 ">
+            <h1 className="text-3xl font-bold w-[60%]">
+              know how everything works and why we work with{" "}
+              <span className="text-[#FF006B]">BIM</span>
+            </h1>
+            <h1 className="font-bold text-blue-600">OUR MISSION</h1>
+            <h1 className="text-lg">
+              At The BIM skills, we're dedicated to revolutionizing the
+              construction landscape through innovative BIM services and expert
+              consul􀆟ng. Our mission is simple yet profound: to empower our
+              clients with the tools, strategies, and support they need to bring
+              their boldest visions to life. We're not just service providers;
+              we're partners committed to driving efficiency, collaboration, and
+              excellence in every project we undertake. Together, we're shaping
+              a future where BIM transforms not just buildings, but entire
+              industries.
+            </h1>
+            <h1 className="font-bold text-[#FF006B]">OUR VISION</h1>
+            <h1 className="text-lg">
+              Our vision at The BIM skills is clear: to lead the way in BIM
+              services and consulting, seeing new standards of excellence and
+              innovation. We see a future where every project, large or small,
+              benefits from the power of BIM to drive efficiency,
+              sustainability, and impact. By harnessing technology, fostering
+              creativity, and nurturing talent, we empower our clients to
+              achieve their goals beyond imagination. At The BIM skills, we're
+              not just building structures; we're building a legacy of
+              collaboration, innovation, and progress that will shape the world
+              for genera􀆟ons.
+            </h1>
+          </div>
+        </div>
+        <div className="flex justify-center w-1/2 absolute left-0 top-0 z-10">
+          <img src={peoplegroup} alt="peoplegroup" className="w-[70%]" />
+        </div>
+        <div className="w-[30%] z-0 -left-10 top-72 absolute h-12 bg-[#FF006B] transform -rotate-6" />
+        <div className="w-[30%] z-0 -left-10 top-96 absolute h-12 bg-[#FF006B] transform -rotate-6" />
       </div>
 
       <Footer />
