@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-bottom: 16rem solid blue; /* Adjust size as needed */
+  border-top: 16rem solid transparent;
+}

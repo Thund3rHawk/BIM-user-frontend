@@ -21,7 +21,37 @@ import icon4 from "../assets/home/icon4.png";
 import icon5 from "../assets/home/icon5.png";
 import icon6 from "../assets/home/icon6.png";
 import peoplegroup from "../assets/home/peoplegroup.png";
+import { FaQuoteLeft } from "react-icons/fa";
+import testimonial from "../assets/home/testimonial.png";
+import blogmain from "../assets/home/blogmain.png";
+import blog from "../assets/home/blog.png";
+import { FaRegHeart } from "react-icons/fa6";
 
+const blogPosts = [
+  {
+    title: "title",
+    description:
+      "lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsa expedita adipisci rem quibusdam voluptatibus, rerum in corrupti esse enim?",
+    image: blogmain,
+    topics: ["topic1", "topic2", "topic3"],
+  },
+  {
+    title: "title",
+    description:
+      "lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatem dolorem excepturi molestiae alias ex similique necessitatibus, ratione officia nam.",
+    image: blog,
+    topics: ["topic1", "topic2", "topic3"],
+  },
+  {
+    title: "title",
+    description:
+      "lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, voluptate! Cumque nesciunt officiis soluta aliquid exercitationem adipisci doloribus labore distinctio!",
+    image: blog,
+    topics: ["topic1", "topic2", "topic3"],
+  },
+];
+const recentBlogPost = blogPosts[0];
+const otherBlogPosts = blogPosts.slice(1);
 const Home = () => {
   return (
     <div className="overflow-x-hidden">
@@ -486,6 +516,189 @@ const Home = () => {
         </div>
         <div className="w-[30%] z-0 -left-10 top-72 absolute h-12 bg-[#FF006B] transform -rotate-6" />
         <div className="w-[30%] z-0 -left-10 top-96 absolute h-12 bg-[#FF006B] transform -rotate-6" />
+      </div>
+
+      {/* testimonial */}
+
+      <div className="bg-[#0044ff1b] min-h-[80vh] flex p-20  m-10 rounded-lg">
+        <div className="w-1/2 flex flex-col ml-20 gap-10">
+          <FaQuoteLeft color="FF006B" size={30} />
+
+          <div className="flex items-center mt-8 ">
+            {[...Array(5)].map((_, index) => (
+              <svg
+                key={index}
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="gold"
+                className="w-5 h-5"
+              >
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.518 4.674a1 1 0 00.95.69h4.92c.969 0 1.371 1.24.588 1.81l-3.98 2.892a1 1 0 00-.364 1.118l1.518 4.674c.3.921-.755 1.688-1.54 1.118l-3.98-2.892a1 1 0 00-1.176 0l-3.98 2.892c-.784.57-1.838-.197-1.54-1.118l1.518-4.674a1 1 0 00-.364-1.118L2.49 10.1c-.783-.57-.38-1.81.588-1.81h4.92a1 1 0 00.95-.69L9.049 2.927z" />
+              </svg>
+            ))}
+          </div>
+          <h1 className="text-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+            voluptate, commodi excepturi cupiditate ab aspernatur, voluptatum
+            corrupti aut voluptas et magni totam earum provident laboriosam
+            voluptatibus similique hic recusandae eos sunt libero. Porro,
+            placeat id obcaecati consequatur, sunt minima sequi illum impedit
+            deserunt repudiandae vero, veniam magni laboriosam dicta quis.
+          </h1>
+          <h1 className="font-bold">
+            Maria Botin <span className="text-[#FF006B]"> CEO</span>
+          </h1>
+        </div>
+        <div className="w-1/2 flex justify-center">
+          <img src={testimonial} alt="testimonial" className="w-[50%]" />
+        </div>
+      </div>
+
+      {/* blogs */}
+      <div className="p-10">
+        <h1 className="text-4xl font-bold text-[#FF006B]">BLOGS</h1>
+        <h1 className="text-blue-600 text-xl font-bold">
+          WHAT BLOGS ARE IN BIM!
+        </h1>
+      </div>
+      <div className="flex p-10 px-20">
+        <div className="w-1/2 flex flex-col">
+          <img
+            src={recentBlogPost.image}
+            alt={recentBlogPost.title}
+            className="w-full"
+          />
+          <h1 className="text-2xl font-bold mt-4">{recentBlogPost.title}</h1>
+          <p className="text-lg">{recentBlogPost.description}</p>
+          <div className="flex flex-wrap gap-2 mt-2">
+            {recentBlogPost.topics.map((topic, index) => (
+              <span
+                key={index}
+                className="bg-blue-50 text-blue-800 text-sm px-4 py-1 rounded-full"
+              >
+                {topic}
+              </span>
+            ))}
+          </div>
+        </div>
+        <div className="w-1/2 flex flex-col pl-10 gap-10">
+          {otherBlogPosts.map((post, index) => (
+            <div key={index} className="flex items-center">
+              <img src={post.image} alt={post.title} className="w-1/3" />
+
+              <div className="pl-4">
+                <h2 className="text-xl font-bold">{post.title}</h2>
+                <p className="text-md">{post.description}</p>
+                <div className="flex flex-wrap gap-2 mt-2">
+                  {post.topics.map((topic, idx) => (
+                    <span
+                      key={idx}
+                      className="bg-blue-50 text-blue-800 text-sm px-4 py-1 rounded-full"
+                    >
+                      {topic}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="flex justify-center mb-10">
+        <button className="bg-[#FF006B] text-white font-semibold px-4 py-2 rounded-md w-[200px]">
+          Explore More
+        </button>
+      </div>
+
+      {/* FAQ */}
+
+      <div className="flex flex-col justify-center items-center gap-3 mb-20">
+        <h1 className="text-lg font-bold text-blue-600">FAQs</h1>
+        <h1 className="text-4xl font-bold">Frequently asked questions</h1>
+
+        <h1 className="text-xl text-gray-400">
+          Have questions? We’re here to help.
+        </h1>
+
+        <div className="flex justify-between gap-10 px-20">
+          <div className="flex flex-col items-center text-center gap-5">
+            <div className="bg-[#F9F5FF] h-10 w-10 flex justify-center items-center rounded-full">
+              <FaRegHeart color="FF006B" size={20} />
+            </div>
+            <h1 className="font-semibold text-lg">
+              What services does The BIM Skills Company provide?
+            </h1>
+            <h1>
+              We offer a wide range of services including BIM training and
+              certification, consulting, custom BIM development, BIM
+              coordination and management, digital twins and data management,
+              outsourcing and support services, as well as VR and AR
+              integration. 
+            </h1>
+          </div>
+          <div className="flex flex-col items-center text-center gap-5">
+            <div className="bg-[#F9F5FF] h-10 w-10 flex justify-center items-center rounded-full">
+              <FaRegHeart color="FF006B" size={20} />
+            </div>
+            <h1 className="font-semibold text-lg">
+              What services does The BIM Skills Company provide?
+            </h1>
+            <h1>
+              We offer a wide range of services including BIM training and
+              certification, consulting, custom BIM development, BIM
+              coordination and management, digital twins and data management,
+              outsourcing and support services, as well as VR and AR
+              integration. 
+            </h1>
+          </div>
+          <div className="flex flex-col items-center text-center gap-5">
+            <div className="bg-[#F9F5FF] h-10 w-10 flex justify-center items-center rounded-full">
+              <FaRegHeart color="FF006B" size={20} />
+            </div>
+            <h1 className="font-semibold text-lg">
+              What services does The BIM Skills Company provide?
+            </h1>
+            <h1>
+              We offer a wide range of services including BIM training and
+              certification, consulting, custom BIM development, BIM
+              coordination and management, digital twins and data management,
+              outsourcing and support services, as well as VR and AR
+              integration. 
+            </h1>
+          </div>
+        </div>
+        <div className="flex justify-between gap-10 px-20 mt-10">
+          <div className="flex flex-col items-center text-center gap-5">
+            <div className="bg-[#F9F5FF] h-10 w-10 flex justify-center items-center rounded-full">
+              <FaRegHeart color="FF006B" size={20} />
+            </div>
+            <h1 className="font-semibold text-lg">
+              What services does The BIM Skills Company provide?
+            </h1>
+            <h1>
+              We offer a wide range of services including BIM training and
+              certification, consulting, custom BIM development, BIM
+              coordination and management, digital twins and data management,
+              outsourcing and support services, as well as VR and AR
+              integration. 
+            </h1>
+          </div>
+          <div className="flex flex-col items-center text-center gap-5">
+            <div className="bg-[#F9F5FF] h-10 w-10 flex justify-center items-center rounded-full">
+              <FaRegHeart color="FF006B" size={20} />
+            </div>
+            <h1 className="font-semibold text-lg">
+              What services does The BIM Skills Company provide?
+            </h1>
+            <h1>
+              We offer a wide range of services including BIM training and
+              certification, consulting, custom BIM development, BIM
+              coordination and management, digital twins and data management,
+              outsourcing and support services, as well as VR and AR
+              integration. 
+            </h1>
+          </div>
+        </div>
       </div>
 
       <Footer />
