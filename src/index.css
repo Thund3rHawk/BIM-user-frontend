@@ -9,3 +9,6 @@
   border-bottom: 16rem solid blue; /* Adjust size as needed */
   border-top: 16rem solid transparent;
 }
+* {
+  font-family: "Calibri", sans-serif;
+}
