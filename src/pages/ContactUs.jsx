@@ -2,6 +2,9 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import img from "../assets/contact/img.png";
 import Footer from "../components/Footer";
+import { CiMail } from "react-icons/ci";
+import { MdOutlineLocationOn } from "react-icons/md";
+import { FiPhone } from "react-icons/fi";
 
 const ContactUs = () => {
   return (
@@ -115,6 +118,52 @@ const ContactUs = () => {
           </div>
         </div>
       </div> */}
+      <div className="flex flex-col gap-3 justify-center items-center my-20">
+        <h1 className="text-lg font-bold text-[#FB1351]">
+          Any Problem Contact us
+        </h1>
+        <h1 className="font-bold text-5xl">We’d love to help you</h1>
+        <h1 className="text-xl text-gray-400 mt-8">
+          Our friendly team is always here to help.
+        </h1>
+      </div>
+
+      <div className="flex mx-40 justify-between my-20">
+        <div className="flex flex-col items-center gap-2">
+          <div className="bg-blue-100 rounded-full p-2">
+            <CiMail size={25} />
+          </div>
+          <h1 className="font-bold text-xl">Email</h1>
+          <h1 className="text-gray-400 text-xl">
+            Our friendly team is here to help.
+          </h1>
+          <h1 className="text-[#FB1351] text-xl font-bold">
+            services@thebimskills.com
+          </h1>
+        </div>
+        <div className="flex flex-col items-center gap-2 w-1/3">
+          <div className="bg-blue-100 rounded-full p-2">
+            <MdOutlineLocationOn size={25} />
+          </div>
+          <h1 className="font-bold text-xl">Office</h1>
+          <h1 className="text-gray-400 text-xl">
+            Come say hello at our office HQ.
+          </h1>
+          <h1 className="text-[#FB1351] text-xl font-bold text-center">
+            First Floor, RS Complex, Opp.Bombay Building, Near GND Eng. College,
+            Bidar - 585401, Karnataka(INDIA)
+          </h1>
+        </div>
+        <div className="flex flex-col items-center gap-2">
+          <div className="bg-blue-100 rounded-full p-2">
+            <FiPhone size={25} />
+          </div>
+          <h1 className="font-bold text-xl">Phone</h1>
+          <h1 className="text-gray-400 text-xl">Mon-Fri from 8am to 5pm.</h1>
+          <h1 className="text-[#FB1351] text-xl font-bold">+91 98102 12345</h1>
+        </div>
+      </div>
+
       <Footer />
     </div>
   );
