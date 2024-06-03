@@ -6,6 +6,39 @@ import courses from "../assets/courses/courses.png";
 import Footer from "../components/Footer";
 import CourseCard from "../components/CourseCard";
 
+const courseData = [
+  {
+    id: 1,
+    image: courses,
+    subtitle: "Architecture",
+    title: "BIM Professional - Basics to Pro Level",
+    rating: 5,
+    reviews: 123,
+    price: "RS 29,999",
+    oldPrice: "RS 1,00,000",
+  },
+  {
+    id: 2,
+    image: courses,
+    subtitle: "Architecture",
+    title: "BIM Professional - Basics to Pro Level",
+    rating: 5,
+    reviews: 123,
+    price: "RS 29,999",
+    oldPrice: "RS 1,00,000",
+  },
+  {
+    id: 3,
+    image: courses,
+    subtitle: "Architecture",
+    title: "BIM Professional - Basics to Pro Level",
+    rating: 5,
+    reviews: 123,
+    price: "RS 29,999",
+    oldPrice: "RS 1,00,000",
+  },
+];
+
 const Courses = () => {
   return (
     <div className="overflow-x-hidden">
@@ -121,33 +154,18 @@ const Courses = () => {
       </div>
 
       <div className="flex space-x-8 px-48 py-10 justify-between">
-        <CourseCard
-          image={courses}
-          subtitle="Architecture"
-          title="BIM Professional - Basics to Pro Level"
-          rating={5}
-          reviews={123}
-          price="RS 29,999"
-          oldPrice="RS 1,00,000"
-        />
-        <CourseCard
-          image={courses}
-          subtitle="Construction"
-          title="Advanced BIM Techniques"
-          rating={5}
-          reviews={98}
-          price="RS 19,999"
-          oldPrice="RS 75,000"
-        />
-        <CourseCard
-          image={courses}
-          subtitle="Engineering"
-          title="BIM for Engineers"
-          rating={5}
-          reviews={87}
-          price="RS 24,999"
-          oldPrice="RS 90,000"
-        />
+        {courseData.map((course, index) => (
+          <CourseCard
+            image={course.image}
+            subtitle={course.subtitle}
+            title={course.title}
+            rating={course.rating}
+            reviews={course.reviews}
+            price={course.price}
+            oldPrice={course.oldPrice}
+            id={course.id}
+          />
+        ))}
       </div>
 
       {/* based on interest */}
@@ -160,33 +178,18 @@ const Courses = () => {
       </div>
 
       <div className="flex space-x-8 px-48 py-10 justify-between">
-        <CourseCard
-          image={courses}
-          subtitle="Architecture"
-          title="BIM Professional - Basics to Pro Level"
-          rating={5}
-          reviews={123}
-          price="RS 29,999"
-          oldPrice="RS 1,00,000"
-        />
-        <CourseCard
-          image={courses}
-          subtitle="Construction"
-          title="Advanced BIM Techniques"
-          rating={5}
-          reviews={98}
-          price="RS 19,999"
-          oldPrice="RS 75,000"
-        />
-        <CourseCard
-          image={courses}
-          subtitle="Engineering"
-          title="BIM for Engineers"
-          rating={5}
-          reviews={87}
-          price="RS 24,999"
-          oldPrice="RS 90,000"
-        />
+        {courseData.map((course, index) => (
+          <CourseCard
+            image={course.image}
+            subtitle={course.subtitle}
+            title={course.title}
+            rating={course.rating}
+            reviews={course.reviews}
+            price={course.price}
+            oldPrice={course.oldPrice}
+            id={course.id}
+          />
+        ))}
       </div>
       <Footer />
     </div>

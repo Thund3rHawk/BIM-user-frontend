@@ -1,4 +1,5 @@
 import React from "react";
+import { redirect, useNavigate } from "react-router-dom";
 
 const CourseCard = ({
   image,
@@ -8,7 +9,13 @@ const CourseCard = ({
   reviews,
   price,
   oldPrice,
+  id,
 }) => {
+  const navigate = useNavigate();
+  const handleCourseClick = (id) => {
+    console.log(id);
+    navigate(`/courses/${id}`);
+  };
   return (
     <div className="bg-white shadow-md rounded-lg p-6 flex flex-col gap-5 w-[300px] ">
       <img
@@ -18,7 +25,9 @@ const CourseCard = ({
       />
       <div className="flex-1">
         <h4 className="text-sm text-gray-500">{subtitle}</h4>
-        <h2 className="text-xl font-bold mb-2">{title}</h2>
+        <button onClick={() => handleCourseClick(id)}>
+          <h2 className="text-xl text-start font-bold mb-2">{title}</h2>
+        </button>
         <div className="flex items-center mb-4">
           {[...Array(5)].map((_, index) => (
             <svg

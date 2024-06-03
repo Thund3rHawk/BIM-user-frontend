@@ -56,6 +56,38 @@ const blogPosts = [
     topics: ["topic1", "topic2", "topic3"],
   },
 ];
+const courseData = [
+  {
+    id: 1,
+    image: courses,
+    subtitle: "Architecture",
+    title: "BIM Professional - Basics to Pro Level",
+    rating: 5,
+    reviews: 123,
+    price: "RS 29,999",
+    oldPrice: "RS 1,00,000",
+  },
+  {
+    id: 2,
+    image: courses,
+    subtitle: "Architecture",
+    title: "BIM Professional - Basics to Pro Level",
+    rating: 5,
+    reviews: 123,
+    price: "RS 29,999",
+    oldPrice: "RS 1,00,000",
+  },
+  {
+    id: 3,
+    image: courses,
+    subtitle: "Architecture",
+    title: "BIM Professional - Basics to Pro Level",
+    rating: 5,
+    reviews: 123,
+    price: "RS 29,999",
+    oldPrice: "RS 1,00,000",
+  },
+];
 const recentBlogPost = blogPosts[0];
 const otherBlogPosts = blogPosts.slice(1);
 const Home = () => {
@@ -323,33 +355,18 @@ const Home = () => {
 
         <div className="flex flex-col gap-12  z-10 w-[70%] py-10 absolute top-40">
           <div className="flex justify-between">
-            <CourseCard
-              image={courses}
-              subtitle="Architecture"
-              title="BIM Professional - Basics to Pro Level"
-              rating={5}
-              reviews={123}
-              price="RS 29,999"
-              oldPrice="RS 1,00,000"
-            />
-            <CourseCard
-              image={courses}
-              subtitle="Construction"
-              title="Advanced BIM Techniques"
-              rating={5}
-              reviews={98}
-              price="RS 19,999"
-              oldPrice="RS 75,000"
-            />
-            <CourseCard
-              image={courses}
-              subtitle="Engineering"
-              title="BIM for Engineers"
-              rating={5}
-              reviews={87}
-              price="RS 24,999"
-              oldPrice="RS 90,000"
-            />
+            {courseData.map((course, index) => (
+              <CourseCard
+                image={course.image}
+                subtitle={course.subtitle}
+                title={course.title}
+                rating={course.rating}
+                reviews={course.reviews}
+                price={course.price}
+                oldPrice={course.oldPrice}
+                id={course.id}
+              />
+            ))}
           </div>
           <div className="flex justify-center">
             <button className="bg-[#FF006B] text-white font-semibold px-4 py-2 rounded-md w-[200px]">
