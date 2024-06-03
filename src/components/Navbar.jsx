@@ -35,7 +35,7 @@ const Navbar = () => {
           <Link to="/courses">
             <h1 className="font-bold">BIM Courses</h1>
           </Link>
-          <Link to="/">
+          <Link to="/projects">
             <h1 className="font-bold">Projects</h1>
           </Link>
           <Link to="/blogs">

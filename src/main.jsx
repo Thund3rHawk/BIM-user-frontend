@@ -11,6 +11,7 @@ import Services from "./pages/Services.jsx";
 import About from "./pages/About.jsx";
 import ContactUs from "./pages/ContactUs.jsx";
 import Payment from "./pages/Payment.jsx";
+import Projects from "./pages/Projects.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path: "/courses/:id",
     element: <Course />,
+  },
+  {
+    path: "/projects",
+    element: <Projects />,
   },
   {
     path: "/blogs",

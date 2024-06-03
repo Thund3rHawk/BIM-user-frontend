@@ -33,6 +33,8 @@ const blogPosts = [
     description:
       "lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsa expedita adipisci rem quibusdam voluptatibus, rerum in corrupti esse enim?",
     image: blogmain,
+    author: "John Dae",
+    Date: "22 Jan, 2024",
     topics: ["topic1", "topic2", "topic3"],
   },
   {
@@ -40,6 +42,8 @@ const blogPosts = [
     description:
       "lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatem dolorem excepturi molestiae alias ex similique necessitatibus, ratione officia nam.",
     image: blog,
+    author: "John Dae",
+    Date: "22 Jan, 2024",
     topics: ["topic1", "topic2", "topic3"],
   },
   {
@@ -47,6 +51,8 @@ const blogPosts = [
     description:
       "lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, voluptate! Cumque nesciunt officiis soluta aliquid exercitationem adipisci doloribus labore distinctio!",
     image: blog,
+    author: "John Dae",
+    Date: "22 Jan, 2024",
     topics: ["topic1", "topic2", "topic3"],
   },
 ];
@@ -561,47 +567,58 @@ const Home = () => {
           WHAT BLOGS ARE IN BIM!
         </h1>
       </div>
-      <div className="flex p-10 px-20">
-        <div className="w-1/2 flex flex-col">
-          <img
-            src={recentBlogPost.image}
-            alt={recentBlogPost.title}
-            className="w-full"
-          />
-          <h1 className="text-2xl font-bold mt-4">{recentBlogPost.title}</h1>
-          <p className="text-lg">{recentBlogPost.description}</p>
-          <div className="flex flex-wrap gap-2 mt-2">
-            {recentBlogPost.topics.map((topic, index) => (
-              <span
-                key={index}
-                className="bg-blue-50 text-blue-800 text-sm px-4 py-1 rounded-full"
-              >
-                {topic}
-              </span>
-            ))}
+      <div className="flex flex-col gap-5 pb-10 px-20">
+        <h1 className="text-2xl font-bold">Recent blog posts</h1>
+        <div className="flex  ">
+          {/* large card */}
+          <div className="w-1/2 flex flex-col ">
+            <img
+              src={recentBlogPost.image}
+              alt={recentBlogPost.title}
+              className="w-full"
+            />
+            <h1 className="font-bold text-blue-600 mt-2">
+              {recentBlogPost.author} • {recentBlogPost.Date}
+            </h1>
+            <h1 className="text-2xl font-bold mt-2">{recentBlogPost.title}</h1>
+            <p className="text-lg">{recentBlogPost.description}</p>
+            <div className="flex flex-wrap gap-2 mt-2">
+              {recentBlogPost.topics.map((topic, index) => (
+                <span
+                  key={index}
+                  className="bg-blue-50 text-blue-800 text-sm px-4 py-1 rounded-full"
+                >
+                  {topic}
+                </span>
+              ))}
+            </div>
           </div>
-        </div>
-        <div className="w-1/2 flex flex-col pl-10 gap-10">
-          {otherBlogPosts.map((post, index) => (
-            <div key={index} className="flex items-center">
-              <img src={post.image} alt={post.title} className="w-1/3" />
+          {/* small cards */}
+          <div className="w-1/2 flex flex-col pl-10 gap-10">
+            {otherBlogPosts.map((post, index) => (
+              <div key={index} className="flex items-center">
+                <img src={post.image} alt={post.title} className="w-[40%]" />
 
-              <div className="pl-4">
-                <h2 className="text-xl font-bold">{post.title}</h2>
-                <p className="text-md">{post.description}</p>
-                <div className="flex flex-wrap gap-2 mt-2">
-                  {post.topics.map((topic, idx) => (
-                    <span
-                      key={idx}
-                      className="bg-blue-50 text-blue-800 text-sm px-4 py-1 rounded-full"
-                    >
-                      {topic}
-                    </span>
-                  ))}
+                <div className="pl-4">
+                  <h1 className="font-bold text-blue-600 mt-2">
+                    {post.author} • {post.Date}
+                  </h1>
+                  <h2 className="text-xl font-bold">{post.title}</h2>
+                  <p className="text-md">{post.description}</p>
+                  <div className="flex flex-wrap gap-2 mt-2">
+                    {post.topics.map((topic, idx) => (
+                      <span
+                        key={idx}
+                        className="bg-blue-50 text-blue-800 text-sm px-4 py-1 rounded-full"
+                      >
+                        {topic}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
       <div className="flex justify-center mb-10">
