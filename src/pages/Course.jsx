@@ -19,8 +19,10 @@ import tool4 from "../assets/courses/tool4.png";
 import tool5 from "../assets/courses/tool5.png";
 import tool6 from "../assets/courses/tool6.png";
 import tool7 from "../assets/courses/tool7.png";
+import { useNavigate } from "react-router-dom";
 
 const Course = () => {
+  const navigate = useNavigate();
   //scroll to top on load
   useEffect(() => {
     window.scrollTo({
@@ -212,7 +214,10 @@ const Course = () => {
           <button className="bg-[#FF006B] w-2/3 py-2 text-white font-bold text-xl rounded-xl mt-5">
             Add to Cart
           </button>
-          <button className="border-[#FF006B] border w-2/3 py-2  font-bold text-xl rounded-xl">
+          <button
+            className="border-[#FF006B] border w-2/3 py-2  font-bold text-xl rounded-xl"
+            onClick={() => navigate("/payment")}
+          >
             Buy Now
           </button>
           <div className="flex gap-3 items-center mt-5">

@@ -5,6 +5,7 @@ import blog2 from "../assets/courses/blog.png";
 import courses from "../assets/courses/courses.png";
 import Footer from "../components/Footer";
 import CourseCard from "../components/CourseCard";
+import { useNavigate } from "react-router-dom";
 
 const courseData = [
   {
@@ -40,6 +41,7 @@ const courseData = [
 ];
 
 const Courses = () => {
+  const navigate = useNavigate();
   return (
     <div className="overflow-x-hidden">
       <Navbar />
@@ -69,7 +71,7 @@ const Courses = () => {
               alt="blog2"
               className="w-60 h-48 object-cover rounded-lg"
             />
-            <div className="flex-1">
+            <div className="flex-1" onClick={() => navigate("/courses/1")}>
               <h2 className="text-xl font-bold mb-2">
                 BIM Professional - Architecture (Basics to Pro Level)
               </h2>
@@ -108,7 +110,7 @@ const Courses = () => {
               alt="blog2"
               className="w-60 h-48 object-cover rounded-lg"
             />
-            <div className="flex-1">
+            <div className="flex-1 " onClick={() => navigate("/courses/1")}>
               <h2 className="text-xl font-bold mb-2">
                 BIM Professional - Architecture (Basics to Pro Level)
               </h2>
