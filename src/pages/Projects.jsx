@@ -5,6 +5,7 @@ import logo from "../assets/projects/logo.png";
 import Footer from "../components/Footer";
 import courses from "../assets/courses/courses.png";
 import ProjectCard from "../components/ProjectCard";
+import Contact from "../components/Contact";
 
 const projectData = [
   {
@@ -61,6 +62,16 @@ const Projects = () => {
       <div className="my-1 px-32 mt-20">
         <h1 className="text-3xl font-bold mb-2">Our Top Projects</h1>
       </div>
+      <div className="flex space-x-8 px-48 py-5 justify-between">
+        {projectData.map((project) => (
+          <ProjectCard
+            subtitle={project.subtitle}
+            title={project.title}
+            image={project.image}
+            courseLink={project.courseLink}
+          />
+        ))}
+      </div>
       <div className="flex space-x-8 px-48 py-5 mb-16 justify-between">
         {projectData.map((project) => (
           <ProjectCard
@@ -71,7 +82,7 @@ const Projects = () => {
           />
         ))}
       </div>
-
+      <Contact />
       <Footer />
     </div>
   );
