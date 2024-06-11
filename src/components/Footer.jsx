@@ -1,5 +1,9 @@
 import React from "react";
 import logo from "../assets/navbar/bim-logo.png"; // Adjust the path to your logo
+import { FaYoutube } from "react-icons/fa";
+import { ImFacebook2 } from "react-icons/im";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -13,6 +17,12 @@ const Footer = () => {
             Oriented, Quality Based BIM Training & Consulting Company. Copyright
             © 2022 . All rights reserved | The BIM skills
           </p>
+          <div className="flex items-center gap-2 my-2">
+            <FaYoutube color="white" className="h-5 w-5" />
+            <ImFacebook2 color="white" className="h-4 w-4" />
+            <FaInstagram color="white" className="h-5 w-5" />
+            <FaLinkedin color="white" className="h-5 w-5" />
+          </div>
         </div>
 
         {/* Short Links Column 1 */}

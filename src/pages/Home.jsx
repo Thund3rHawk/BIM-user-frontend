@@ -26,6 +26,14 @@ import testimonial from "../assets/home/testimonial.png";
 import blogmain from "../assets/home/blogmain.png";
 import blog from "../assets/home/blog.png";
 import { FaRegHeart } from "react-icons/fa6";
+import { TfiArrowTopRight } from "react-icons/tfi";
+import one from "../assets/home/1.png";
+import two from "../assets/home/2.png";
+import three from "../assets/home/3.png";
+import four from "../assets/home/4.png";
+import five from "../assets/home/5.png";
+import six from "../assets/home/6.png";
+import seven from "../assets/home/7.png";
 
 const blogPosts = [
   {
@@ -107,10 +115,11 @@ const Home = () => {
               LET'S START YOUR JOUNEY
             </h1>
 
-            <h1 className="text-white text-7xl font-bold">
-              BECOME BIM PRO! WORKING REALTIME PROJECTS
+            <h1 className=" text-7xl font-bold">
+              BECOME <span className="text-white">BIM PRO!</span> WORKING
+              REALTIME PROJECTS
             </h1>
-            <h1 className=" text-lg">
+            <h1 className=" text-2xl">
               we're dedicated to revolutionizing the construction landscape
               through innovative BIM services and expert consulting. Our mission
               is simple yetprofound: to empower our clients with the tools,
@@ -123,11 +132,13 @@ const Home = () => {
           </div>
         </div>
         <div className="p-10 flex gap-10">
-          <button className=" text-[#FF006B] bg-white border border-[#FF006B] font-semibold px-4 py-2 rounded-md w-[300px]">
+          <button className=" flex gap-2 items-center justify-center text-xl  text-[#FF006B] bg-white border border-[#FF006B] font-semibold px-4 py-2 rounded-md w-[300px]">
             Explore BIM Training
+            <TfiArrowTopRight />
           </button>
-          <button className=" text-[#FF006B] bg-white border border-[#FF006B] font-semibold px-4 py-2 rounded-md w-[300px]">
+          <button className=" flex gap-2 items-center justify-center text-xl text-[#FF006B] bg-white border border-[#FF006B] font-semibold px-4 py-2 rounded-md w-[300px]">
             Explore BIM Services
+            <TfiArrowTopRight />
           </button>
           <img src={avatars} alt="avatars" />
           <div className="w-32">
@@ -138,7 +149,7 @@ const Home = () => {
         </div>
       </div>
       {/* BIM Services Section */}
-      <div className="p-10 px-20">
+      {/* <div className="p-10 px-20">
         <h1 className="text-[#FF006B] text-6xl font-bold">BIM Services</h1>
         <h1 className="text-blue-600 text-xl font-bold">
           What Services We Provide!
@@ -234,7 +245,62 @@ const Home = () => {
             Explore More
           </button>
         </div>
+      </div> */}
+      <div className="p-10 px-20">
+        <h1 className="text-4xl font-bold">
+          <span className="text-[#FF006B]">Top BIM</span> Services
+        </h1>
+        <div className="flex justify-between my-10 mt-16">
+          <div className="flex gap-5 items-center w-[20%]">
+            <img src={one} alt="one" className="w-6 h-6" />
+            <h1 className="text-2xl text-[#FF006B] font-bold ">
+              BIM <span className="text-black">TRAINING</span>
+            </h1>
+          </div>
+          <div className="flex gap-5 w-[25%]  items-center">
+            <img src={two} alt="one" className="w-6 h-6" />
+            <h1 className="text-2xl text-[#FF006B] font-bold ">
+              BIM <span className="text-black">CONSULTING</span>
+            </h1>
+          </div>
+          <div className="flex gap-5 items-center  w-[30%]">
+            <img src={three} alt="one" className="w-6 h-6" />
+            <h1 className="text-2xl font-bold ">
+              ARCHITECTURE <span className="text-[#FF006B]">BIM</span> SERVICES
+            </h1>
+          </div>
+        </div>
+
+        <div className="flex justify-between">
+          <div className="flex gap-5 items-center w-[20%]">
+            <img src={four} alt="one" className="w-6 h-6" />
+            <h1 className="text-2xl font-bold text-[#FF006B]">
+              BIM <span className="text-black">SERVICES</span>
+            </h1>
+          </div>
+          <div className="flex gap-5 w-[25%] items-center">
+            <img src={five} alt="one" className="w-6 h-6" />
+            <h1 className="text-2xl font-bold text-[#FF006B]">
+              CAD <span className="text-black">SERVICES</span>
+            </h1>
+          </div>
+          <div className="flex gap-5 items-center w-[30%]">
+            <img src={six} alt="one" className="w-6 h-6" />
+            <h1 className="text-2xl font-bold  ">
+              STRUCTURE <span className="text-[#FF006B]">BIM</span> SERVICES
+            </h1>
+          </div>
+        </div>
+        <div className="mt-10 flex justify-center">
+          <div className="flex gap-5  items-center  w-[35%] ">
+            <img src={seven} alt="one" className="w-6 h-6" />
+            <h1 className="text-2xl text-[#FF006B] font-bold ">
+              VISUALIZATION <span className="text-black">SERVICES</span>
+            </h1>
+          </div>
+        </div>
       </div>
+
       {/* target audience */}
       <div className="p-10 px-20">
         <h1 className="text-4xl font-bold">

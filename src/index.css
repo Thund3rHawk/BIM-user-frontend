@@ -12,3 +12,10 @@
 * {
   font-family: "Calibri", sans-serif;
 }
+
+.icon-gradient {
+  display: inline-block;
+  background: linear-gradient(45deg, #ff6a00, #ee0979);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
