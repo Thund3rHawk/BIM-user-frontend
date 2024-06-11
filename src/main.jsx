@@ -12,6 +12,7 @@ import About from "./pages/About.jsx";
 import ContactUs from "./pages/ContactUs.jsx";
 import Payment from "./pages/Payment.jsx";
 import Projects from "./pages/Projects.jsx";
+import CourseLanding from "./pages/CourseLanding.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   },
   {
     path: "/courses",
+    element: <CourseLanding />,
+  },
+  {
+    path: "/allcourses",
     element: <Courses />,
   },
   {
