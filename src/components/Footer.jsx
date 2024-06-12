@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/navbar/bim-logo.png"; // Adjust the path to your logo
+import logo from "../assets/footer/logo.png"; // Adjust the path to your logo
 import { FaYoutube } from "react-icons/fa";
 import { ImFacebook2 } from "react-icons/im";
 import { FaInstagram } from "react-icons/fa";
@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Company Intro and Logo */}
         <div>
-          <img src={logo} alt="Company Logo" className="w-32 mb-4" />
+          <img src={logo} alt="Company Logo" className="w-48 mb-4" />
           <p className="text-gray-400">
             The BIM skills is an innovative, Value driven, Real-Time Project
             Oriented, Quality Based BIM Training & Consulting Company. Copyright

@@ -25,7 +25,7 @@ const About = () => {
         <h1 className="text-4xl font-bold">
           About the <span className="text-[#FF006B]">Company</span>
         </h1>
-        <h1 className="text-xl text-gray-400">
+        <h1 className="text-xl text-gray-500">
           Learn more about the company and the team behind it.
         </h1>
       </div>
@@ -90,7 +90,7 @@ const About = () => {
         <div className="w-[40%]  p-16 flex flex-col gap-5">
           <h1 className="text-2xl font-bold ">Explore features</h1>
           <h1 className="text-4xl font-medium">A Leading BIM Company</h1>
-          <h1 className="font-bold ">
+          <h1 className=" ">
             "At The BIM Skills, we're more than just a company; we're a team of
             passionate trailblazers, driven by innovation and fueled by
             enthusiasm for cutting-edge technologies. With our dynamic blend of
@@ -105,9 +105,9 @@ const About = () => {
               </h1>
             </div>
             <div className="w-40 flex flex-col gap-5">
-              <img src={discipline} alt="discipline" className="h-20 w-20" />
+              <img src={security} alt="discipline" className="h-20 w-20" />
               <h1 className="font-bold text-lg">
-                All discipline under one roof
+                100% Data Security and Technical Support
               </h1>
             </div>
           </div>

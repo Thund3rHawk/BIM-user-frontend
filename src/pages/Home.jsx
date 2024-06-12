@@ -464,7 +464,7 @@ const Home = () => {
               NEOM - LOGISTICS PARK LANDSCAPE PROJECT
             </h1>
             <h1 className="text-lg font-bold text-blue-600">
-              A Benchmark in Advanced BIM Implementa􀆟on
+              A Benchmark in Advanced BIM Implementation
             </h1>
             <h1 className="pt-5 text-xl">
               The NEOM Logistics Park project stands as a testament to our
@@ -487,7 +487,7 @@ const Home = () => {
         <div className="absolute bottom-[30%] left-[15%] z-20 ">
           <img src={project5} alt="project5" className="w-60 h-80" />
         </div>
-        <div className="w-[110%] z-0 -left-10 top-80 absolute h-12 bg-blue-600 transform -rotate-6" />
+        <div className="w-[110%] z-0 -left-10 top-60 absolute h-12 bg-blue-600 transform -rotate-6" />
         <div className="w-[20%] z-0 -left-10 top-[62%] absolute h-12 bg-[#FF006B] transform -rotate-6" />
 
         <div className="w-[20%] z-0 -left-10 top-[70%] absolute h-12 bg-[#FF006B] transform -rotate-6" />
