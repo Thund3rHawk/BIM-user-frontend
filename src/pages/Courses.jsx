@@ -155,19 +155,29 @@ const Courses = () => {
         </h3>
       </div>
 
-      <div className="flex space-x-8 px-48 py-10 justify-between">
-        {courseData.map((course, index) => (
-          <CourseCard
-            image={course.image}
-            subtitle={course.subtitle}
-            title={course.title}
-            rating={course.rating}
-            reviews={course.reviews}
-            price={course.price}
-            oldPrice={course.oldPrice}
-            id={course.id}
-          />
-        ))}
+      <div className=" relative min-h-[70vh]  justify-center flex ">
+        <div className="flex w-[75%] absolute z-10 space-x-8 py-10  justify-between">
+          {courseData.map((course, index) => (
+            <CourseCard
+              image={course.image}
+              subtitle={course.subtitle}
+              title={course.title}
+              rating={course.rating}
+              reviews={course.reviews}
+              price={course.price}
+              oldPrice={course.oldPrice}
+              id={course.id}
+            />
+          ))}
+        </div>
+
+        <div className="w-[30%] z-0 -left-10 bottom-20 absolute h-12 bg-blue-600 transform -rotate-6" />
+        <div className="w-[30%] z-0 -left-10 bottom-36 absolute h-12 bg-blue-600 transform -rotate-6" />
+
+        <div className="w-[30%] z-0 -right-10 top-20 absolute h-12 bg-blue-600 transform -rotate-6" />
+        <div className="w-[30%] z-0 -right-10 top-40 absolute h-12 bg-blue-600 transform -rotate-6" />
+
+        <div className="w-[60%] z-0 -right-10 top-36 absolute h-12 bg-[#FF006B] transform -rotate-6" />
       </div>
 
       {/* based on interest */}
@@ -179,19 +189,29 @@ const Courses = () => {
         </h3>
       </div>
 
-      <div className="flex space-x-8 px-48 py-10 justify-between">
-        {courseData.map((course, index) => (
-          <CourseCard
-            image={course.image}
-            subtitle={course.subtitle}
-            title={course.title}
-            rating={course.rating}
-            reviews={course.reviews}
-            price={course.price}
-            oldPrice={course.oldPrice}
-            id={course.id}
-          />
-        ))}
+      <div className=" relative min-h-[70vh]  justify-center flex ">
+        <div className="flex w-[75%] absolute z-10 space-x-8 py-10  justify-between">
+          {courseData.map((course, index) => (
+            <CourseCard
+              image={course.image}
+              subtitle={course.subtitle}
+              title={course.title}
+              rating={course.rating}
+              reviews={course.reviews}
+              price={course.price}
+              oldPrice={course.oldPrice}
+              id={course.id}
+            />
+          ))}
+        </div>
+
+        <div className="w-[30%] z-0 -left-10 bottom-20 absolute h-12 bg-blue-600 transform -rotate-6" />
+        <div className="w-[30%] z-0 -left-10 bottom-36 absolute h-12 bg-blue-600 transform -rotate-6" />
+
+        <div className="w-[30%] z-0 -right-10 top-20 absolute h-12 bg-blue-600 transform -rotate-6" />
+        <div className="w-[30%] z-0 -right-10 top-40 absolute h-12 bg-blue-600 transform -rotate-6" />
+
+        <div className="w-[60%] z-0 -right-10 top-36 absolute h-12 bg-[#FF006B] transform -rotate-6" />
       </div>
       <Footer />
     </div>

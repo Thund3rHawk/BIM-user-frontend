@@ -62,25 +62,45 @@ const Projects = () => {
       <div className="my-1 px-32 mt-20">
         <h1 className="text-3xl font-bold mb-2">Our Top Projects</h1>
       </div>
-      <div className="flex space-x-8 px-48 py-5 justify-between">
-        {projectData.map((project) => (
-          <ProjectCard
-            subtitle={project.subtitle}
-            title={project.title}
-            image={project.image}
-            courseLink={project.courseLink}
-          />
-        ))}
+
+      <div className=" relative min-h-[70vh]  justify-center flex ">
+        <div className="flex space-x-8 absolute w-[75%] z-10 py-5 justify-between">
+          {projectData.map((project) => (
+            <ProjectCard
+              subtitle={project.subtitle}
+              title={project.title}
+              image={project.image}
+              courseLink={project.courseLink}
+            />
+          ))}
+        </div>
+        <div className="w-[30%] z-0 -left-10 top-64 absolute h-12 bg-blue-600 transform -rotate-6" />
+        <div className="w-[30%] z-0 -left-10 top-80 absolute h-12 bg-blue-600 transform -rotate-6" />
+
+        <div className="w-[30%] z-0 -right-10 top-20 absolute h-12 bg-blue-600 transform -rotate-6" />
+        <div className="w-[30%] z-0 -right-10 top-40 absolute h-12 bg-blue-600 transform -rotate-6" />
+
+        <div className="w-[60%] z-0 -right-10 top-36 absolute h-12 bg-[#FF006B] transform -rotate-6" />
       </div>
-      <div className="flex space-x-8 px-48 py-5 mb-16 justify-between">
-        {projectData.map((project) => (
-          <ProjectCard
-            subtitle={project.subtitle}
-            title={project.title}
-            image={project.image}
-            courseLink={project.courseLink}
-          />
-        ))}
+
+      <div className=" relative min-h-[70vh]  justify-center flex ">
+        <div className="flex space-x-8 absolute w-[75%] z-10 py-5 justify-between">
+          {projectData.map((project) => (
+            <ProjectCard
+              subtitle={project.subtitle}
+              title={project.title}
+              image={project.image}
+              courseLink={project.courseLink}
+            />
+          ))}
+        </div>
+        <div className="w-[30%] z-0 -left-10 top-64 absolute h-12 bg-blue-600 transform -rotate-6" />
+        <div className="w-[30%] z-0 -left-10 top-80 absolute h-12 bg-blue-600 transform -rotate-6" />
+
+        <div className="w-[30%] z-0 -right-10 top-20 absolute h-12 bg-blue-600 transform -rotate-6" />
+        <div className="w-[30%] z-0 -right-10 top-40 absolute h-12 bg-blue-600 transform -rotate-6" />
+
+        <div className="w-[60%] z-0 -right-10 top-36 absolute h-12 bg-[#FF006B] transform -rotate-6" />
       </div>
       <Contact />
       <Footer />

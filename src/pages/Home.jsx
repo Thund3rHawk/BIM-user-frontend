@@ -441,12 +441,13 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="w-[30%] z-0 -left-10 top-80 absolute h-12 bg-blue-600 transform -rotate-6" />
-        <div className="w-[30%] z-0 -left-10 top-96 absolute h-12 bg-blue-600 transform -rotate-6" />
+        <div className="w-[30%] z-0 -left-10 bottom-56 absolute h-12 bg-blue-600 transform -rotate-6" />
+        <div className="w-[30%] z-0 -left-10 bottom-40 absolute h-12 bg-blue-600 transform -rotate-6" />
 
-        <div className="w-[30%] z-0 -right-10 top-56 absolute h-12 bg-blue-600 transform -rotate-6" />
+        <div className="w-[30%] z-0 -right-10 top-60 absolute h-12 bg-blue-600 transform -rotate-6" />
+        <div className="w-[30%] z-0 -right-10 top-[45%] absolute h-12 bg-blue-600 transform -rotate-6" />
 
-        <div className="w-[30%] z-0 -right-10 top-72 absolute h-12 bg-[#FF006B] transform -rotate-6" />
+        <div className="w-[60%] z-0 -right-10 top-[42%] absolute h-12 bg-[#FF006B] transform -rotate-6" />
       </div>
 
       {/* out top projects  */}
