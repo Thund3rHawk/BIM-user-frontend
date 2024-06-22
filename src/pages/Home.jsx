@@ -105,7 +105,7 @@ const Home = () => {
       <div
         className="min-h-[80vh] m-10 rounded-xl"
         style={{
-          background: "linear-gradient(to bottom, #FF006B, #001AFF)",
+          background: "linear-gradient(to right, #0666BD, #D92E68)",
         }}
       >
         <div className="flex justify-between p-10 relative">
@@ -722,7 +722,7 @@ const Home = () => {
         </h1>
 
         <div className="flex justify-between gap-10 px-20">
-          <div className="flex flex-col items-center text-center gap-5">
+          <div className="w-1/3 flex flex-col items-center text-center gap-5">
             <div className="bg-[#F9F5FF] h-10 w-10 flex justify-center items-center rounded-full">
               <FaRegHeart color="FF006B" size={20} />
             </div>
@@ -737,66 +737,59 @@ const Home = () => {
               integration. 
             </h1>
           </div>
-          <div className="flex flex-col items-center text-center gap-5">
+          <div className="w-1/3 flex flex-col items-center text-center gap-5">
             <div className="bg-[#F9F5FF] h-10 w-10 flex justify-center items-center rounded-full">
               <FaRegHeart color="FF006B" size={20} />
             </div>
             <h1 className="font-semibold text-lg">
-              What services does The BIM Skills Company provide?
+              Are your courses suitable for professionals?
             </h1>
             <h1>
-              We offer a wide range of services including BIM training and
-              certification, consulting, custom BIM development, BIM
-              coordination and management, digital twins and data management,
-              outsourcing and support services, as well as VR and AR
-              integration. 
+              Yes, our courses are designed for both students and professionals
+              in the AEC (Architecture, Engineering, and Construction) industry.
+              We offer practical, project-based training to enhance real-world
+              skills.
             </h1>
           </div>
-          <div className="flex flex-col items-center text-center gap-5">
+          <div className="w-1/3 flex flex-col items-center text-center gap-5">
             <div className="bg-[#F9F5FF] h-10 w-10 flex justify-center items-center rounded-full">
               <FaRegHeart color="FF006B" size={20} />
             </div>
             <h1 className="font-semibold text-lg">
-              What services does The BIM Skills Company provide?
+               Do you provide certification upon course completion?
             </h1>
             <h1>
-              We offer a wide range of services including BIM training and
-              certification, consulting, custom BIM development, BIM
-              coordination and management, digital twins and data management,
-              outsourcing and support services, as well as VR and AR
-              integration. 
+              Yes, we provide official certification for various BIM
+              competencies and software proficiencies upon successful completion
+              of our courses.
             </h1>
           </div>
         </div>
         <div className="flex justify-between gap-10 px-20 mt-10">
-          <div className="flex flex-col items-center text-center gap-5">
+          <div className="w-1/2 flex flex-col items-center text-center gap-5">
             <div className="bg-[#F9F5FF] h-10 w-10 flex justify-center items-center rounded-full">
               <FaRegHeart color="FF006B" size={20} />
             </div>
             <h1 className="font-semibold text-lg">
-              What services does The BIM Skills Company provide?
+               What support services do you offer?
             </h1>
             <h1>
-              We offer a wide range of services including BIM training and
-              certification, consulting, custom BIM development, BIM
-              coordination and management, digital twins and data management,
-              outsourcing and support services, as well as VR and AR
-              integration. 
+              We provide ongoing support for BIM software and models, including
+              updates, troubleshooting, and maintenance. We also offer modeling
+              services for architectural, structural, and MEP (mechanical,
+              electrical, and plumbing) aspects of projects.
             </h1>
           </div>
-          <div className="flex flex-col items-center text-center gap-5">
+          <div className="w-1/2 flex flex-col items-center text-center gap-5">
             <div className="bg-[#F9F5FF] h-10 w-10 flex justify-center items-center rounded-full">
               <FaRegHeart color="FF006B" size={20} />
             </div>
             <h1 className="font-semibold text-lg">
-              What services does The BIM Skills Company provide?
+              Do you offer online courses?
             </h1>
             <h1>
-              We offer a wide range of services including BIM training and
-              certification, consulting, custom BIM development, BIM
-              coordination and management, digital twins and data management,
-              outsourcing and support services, as well as VR and AR
-              integration. 
+              Yes, we offer both live and recorded online courses to provide
+              flexible learning options for our students.
             </h1>
           </div>
         </div>

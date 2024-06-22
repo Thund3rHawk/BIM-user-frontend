@@ -15,7 +15,7 @@ const Contact = () => {
         justifyContent: "center",
       }}
     >
-      <div className="flex w-4/5 h-4/5 bg-opacity-75">
+      <div className="flex w-4/5  bg-opacity-75">
         <div className="flex-1 flex flex-col justify-center items-start p-8 text-white">
           <h1 className="text-6xl font-bold mb-4">
             Send Your BIM Requirements For Your Next Project.
