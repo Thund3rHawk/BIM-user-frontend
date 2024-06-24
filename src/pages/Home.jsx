@@ -21,6 +21,7 @@ import icon4 from "../assets/home/icon4.png";
 import icon5 from "../assets/home/icon5.png";
 import icon6 from "../assets/home/icon6.png";
 import peoplegroup from "../assets/home/peoplegroup.png";
+import peoplegroup2 from "../assets/home/peoplegroup2.png";
 import { FaQuoteLeft } from "react-icons/fa";
 import testimonial from "../assets/home/testimonial.png";
 import blogmain from "../assets/home/blogmain.png";
@@ -602,10 +603,10 @@ const Home = () => {
           </div>
         </div>
         <div className="flex justify-center w-1/2 absolute left-0 top-0 z-10">
-          <img src={peoplegroup} alt="peoplegroup" className="w-[70%]" />
+          <img src={peoplegroup2} alt="peoplegroup" className="w-[70%]" />
         </div>
-        <div className="w-[30%] z-0 -left-10 top-72 absolute h-12 bg-[#FF006B] transform -rotate-6" />
-        <div className="w-[30%] z-0 -left-10 top-96 absolute h-12 bg-[#FF006B] transform -rotate-6" />
+        <div className="w-[38%] z-0 -left-10 top-72 absolute h-12 bg-[#FF006B] transform -rotate-6" />
+        <div className="w-[35%] z-0 -left-10 top-96 absolute h-12 bg-[#FF006B] transform -rotate-6" />
       </div>
 
       {/* testimonial */}

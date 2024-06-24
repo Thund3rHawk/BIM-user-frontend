@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import courses from "../assets/courses/courses.png";
 import ProjectCard from "../components/ProjectCard";
 import Contact from "../components/Contact";
+import bgImage from "../assets/projects/bgImage.png";
 
 const projectData = [
   {
@@ -34,7 +35,7 @@ const Projects = () => {
       <Navbar />
       <div className="flex h-[90vh] my-10">
         <div className="w-1/2 flex justify-center items-center bg-blue-600 relative">
-          <img src={logo} alt="logo" className="w-[80%]" />
+          <img src={bgImage} alt="logo" className="w-full h-full" />
           <div className="flex flex-col gap-5  m-16 absolute">
             <h1 className="text-5xl font-bold text-white">
               NEOM - LOGISTICS PARK LANDSCAPE PROJECT

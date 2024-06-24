@@ -40,6 +40,7 @@ import review1 from "../assets/courses/review1.png";
 import review2 from "../assets/courses/review2.png";
 import review3 from "../assets/courses/review3.png";
 import review4 from "../assets/courses/review4.png";
+import bgImage from "../assets/courses/bgImage.png";
 
 const courseData = [
   {
@@ -83,7 +84,7 @@ const CourseLanding = () => {
       <div
         className="min-h-[80vh] mt-10 mx-10 rounded-xl"
         style={{
-          background: "linear-gradient(to right, #0666BD, #D92E68)",
+          background: `url(${bgImage}), linear-gradient(to right, #0666BD, #D92E68) `,
         }}
       >
         <div className="flex justify-between p-20 relative">

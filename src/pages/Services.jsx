@@ -8,6 +8,8 @@ import courses from "../assets/courses/courses.png";
 import Footer from "../components/Footer";
 import building from "../assets/services/building.png";
 import Contact from "../components/Contact";
+import services1 from "../assets/services/services1.png";
+import services2 from "../assets/services/services2.png";
 
 const Services = () => {
   return (
@@ -119,12 +121,12 @@ const Services = () => {
           </div>
         </div>
         <div className=" w-1/2 flex  justify-end ">
-          <img src={projectsmain} alt="projectsmain" className="w-full" />
+          <img src={services1} alt="projectsmain" className="w-full" />
         </div>
       </div>
 
       <div className="flex mt-10">
-        <img src={building} alt="building" className="w-1/2" />
+        <img src={services2} alt="building" className="w-1/2" />
         <div className="bg-[#FF006B] flex flex-col gap-3 justify-center px-20 ">
           <h1 className="text-white text-4xl font-bold">
             Sustainable BIM Services
