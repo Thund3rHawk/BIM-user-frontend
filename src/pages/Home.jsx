@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import laptop from "../assets/home/laptop.png";
-import info from "../assets/home/info.png";
+import info from "../assets/home/info.jpg";
 import wave from "../assets/home/wave.png";
 import avatars from "../assets/home/avatars.png";
 import { GoCheckCircleFill } from "react-icons/go";
@@ -35,6 +35,39 @@ import four from "../assets/home/4.png";
 import five from "../assets/home/5.png";
 import six from "../assets/home/6.png";
 import seven from "../assets/home/7.png";
+import mainbg from "../assets/home/mainbg.jpg";
+import onlinetraining from "../assets/home/onlinetraining.jpg";
+import offlinetraining from "../assets/home/offlinetraining.jpg";
+import "react-slideshow-image/dist/styles.css";
+import { Slide } from "react-slideshow-image";
+
+const spanStyle = {
+  padding: "20px",
+  background: "#efefef",
+  color: "#000000",
+};
+
+const divStyle = {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  backgroundSize: "cover",
+  height: "400px",
+};
+const slideImages = [
+  {
+    url: mainbg,
+    caption: "Slide 1",
+  },
+  {
+    url: offlinetraining,
+    caption: "Slide 2",
+  },
+  {
+    url: onlinetraining,
+    caption: "Slide 3",
+  },
+];
 
 const blogPosts = [
   {
@@ -103,52 +136,49 @@ const Home = () => {
   return (
     <div className="overflow-x-hidden">
       <Navbar />
-      <div
-        className="min-h-[80vh] m-10 rounded-xl"
-        style={{
-          background: "linear-gradient(to right, #0666BD, #D92E68)",
-        }}
-      >
-        <div className="flex justify-between p-10 relative">
-          <div className="w-[55%]  flex flex-col gap-6 ">
-            <h1 className="text-white text-lg font-semibold">
-              {" "}
-              LET'S START YOUR JOUNEY
-            </h1>
 
-            <h1 className=" text-7xl font-bold">
-              BECOME <span className="text-white">BIM PRO!</span> WORKING
-              REALTIME PROJECTS
-            </h1>
-            <h1 className=" text-2xl">
-              we're dedicated to revolutionizing the construction landscape
-              through innovative BIM services and expert consulting. Our mission
-              is simple yetprofound: to empower our clients with the tools,
-              strategies, and support theyneed to bring their boldest
-              visions to life.
-            </h1>
+      <Slide arrows={false} autoplay={true} duration={3000}>
+        {slideImages.map((slideImage, index) => (
+          <div key={index}>
+            <div
+              className="min-h-[90vh] m-10 rounded-xl flex flex-col justify-end items-start"
+              // style={{
+              //   // background: "linear-gradient(to right, #0666BD, #D92E68)",
+              //   background: `url(${mainbg}) no-repeat center center/cover`,
+              // }}
+
+              style={{
+                ...divStyle,
+                backgroundImage: `url(${slideImage.url})`,
+              }}
+            >
+              <div className="flex justify-between p-10 relative">
+                <div className="w-[55%] h-[60vh] bg-red-900  flex flex-col gap-6  "></div>
+                {/* <div className="absolute right-10 w-[60vw]">
+                  <img src={laptop} alt="laptop" className="w-[80%]" />
+                </div> */}
+              </div>
+              <div className="p-10 flex gap-10">
+                <button className=" flex gap-2 items-center justify-center text-xl  text-[#FF006B] bg-white border border-[#FF006B] font-semibold px-4 py-2 rounded-md w-[300px]">
+                  Explore BIM Training
+                  <TfiArrowTopRight />
+                </button>
+                <button className=" flex gap-2 items-center justify-center text-xl text-[#FF006B] bg-white border border-[#FF006B] font-semibold px-4 py-2 rounded-md w-[300px]">
+                  Explore BIM Services
+                  <TfiArrowTopRight />
+                </button>
+                <img src={avatars} alt="avatars" />
+                <div className="w-32">
+                  <h1 className="text-white">
+                    100+ <br /> satisfied clients
+                  </h1>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="absolute right-10 -top-24">
-            <img src={laptop} alt="laptop" className="w-[800px]" />
-          </div>
-        </div>
-        <div className="p-10 flex gap-10">
-          <button className=" flex gap-2 items-center justify-center text-xl  text-[#FF006B] bg-white border border-[#FF006B] font-semibold px-4 py-2 rounded-md w-[300px]">
-            Explore BIM Training
-            <TfiArrowTopRight />
-          </button>
-          <button className=" flex gap-2 items-center justify-center text-xl text-[#FF006B] bg-white border border-[#FF006B] font-semibold px-4 py-2 rounded-md w-[300px]">
-            Explore BIM Services
-            <TfiArrowTopRight />
-          </button>
-          <img src={avatars} alt="avatars" />
-          <div className="w-32">
-            <h1 className="text-white">
-              100+ <br /> satisfied clients
-            </h1>
-          </div>
-        </div>
-      </div>
+        ))}
+      </Slide>
+
       {/* BIM Services Section */}
       {/* <div className="p-10 px-20">
         <h1 className="text-[#FF006B] text-6xl font-bold">BIM Services</h1>

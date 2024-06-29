@@ -41,6 +41,33 @@ import review2 from "../assets/courses/review2.png";
 import review3 from "../assets/courses/review3.png";
 import review4 from "../assets/courses/review4.png";
 import bgImage from "../assets/courses/bgImage.png";
+import onlinetraining from "../assets/home/onlinetraining.jpg";
+import offlinetraining from "../assets/home/offlinetraining.jpg";
+import { Slide } from "react-slideshow-image";
+
+const spanStyle = {
+  padding: "20px",
+  background: "#efefef",
+  color: "#000000",
+};
+
+const divStyle = {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  backgroundSize: "cover",
+  height: "400px",
+};
+const slideImages = [
+  {
+    url: offlinetraining,
+    caption: "Slide 2",
+  },
+  {
+    url: onlinetraining,
+    caption: "Slide 3",
+  },
+];
 
 const courseData = [
   {
@@ -81,48 +108,59 @@ const CourseLanding = () => {
     <div className="overflow-x-hidden">
       <Navbar />
       {/* hero section */}
-      <div
-        className="min-h-[80vh] mt-10 mx-10 rounded-xl"
-        style={{
-          background: `url(${bgImage}), linear-gradient(to right, #0666BD, #D92E68) `,
-        }}
-      >
-        <div className="flex justify-between p-20 relative">
-          <div className="w-[60%]  flex flex-col gap-6 ">
-            <h1 className=" text-7xl font-extrabold text-white ">
-              Empowering <br /> next-gen architects and engineers towards career
-              success
-            </h1>
-            <h1 className=" text-2xl text-white">
-              Online certification courses designed for success. Acquire
-              industry-relevant skills through engaging cohort-based learning
-              experiences.
-            </h1>
-            <div className="flex gap-10">
-              <button
-                onClick={() => navigate("/allcourses")}
-                className=" flex gap-2 items-center justify-center text-xl  text-[#FF006B] bg-white border border-[#FF006B] font-semibold p-2 rounded-md w-[250px]"
-              >
-                Explore Courses
-                <GoArrowRight />
-              </button>
-              <button className=" flex gap-2 items-center justify-center text-xl bg-[#FF006B] text-white border border-[#FF006B] font-semibold p-2 rounded-md w-[250px]">
-                Request a Call Back
-                <FiPhoneCall />
-              </button>
+
+      <Slide arrows={false} autoplay={true} duration={3000}>
+        {slideImages.map((slideImage, index) => (
+          <div key={index}>
+            <div
+              className="min-h-[90vh] mt-10 mx-10 rounded-xl"
+              // style={{
+              //   background: `url(${bgImage}), linear-gradient(to right, #0666BD, #D92E68) `,
+              // }}
+              style={{
+                ...divStyle,
+                backgroundImage: `url(${slideImage.url})`,
+              }}
+            >
+              <div className="flex justify-between p-20 relative">
+                <div className="w-[60%]  flex flex-col gap-6 ">
+                  <h1 className=" text-7xl font-extrabold text-transparent ">
+                    Empowering <br /> next-gen architects and engineers towards
+                    career success
+                  </h1>
+                  <h1 className=" text-2xl text-transparent">
+                    Online certification courses designed for success. Acquire
+                    industry-relevant skills through engaging cohort-based
+                    learning experiences.
+                  </h1>
+                  <div className="flex gap-10">
+                    <button
+                      onClick={() => navigate("/allcourses")}
+                      className=" flex gap-2 items-center justify-center text-xl  text-[#FF006B] bg-white border border-[#FF006B] font-semibold p-2 rounded-md w-[250px]"
+                    >
+                      Explore Courses
+                      <GoArrowRight />
+                    </button>
+                    <button className=" flex gap-2 items-center justify-center text-xl bg-[#FF006B] text-white border border-[#FF006B] font-semibold p-2 rounded-md w-[250px]">
+                      Request a Call Back
+                      <FiPhoneCall />
+                    </button>
+                  </div>
+                </div>
+                <div className="absolute right-10 ">
+                  <img src={group} alt="group" className="w-[100%]" />
+                </div>
+                <div className="absolute right-[30%] top-10 ">
+                  <img src={sticker1} alt="sticker" className="w-[100%]" />
+                </div>
+                <div className="absolute right-[30%] bottom-28 ">
+                  <img src={sticker2} alt="sticker" className="w-[100%]" />
+                </div>
+              </div>
             </div>
           </div>
-          <div className="absolute right-10 ">
-            <img src={group} alt="group" className="w-[100%]" />
-          </div>
-          <div className="absolute right-[30%] top-10 ">
-            <img src={sticker1} alt="sticker" className="w-[100%]" />
-          </div>
-          <div className="absolute right-[30%] bottom-28 ">
-            <img src={sticker2} alt="sticker" className="w-[100%]" />
-          </div>
-        </div>
-      </div>
+        ))}
+      </Slide>
 
       {/* impact section */}
       <div className="h-[40vh]  pl-40 relative">

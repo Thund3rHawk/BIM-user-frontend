@@ -49,3 +49,24 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+@keyframes backgroundTransition {
+  0% {
+    background: url("../assets/home/mainbg.jpg") no-repeat center center/cover;
+  }
+  33% {
+    background: url("../assets/home/offlinetraining.jpg") no-repeat center
+      center/cover;
+  }
+  66% {
+    background: url("../assets/home/onlinetraining.jpg") no-repeat center
+      center/cover;
+  }
+  100% {
+    background: url("../assets/home/mainbg.jpg") no-repeat center center/cover;
+  }
+}
+
+.bg-transition {
+  animation: backgroundTransition 15s infinite;
+}
