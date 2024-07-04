@@ -389,54 +389,58 @@ const Home = () => {
             <span className="text-[#FF006B]">BIM?</span>
           </h1>
           <h1>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
-            sint voluptatem necessitatibus quidem, cumque exercitationem
-            repellendus nihil porro. Doloribus optio, sapiente impedit magni
-            commodi ea et praesentium nemo. Mollitia, dignissimos aliquid
-            dolorem ad quam fugiat possimus eos eaque veniam enim.
+            Unlock unparalleled opportunities in the architecture, engineering,
+            and construction (AEC) industry by mastering Building Information
+            Modeling (BIM). As the industry's leading-edge technology, BIM
+            proficiency positions you at the forefront of innovation, making you
+            an indispensable asset to employers. Streamline your workflows,
+            enhance collaboration, and reduce costly errors with BIM’s advanced
+            tools. Embrace the future of AEC and transform your career with BIM
+            expertise—where efficiency meets excellence. Join the BIM revolution
+            and build a brighter, more prosperous professional journey.
           </h1>
           <div className="flex flex-wrap ">
             <div className="flex w-[50%] gap-5 mb-5">
               <img src={wave} alt="wave" className="h-10 w-10" />
               <div>
-                <h1 className="text-2xl font-bold">title</h1>
+                <h1 className="text-2xl font-bold">High Demand</h1>
                 <h1>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-                  ipsa expedita adipisci rem quibusdam voluptatibus, rerum in
-                  corrupti esse enim?
+                  BIM skills are highly sought after, making you a valuable
+                  asset in the competitive AEC job market.
                 </h1>
               </div>
             </div>
             <div className="flex w-[50%] gap-5 mb-5">
               <img src={wave} alt="wave" className="h-10 w-10" />
               <div>
-                <h1 className="text-2xl font-bold">title</h1>
+                <h1 className="text-2xl font-bold">Accelerated Growth</h1>
                 <h1>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Deleniti ducimus distinctio numquam illo neque quis harum
-                  sapiente perspiciatis laudantium facilis!
+                  Fast-track your career with BIM expertise, opening doors to
+                  advanced roles and higher earning potential.
                 </h1>
               </div>
             </div>
             <div className="flex w-[50%] gap-5">
               <img src={wave} alt="wave" className="h-10 w-10" />
               <div>
-                <h1 className="text-2xl font-bold">title</h1>
+                <h1 className="text-2xl font-bold">Innovation Leadership</h1>
                 <h1>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                  voluptatem dolorem excepturi molestiae alias ex similique
-                  necessitatibus, ratione officia nam.
+                  Lead the charge in innovative design and construction
+                  practices, leveraging advanced BIM tools for superior,
+                  sustainable project outcomes.
                 </h1>
               </div>
             </div>
             <div className="flex w-[50%] gap-5">
               <img src={wave} alt="wave" className="h-10 w-10" />
               <div>
-                <h1 className="text-2xl font-bold">title</h1>
+                <h1 className="text-2xl font-bold">
+                  Enhanced Project Management
+                </h1>
                 <h1>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Asperiores, voluptate! Cumque nesciunt officiis soluta aliquid
-                  exercitationem adipisci doloribus labore distinctio!
+                  Improve collaboration and efficiency across all project
+                  stages, reducing errors and ensuring high-quality, timely
+                  project delivery.
                 </h1>
               </div>
             </div>
