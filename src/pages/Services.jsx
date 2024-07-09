@@ -23,17 +23,26 @@ const Services = () => {
       <div className="flex">
         <div className="w-[40%] py-32 pl-32 pr-10">
           <h1 className="font-bold text-lg mt-5">
-            Innovative methods for better construction
+            Enhancing Design, Construction and Operations Through BIM Solutions
           </h1>
-          <h1 className="font-medium text-4xl">Your Design and BIM Partner</h1>
-          <h1 className=" text-lg mt-10">
-            Choose us as your offshore design and BIM partner and experience the
-            benefits of professional support and cost-effective solutions.
+          <h1 className="font-medium text-4xl">
+            {" "}
+            Your BIM Partner for all phases of construction project
           </h1>
+          {/* <h1 className=" text-lg mt-10">
+            Your BIM Partner for all phases of construction project
+          </h1> */}
           <h1 className=" text-lg mt-5">
-            Our team of highly trained professionals use the latest technology
-            and methods to deliver accurate designs and models, so you can
-            achieve your project goals with confidence.
+            At The BIM skills, we're more than just a company; we're a team of
+            passionate trailblazers, driven by innovation and fueled by
+            enthusiasm for cutting-edge technologies. With our dynamic blend of
+            creativity and expertise, we're not just active participants in the
+            tech realm—we're pioneering the way forward. Our team is a vibrant
+            tapestry of diverse talents, united by a shared commitment to
+            excellence and a relentless pursuit of innovavtion. From the latest
+            advancements in Building Information Modeling (BIM) to emerging
+            technologies shaping the future of our industries, we're at the
+            forefront, exploring, experimenting, and pushing boundaries
           </h1>
         </div>
 
@@ -42,24 +51,28 @@ const Services = () => {
             <img src={design} alt="design" className="w-20 h-20" />
             <h1 className="font-bold text-lg">Design Phase</h1>
             <h1>
-              Our BIM services enable virtual design validation and optimization
-              prior to physical construction.
+              Our BIM services optimize the design phase with precise 3D
+              modeling, seamless collaboration, and streamlined documentation,
+              ensuring efficient project delivery and superior quality outcomes.
             </h1>
           </div>
           <div className="w-[40%] flex flex-col gap-3">
             <img src={construction} alt="design" className="w-20 h-20" />
             <h1 className="font-bold text-lg">Construction Phase</h1>
             <h1>
-              Our BIM services enable virtual design validation and optimization
-              prior to physical construction.
+              Through our BIM services, we facilitate precise 3D modeling and
+              data integration, enhancing construction coordination, minimizing
+              errors, and optimizing project efficiency.
             </h1>
           </div>
           <div className="w-[40%] flex flex-col gap-3">
             <img src={operation} alt="design" className="w-20 h-20" />
             <h1 className="font-bold text-lg">Operation Phase</h1>
             <h1>
-              Our BIM services enable virtual design validation and optimization
-              prior to physical construction.
+              Utilizing our BIM services for operations and maintenance enables
+              efficient facility management through comprehensive 3D models and
+              integrated data, ensuring streamlined processes and optimized
+              maintenance schedules.
             </h1>
           </div>
           <div className="w-[40%] bg-[#FF006B] rounded-md p-10">

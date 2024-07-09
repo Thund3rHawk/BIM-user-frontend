@@ -17,7 +17,7 @@ const CourseCard = ({
     navigate(`/courses/${id}`);
   };
   return (
-    <div className="bg-white shadow-md rounded-lg p-6 flex flex-col gap-5 w-[300px]  ">
+    <div className="bg-white shadow-md rounded-lg p-6 flex flex-col gap-5 w-[320px]  ">
       <img
         src={image}
         alt="Course"

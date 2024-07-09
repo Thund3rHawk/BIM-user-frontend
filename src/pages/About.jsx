@@ -289,7 +289,7 @@ const About = () => {
             <div className="flex flex-col gap-3">
               <h1 className="text-xl font-bold">Lifecycle Management</h1>
               <h1>
-                BIM supports the en􀆟re lifecycle of a building, from initial
+                BIM supports the ensure lifecycle of a building, from initial
                 design and construction to maintenance.
               </h1>
             </div>
@@ -299,7 +299,7 @@ const About = () => {
             <div className="flex flex-col gap-3">
               <h1 className="text-xl font-bold">Cost Savings</h1>
               <h1>
-                BIM helps in accurate cost es􀆟ma􀆟on and budget management by
+                BIM helps in accurate cost estimation and budget management by
                 providing detailed quantity take-offs.
               </h1>
             </div>

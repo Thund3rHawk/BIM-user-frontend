@@ -47,9 +47,9 @@ const Projects = () => {
               The NEOM Logistics Park project stands as a testament to our
               expertise in handling complex and challenging projects with
               precision and excellence. The successful implementation of
-              Building Informa􀆟on Modeling (BIM) at Level of Detail (LOD) 500
-              during the as-built stage with all COBie data integra􀆟on is one of
-              our significant achievements. This high level of detail
+              Building Information Modeling (BIM) at Level of Detail (LOD) 500
+              during the as-built stage with all COBie data integration is one
+              of our significant achievements. This high level of detail
               encompassed various aspects of the project, ensuring unparalleled
               accuracy and integration.
             </h1>

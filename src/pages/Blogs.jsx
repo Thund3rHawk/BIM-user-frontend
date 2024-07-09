@@ -12,29 +12,29 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const blogPosts = [
   {
-    title: "title",
+    title: "What is BIM and why is it important",
     description:
       "lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsa expedita adipisci rem quibusdam voluptatibus, rerum in corrupti esse enim?",
     image: blogmain,
-    author: "John Dae",
+    author: "Syed Amaan Quadri",
     Date: "22 Jan, 2024",
     topics: ["topic1", "topic2", "topic3"],
   },
   {
-    title: "title",
+    title: "BIM standards and protocols",
     description:
       "lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatem dolorem excepturi molestiae alias ex similique necessitatibus, ratione officia nam.",
     image: blog,
-    author: "John Dae",
+    author: "Syed Amaan Quadri",
     Date: "22 Jan, 2024",
     topics: ["topic1", "topic2", "topic3"],
   },
   {
-    title: "title",
+    title: "BIM in construction",
     description:
       "lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, voluptate! Cumque nesciunt officiis soluta aliquid exercitationem adipisci doloribus labore distinctio!",
     image: blog,
-    author: "John Dae",
+    author: "Syed Amaan Quadri",
     Date: "22 Jan, 2024",
     topics: ["topic1", "topic2", "topic3"],
   },

@@ -6,13 +6,16 @@ import courses from "../assets/courses/courses.png";
 import Footer from "../components/Footer";
 import CourseCard from "../components/CourseCard";
 import { useNavigate } from "react-router-dom";
+import course3 from "../assets/courses/course3.png";
+import course4 from "../assets/courses/course4.png";
 
 const courseData = [
   {
     id: 1,
-    image: courses,
+    image: course3,
     subtitle: "Architecture",
-    title: "BIM Professional - Basics to Pro Level",
+    title:
+      "Internation BIM Coordinator Training and Internship Program in Architecture and Structure",
     rating: 5,
     reviews: 123,
     price: "RS 29,999",
@@ -20,19 +23,10 @@ const courseData = [
   },
   {
     id: 2,
-    image: courses,
+    image: course4,
     subtitle: "Architecture",
-    title: "BIM Professional - Basics to Pro Level",
-    rating: 5,
-    reviews: 123,
-    price: "RS 29,999",
-    oldPrice: "RS 1,00,000",
-  },
-  {
-    id: 3,
-    image: courses,
-    subtitle: "Architecture",
-    title: "BIM Professional - Basics to Pro Level",
+    title:
+      "International BIM Coordinator Training and internship program in MEP",
     rating: 5,
     reviews: 123,
     price: "RS 29,999",
@@ -156,7 +150,7 @@ const Courses = () => {
       </div>
 
       <div className=" relative min-h-[70vh]  justify-center flex ">
-        <div className="flex w-[75%] absolute z-10 space-x-8 py-10  justify-between">
+        <div className="flex w-[50%] absolute z-10 space-x-8 py-10  justify-between">
           {courseData.map((course, index) => (
             <CourseCard
               image={course.image}
@@ -190,7 +184,7 @@ const Courses = () => {
       </div>
 
       <div className=" relative min-h-[70vh]  justify-center flex ">
-        <div className="flex w-[75%] absolute z-10 space-x-8 py-10  justify-between">
+        <div className="flex w-[50%] absolute z-10 space-x-8 py-10  justify-between">
           {courseData.map((course, index) => (
             <CourseCard
               image={course.image}

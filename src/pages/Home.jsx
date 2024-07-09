@@ -40,6 +40,9 @@ import onlinetraining from "../assets/home/onlinetraining.jpg";
 import offlinetraining from "../assets/home/offlinetraining.jpg";
 import "react-slideshow-image/dist/styles.css";
 import { Slide } from "react-slideshow-image";
+import projectgroup from "../assets/home/projectgroup.png";
+import course3 from "../assets/courses/course3.png";
+import course4 from "../assets/courses/course4.png";
 
 const spanStyle = {
   padding: "20px",
@@ -71,29 +74,29 @@ const slideImages = [
 
 const blogPosts = [
   {
-    title: "title",
+    title: "What is BIM and why is it important",
     description:
       "lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsa expedita adipisci rem quibusdam voluptatibus, rerum in corrupti esse enim?",
     image: blogmain,
-    author: "John Dae",
+    author: "Syed Amaan Quadri",
     Date: "22 Jan, 2024",
     topics: ["topic1", "topic2", "topic3"],
   },
   {
-    title: "title",
+    title: "BIM standards and protocols",
     description:
       "lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatem dolorem excepturi molestiae alias ex similique necessitatibus, ratione officia nam.",
     image: blog,
-    author: "John Dae",
+    author: "Syed Amaan Quadri",
     Date: "22 Jan, 2024",
     topics: ["topic1", "topic2", "topic3"],
   },
   {
-    title: "title",
+    title: "BIM in construction",
     description:
       "lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, voluptate! Cumque nesciunt officiis soluta aliquid exercitationem adipisci doloribus labore distinctio!",
     image: blog,
-    author: "John Dae",
+    author: "Syed Amaan Quadri",
     Date: "22 Jan, 2024",
     topics: ["topic1", "topic2", "topic3"],
   },
@@ -101,9 +104,10 @@ const blogPosts = [
 const courseData = [
   {
     id: 1,
-    image: courses,
+    image: course3,
     subtitle: "Architecture",
-    title: "BIM Professional - Basics to Pro Level",
+    title:
+      "Internation BIM Coordinator Training and Internship Program in Architecture and Structure",
     rating: 5,
     reviews: 123,
     price: "RS 29,999",
@@ -111,19 +115,10 @@ const courseData = [
   },
   {
     id: 2,
-    image: courses,
+    image: course4,
     subtitle: "Architecture",
-    title: "BIM Professional - Basics to Pro Level",
-    rating: 5,
-    reviews: 123,
-    price: "RS 29,999",
-    oldPrice: "RS 1,00,000",
-  },
-  {
-    id: 3,
-    image: courses,
-    subtitle: "Architecture",
-    title: "BIM Professional - Basics to Pro Level",
+    title:
+      "International BIM Coordinator Training and internship program in MEP",
     rating: 5,
     reviews: 123,
     price: "RS 29,999",
@@ -454,7 +449,7 @@ const Home = () => {
           TOP ONLINE <span className="text-[#FF006B]">COURSES</span>
         </h1>
 
-        <div className="flex flex-col gap-12  z-10 w-[70%] py-10 absolute top-40">
+        <div className="flex flex-col gap-12  z-10 w-[50%] py-10 absolute top-40">
           <div className="flex justify-between">
             {courseData.map((course, index) => (
               <CourseCard
@@ -505,23 +500,27 @@ const Home = () => {
               The NEOM Logistics Park project stands as a testament to our
               expertise in handling complex and challenging projects with
               precision and excellence. The successful implementation of
-              Building Informa􀆟on Modeling (BIM) at Level of Detail (LOD) 500
-              during the as-built stage with all COBie data integra􀆟on is one of
-              our significant achievements. This high level of detail
+              Building Information Modeling (BIM) at Level of Detail (LOD) 500
+              during the as-built stage with all COBie data integration is one
+              of our significant achievements. This high level of detail
               encompassed various aspects of the project, ensuring unparalleled
               accuracy and integration.
             </h1>
           </div>
         </div>
-        <div className="flex gap-5 w-1/2  flex-wrap absolute top-40 z-10">
+        <div className="flex gap-5 w-1/2  flex-wrap absolute top-40  z-10">
+          <img src={projectgroup} alt="projectgroup" className="w-2/3 h-full" />
+        </div>
+
+        {/* <div className="flex gap-5 w-1/2  flex-wrap absolute top-40 z-10">
           <img src={project1} alt="project1" className="w-60 h-80" />
           <img src={project2} alt="project2" className="w-60 h-80" />
           <img src={project3} alt="project3" className="w-60 h-80" />
           <img src={project4} alt="project4" className="w-60 h-80" />
-        </div>
-        <div className="absolute bottom-[30%] left-[15%] z-20 ">
+        </div> */}
+        {/* <div className="absolute bottom-[30%] left-[15%] z-20 ">
           <img src={project5} alt="project5" className="w-60 h-80" />
-        </div>
+        </div> */}
         <div className="w-[110%] z-0 -left-10 top-60 absolute h-12 bg-blue-600 transform -rotate-6" />
         <div className="w-[20%] z-0 -left-10 top-[62%] absolute h-12 bg-[#FF006B] transform -rotate-6" />
 
@@ -563,7 +562,7 @@ const Home = () => {
             <div className="flex flex-col gap-3">
               <h1 className="text-xl font-bold">Lifecycle Management</h1>
               <h1>
-                BIM supports the en􀆟re lifecycle of a building, from initial
+                BIM supports the ensure lifecycle of a building, from initial
                 design and construction to maintenance.
               </h1>
             </div>
@@ -573,7 +572,7 @@ const Home = () => {
             <div className="flex flex-col gap-3">
               <h1 className="text-xl font-bold">Cost Savings</h1>
               <h1>
-                BIM helps in accurate cost es􀆟ma􀆟on and budget management by
+                BIM helps in accurate cost estimation and budget management by
                 providing detailed quantity take-offs.
               </h1>
             </div>
@@ -613,7 +612,7 @@ const Home = () => {
             <h1 className="text-lg">
               At The BIM skills, we're dedicated to revolutionizing the
               construction landscape through innovative BIM services and expert
-              consul􀆟ng. Our mission is simple yet profound: to empower our
+              consulting. Our mission is simple yet profound: to empower our
               clients with the tools, strategies, and support they need to bring
               their boldest visions to life. We're not just service providers;
               we're partners committed to driving efficiency, collaboration, and
@@ -632,7 +631,7 @@ const Home = () => {
               achieve their goals beyond imagination. At The BIM skills, we're
               not just building structures; we're building a legacy of
               collaboration, innovation, and progress that will shape the world
-              for genera􀆟ons.
+              for generations.
             </h1>
           </div>
         </div>
