@@ -6,6 +6,9 @@ import Footer from "../components/Footer";
 import blog1 from "../assets/blogs/blog1.png";
 import blog2 from "../assets/blogs/blog2.png";
 import blog3 from "../assets/blogs/blog3.png";
+import blog4 from "../assets/blogs/blog4.png";
+import blog5 from "../assets/blogs/blog5.png";
+import blog6 from "../assets/blogs/blog6.png";
 import { FiArrowRight } from "react-icons/fi";
 import { FiArrowLeft } from "react-icons/fi";
 import { GoArrowUpRight } from "react-icons/go";
@@ -15,7 +18,7 @@ const blogPosts = [
     title: "What is BIM and why is it important",
     description:
       "lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsa expedita adipisci rem quibusdam voluptatibus, rerum in corrupti esse enim?",
-    image: blogmain,
+    image: blog4,
     author: "Syed Amaan Quadri",
     Date: "22 Jan, 2024",
     topics: ["topic1", "topic2", "topic3"],
@@ -24,7 +27,7 @@ const blogPosts = [
     title: "BIM standards and protocols",
     description:
       "lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatem dolorem excepturi molestiae alias ex similique necessitatibus, ratione officia nam.",
-    image: blog,
+    image: blog6,
     author: "Syed Amaan Quadri",
     Date: "22 Jan, 2024",
     topics: ["topic1", "topic2", "topic3"],
@@ -33,7 +36,7 @@ const blogPosts = [
     title: "BIM in construction",
     description:
       "lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, voluptate! Cumque nesciunt officiis soluta aliquid exercitationem adipisci doloribus labore distinctio!",
-    image: blog,
+    image: blog5,
     author: "Syed Amaan Quadri",
     Date: "22 Jan, 2024",
     topics: ["topic1", "topic2", "topic3"],

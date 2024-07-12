@@ -76,7 +76,7 @@ const Services = () => {
             </h1>
           </div>
           <div className="w-[40%] bg-[#FF006B] rounded-md p-10">
-            <h1 className="text-white text-4xl">280+</h1>
+            <h1 className="text-white text-4xl">50+</h1>
             <h1 className="text-white text-4xl">Organizations</h1>
             <h1 className="text-white text-lg font-bold">
               reply on BIM Services for their BIM needs
@@ -88,13 +88,20 @@ const Services = () => {
       <div className="flex h-full">
         <div className="w-1/2 flex justify-center items-center bg-[#1761B6] relative">
           <div className="flex flex-col gap-5  mx-16 absolute">
-            <h1 className="text-5xl font-medium text-white">BIM Services</h1>
+            <h1 className="text-5xl font-medium text-white">
+              Our Top BIM Services
+            </h1>
 
             <h1 className="text-xl text-white">
-              BIM is extremely valuable as it facilitates all phases of a
-              project from design to construction to operation and maintenance.
-              We are committed to providing efficient and innovative solutions
-              for successful project delivery.
+              What sets us apart is not just our technical prowess, but our
+              unwavering passion for what we do. We thrive on challenges, revel
+              in exploration, and embrace every opportunity to learn and grow.
+              With us, you're not just getting a team of experts, you're gaining
+              a dedicated partner on a journey of discovery and transformation.
+              Join us as we harness the power of technology to create solutions
+              that inspire, empower, and shape the world of tomorrow. Together,
+              let's innovate, let's explore, and let's build a future where
+              possibilities are limitless.
             </h1>
             <h1 className="text-xl text-white">
               We offer BIM services for architectural, structural and MEP
@@ -110,15 +117,15 @@ const Services = () => {
             <div className="flex gap-2">
               <div className="w-[30%] bg-white rounded-md">
                 <img src={courses} alt="courses" className="rounded-t-md" />
-                <h1 className="font-bold p-2">BIM Consulting</h1>
+                <h1 className="font-bold p-2">Architectural BIM services</h1>
               </div>
               <div className="w-[30%] bg-white rounded-md">
                 <img src={courses} alt="courses" className="rounded-t-md" />
-                <h1 className="font-bold p-2">BIM Services</h1>
+                <h1 className="font-bold p-2">Structural BIM services</h1>
               </div>
               <div className="w-[30%] bg-white rounded-md">
                 <img src={courses} alt="courses" className="rounded-t-md" />
-                <h1 className="font-bold p-2">Architecture BIM Services</h1>
+                <h1 className="font-bold p-2">MEP BIM services</h1>
               </div>
             </div>
             <div className="flex gap-5">

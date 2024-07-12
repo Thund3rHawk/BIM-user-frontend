@@ -7,24 +7,27 @@ import courses from "../assets/courses/courses.png";
 import ProjectCard from "../components/ProjectCard";
 import Contact from "../components/Contact";
 import bgImage from "../assets/projects/bgImage.png";
+import neom from "../assets/projects/neom.png";
+import africa from "../assets/projects/africa.png";
+import netherland from "../assets/projects/netherland.png";
 
 const projectData = [
   {
     subtitle: "BIM",
     title: "NEOM - LOGISTICS PARK LANDSCAPE PROJECT",
-    image: courses,
+    image: neom,
     courseLink: "#",
   },
   {
     subtitle: "BIM",
-    title: "NEOM - LOGISTICS PARK LANDSCAPE PROJECT",
-    image: courses,
+    title: "KWA-ZULU NATAL DEPARTMENT OF WORKS South Africa",
+    image: africa,
     courseLink: "#",
   },
   {
     subtitle: "BIM",
-    title: "NEOM - LOGISTICS PARK LANDSCAPE PROJECT",
-    image: courses,
+    title: "Netherlands Housing Units Digital Twins",
+    image: netherland,
     courseLink: "#",
   },
 ];
@@ -84,7 +87,7 @@ const Projects = () => {
         <div className="w-[60%] z-0 -right-10 top-36 absolute h-12 bg-[#FF006B] transform -rotate-6" />
       </div>
 
-      <div className=" relative min-h-[70vh]  justify-center flex ">
+      {/* <div className=" relative min-h-[70vh]  justify-center flex ">
         <div className="flex space-x-8 absolute w-[75%] z-10 py-5 justify-between">
           {projectData.map((project) => (
             <ProjectCard
@@ -102,7 +105,7 @@ const Projects = () => {
         <div className="w-[30%] z-0 -right-10 top-40 absolute h-12 bg-blue-600 transform -rotate-6" />
 
         <div className="w-[60%] z-0 -right-10 top-36 absolute h-12 bg-[#FF006B] transform -rotate-6" />
-      </div>
+      </div> */}
       <Contact />
       <Footer />
     </div>

@@ -15,7 +15,7 @@ const Footer = () => {
           <p className="text-gray-400">
             The BIM skills is an innovative, Value driven, Real-Time Project
             Oriented, Quality Based BIM Training & Consulting Company. Copyright
-            © 2022 . All rights reserved | The BIM skills
+            © 2024 . All rights reserved | The BIM skills
           </p>
           <div className="flex items-center gap-2 my-2">
             <FaYoutube color="white" className="h-5 w-5" />
@@ -27,13 +27,8 @@ const Footer = () => {
 
         {/* Short Links Column 1 */}
         <div className="">
-          <h3 className="text-sm text-gray-400 mb-2">Company Info</h3>
+          <h3 className="text-xl font-bold text-white mb-2">Quick Links</h3>
           <ul className="space-y-2 pt-5">
-            <li>
-              <a href="#" className="text-gray-200 hover:underline">
-                The BIM Skills for Business
-              </a>
-            </li>
             <li>
               <a href="#" className="text-gray-200 hover:underline">
                 Teach on The bim Skills
@@ -59,18 +54,8 @@ const Footer = () => {
 
         {/* Short Links Column 2 */}
         <div>
-          <h3 className="text-sm text-gray-400 mb-2">Support Zone</h3>
+          <h3 className="text-xl font-bold text-white mb-2">Support</h3>
           <ul className="space-y-2 pt-5">
-            <li>
-              <a href="#" className="text-gray-200 hover:underline">
-                Unlock Your Potential
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-200 hover:underline">
-                Privacy policy and cookie policy
-              </a>
-            </li>
             <li>
               <a href="#" className="text-gray-200 hover:underline">
                 Sitemap
@@ -92,7 +77,7 @@ const Footer = () => {
 
         {/* Short Links Column 3 */}
         <div>
-          <h3 className="text-sm text-gray-400 mb-2">Explore Services</h3>
+          <h3 className="text-xl font-bold text-white mb-2">Services</h3>
           <ul className="space-y-2 pt-5">
             <li>
               <a href="#" className="text-gray-200 hover:underline">

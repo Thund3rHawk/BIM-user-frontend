@@ -74,10 +74,9 @@ const slideImages = [
 const courseData = [
   {
     id: 1,
-    image: course3,
-    subtitle: "Architecture",
-    title:
-      "Internation BIM Coordinator Training and Internship Program in Architecture and Structure",
+    image: course4,
+    subtitle: "Architects & Civil",
+    title: "International BIM Coordinator Training & Internship",
     rating: 5,
     reviews: 123,
     price: "RS 29,999",
@@ -85,10 +84,9 @@ const courseData = [
   },
   {
     id: 2,
-    image: course4,
-    subtitle: "Architecture",
-    title:
-      "International BIM Coordinator Training and internship program in MEP",
+    image: course3,
+    subtitle: "Mechanical & Electrical",
+    title: "International BIM Coordinator Training & Internship",
     rating: 5,
     reviews: 123,
     price: "RS 29,999",

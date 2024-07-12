@@ -43,6 +43,7 @@ import { Slide } from "react-slideshow-image";
 import projectgroup from "../assets/home/projectgroup.png";
 import course3 from "../assets/courses/course3.png";
 import course4 from "../assets/courses/course4.png";
+import landscape from "../assets/home/landscape.png";
 
 const spanStyle = {
   padding: "20px",
@@ -104,10 +105,9 @@ const blogPosts = [
 const courseData = [
   {
     id: 1,
-    image: course3,
-    subtitle: "Architecture",
-    title:
-      "Internation BIM Coordinator Training and Internship Program in Architecture and Structure",
+    image: course4,
+    subtitle: "Architects & Civil",
+    title: "International BIM Coordinator Training & Internship",
     rating: 5,
     reviews: 123,
     price: "RS 29,999",
@@ -115,10 +115,9 @@ const courseData = [
   },
   {
     id: 2,
-    image: course4,
-    subtitle: "Architecture",
-    title:
-      "International BIM Coordinator Training and internship program in MEP",
+    image: course3,
+    subtitle: "Mechanical & Electrical",
+    title: "International BIM Coordinator Training & Internship",
     rating: 5,
     reviews: 123,
     price: "RS 29,999",
@@ -508,8 +507,8 @@ const Home = () => {
             </h1>
           </div>
         </div>
-        <div className="flex gap-5 w-1/2  flex-wrap absolute top-40  z-10">
-          <img src={projectgroup} alt="projectgroup" className="w-2/3 h-full" />
+        <div className="flex gap-5 w-1/2  flex-wrap absolute top-48  z-10">
+          <img src={landscape} alt="projectgroup" className="w-[80%] h-full " />
         </div>
 
         {/* <div className="flex gap-5 w-1/2  flex-wrap absolute top-40 z-10">
