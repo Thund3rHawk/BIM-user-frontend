@@ -44,6 +44,9 @@ import projectgroup from "../assets/home/projectgroup.png";
 import course3 from "../assets/courses/course3.png";
 import course4 from "../assets/courses/course4.png";
 import landscape from "../assets/home/landscape.png";
+import blog4 from "../assets/blogs/blog4.png";
+import blog5 from "../assets/blogs/blog5.png";
+import blog6 from "../assets/blogs/blog6.png";
 
 const spanStyle = {
   padding: "20px",
@@ -78,7 +81,7 @@ const blogPosts = [
     title: "What is BIM and why is it important",
     description:
       "lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsa expedita adipisci rem quibusdam voluptatibus, rerum in corrupti esse enim?",
-    image: blogmain,
+    image: blog4,
     author: "Syed Amaan Quadri",
     Date: "22 Jan, 2024",
     topics: ["topic1", "topic2", "topic3"],
@@ -87,7 +90,7 @@ const blogPosts = [
     title: "BIM standards and protocols",
     description:
       "lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatem dolorem excepturi molestiae alias ex similique necessitatibus, ratione officia nam.",
-    image: blog,
+    image: blog6,
     author: "Syed Amaan Quadri",
     Date: "22 Jan, 2024",
     topics: ["topic1", "topic2", "topic3"],
@@ -96,7 +99,7 @@ const blogPosts = [
     title: "BIM in construction",
     description:
       "lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, voluptate! Cumque nesciunt officiis soluta aliquid exercitationem adipisci doloribus labore distinctio!",
-    image: blog,
+    image: blog5,
     author: "Syed Amaan Quadri",
     Date: "22 Jan, 2024",
     topics: ["topic1", "topic2", "topic3"],
