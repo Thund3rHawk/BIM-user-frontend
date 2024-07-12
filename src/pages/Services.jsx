@@ -86,59 +86,57 @@ const Services = () => {
       </div>
 
       <div className="flex h-full">
-        <div className="w-1/2 flex justify-center items-center bg-[#1761B6] relative">
-          <div className="flex flex-col gap-5  mx-16 absolute">
-            <h1 className="text-5xl font-medium text-white">
-              Our Top BIM Services
-            </h1>
+        <div className="w-1/2 flex flex-col gap-5 px-16 p-10 bg-[#1761B6] relative">
+          {/* <div className="flex flex-col gap-5  mx-16 absolute"> */}
+          <h1 className="text-5xl font-medium text-white">
+            Our Top BIM Services
+          </h1>
 
-            <h1 className="text-xl text-white">
-              What sets us apart is not just our technical prowess, but our
-              unwavering passion for what we do. We thrive on challenges, revel
-              in exploration, and embrace every opportunity to learn and grow.
-              With us, you're not just getting a team of experts, you're gaining
-              a dedicated partner on a journey of discovery and transformation.
-              Join us as we harness the power of technology to create solutions
-              that inspire, empower, and shape the world of tomorrow. Together,
-              let's innovate, let's explore, and let's build a future where
-              possibilities are limitless.
-            </h1>
-            <h1 className="text-xl text-white">
-              We offer BIM services for architectural, structural and MEP
-              disciplinary. Our experienced team develops accurate virtual
-              models through digitization that accelerate the construction
-              process by improving project collaboration, accuracy and cost
-              savings. We are well versed in an international standard to
-              provide BIM across the globe.
-            </h1>
+          <h1 className="text-xl text-white">
+            What sets us apart is not just our technical prowess, but our
+            unwavering passion for what we do. We thrive on challenges, revel in
+            exploration, and embrace every opportunity to learn and grow. With
+            us, you're not just getting a team of experts, you're gaining a
+            dedicated partner on a journey of discovery and transformation. Join
+            us as we harness the power of technology to create solutions that
+            inspire, empower, and shape the world of tomorrow. Together, let's
+            innovate, let's explore, and let's build a future where
+            possibilities are limitless.
+          </h1>
+          <h1 className="text-xl text-white">
+            We offer BIM services for architectural, structural and MEP
+            disciplinary. Our experienced team develops accurate virtual models
+            through digitization that accelerate the construction process by
+            improving project collaboration, accuracy and cost savings. We are
+            well versed in an international standard to provide BIM across the
+            globe.
+          </h1>
 
-            {/* service cards */}
+          {/* service cards */}
 
-            <div className="flex gap-2">
-              <div className="w-[30%] bg-white rounded-md">
-                <img src={courses} alt="courses" className="rounded-t-md" />
-                <h1 className="font-bold p-2">Architectural BIM services</h1>
-              </div>
-              <div className="w-[30%] bg-white rounded-md">
-                <img src={courses} alt="courses" className="rounded-t-md" />
-                <h1 className="font-bold p-2">Structural BIM services</h1>
-              </div>
-              <div className="w-[30%] bg-white rounded-md">
-                <img src={courses} alt="courses" className="rounded-t-md" />
-                <h1 className="font-bold p-2">MEP BIM services</h1>
-              </div>
+          <div className="flex gap-2">
+            <div className="w-[30%] bg-white rounded-md">
+              <img src={courses} alt="courses" className="rounded-t-md" />
+              <h1 className="font-bold p-2">Architectural BIM services</h1>
             </div>
-            <div className="flex gap-5">
-              <button className="border-2 p-2 rounded-md border-white">
-                <h1 className="text-white font-bold">
-                  Explore Our BIM Services
-                </h1>
-              </button>
-              <button className="p-2 rounded-md border-white bg-[#FF006B]">
-                <h1 className="text-white font-bold">Request a Qoute</h1>
-              </button>
+            <div className="w-[30%] bg-white rounded-md">
+              <img src={courses} alt="courses" className="rounded-t-md" />
+              <h1 className="font-bold p-2">Structural BIM services</h1>
+            </div>
+            <div className="w-[30%] bg-white rounded-md">
+              <img src={courses} alt="courses" className="rounded-t-md" />
+              <h1 className="font-bold p-2">MEP BIM services</h1>
             </div>
           </div>
+          <div className="flex gap-5">
+            <button className="border-2 p-2 rounded-md border-white">
+              <h1 className="text-white font-bold">Explore Our BIM Services</h1>
+            </button>
+            <button className="p-2 rounded-md border-white bg-[#FF006B]">
+              <h1 className="text-white font-bold">Request a Qoute</h1>
+            </button>
+          </div>
+          {/* </div> */}
         </div>
         <div className=" w-1/2 flex  justify-end ">
           <img src={services1} alt="projectsmain" className="w-full" />

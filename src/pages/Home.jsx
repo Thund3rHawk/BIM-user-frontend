@@ -134,11 +134,11 @@ const Home = () => {
     <div className="overflow-x-hidden">
       <Navbar />
 
-      <Slide arrows={false} autoplay={true} duration={3000}>
+      <Slide arrows={false} autoplay={true} duration={2000}>
         {slideImages.map((slideImage, index) => (
           <div key={index}>
             <div
-              className="min-h-[90vh] m-10 rounded-xl flex flex-col justify-end items-start"
+              className="min-h-[90vh]  m-10 rounded-xl flex flex-col justify-end items-start"
               // style={{
               //   // background: "linear-gradient(to right, #0666BD, #D92E68)",
               //   background: `url(${mainbg}) no-repeat center center/cover`,
@@ -149,18 +149,30 @@ const Home = () => {
                 backgroundImage: `url(${slideImage.url})`,
               }}
             >
-              <div className="flex justify-between p-10 relative">
+              <div className="flex justify-between p-10 relative ">
                 <div className="w-[55%] h-[60vh] bg-red-900  flex flex-col gap-6  "></div>
                 {/* <div className="absolute right-10 w-[60vw]">
                   <img src={laptop} alt="laptop" className="w-[80%]" />
                 </div> */}
               </div>
-              <div className="p-10 flex gap-10">
-                <button className=" flex gap-2 items-center justify-center text-xl  text-[#FF006B] bg-white border border-[#FF006B] font-semibold px-4 py-2 rounded-md w-[300px]">
+              <div className="p-10 px-20 flex gap-10  w-full">
+                <button
+                  className="flex gap-2 items-center justify-center text-xl text-white font-semibold px-4 py-2 rounded-md w-[300px]"
+                  style={{
+                    background: "linear-gradient(to top, black, black, white)",
+                    border: "1px solid #FF006B",
+                  }}
+                >
                   Explore BIM Training
                   <TfiArrowTopRight />
                 </button>
-                <button className=" flex gap-2 items-center justify-center text-xl text-[#FF006B] bg-white border border-[#FF006B] font-semibold px-4 py-2 rounded-md w-[300px]">
+                <button
+                  className="flex gap-2 items-center justify-center text-xl text-white font-semibold px-4 py-2 rounded-md w-[300px]"
+                  style={{
+                    background: "linear-gradient(to top, black, black, white)",
+                    border: "1px solid #FF006B",
+                  }}
+                >
                   Explore BIM Services
                   <TfiArrowTopRight />
                 </button>
@@ -607,7 +619,7 @@ const Home = () => {
         <div className="flex justify-end min-h-screen">
           <div className="w-1/2 flex flex-col gap-3 ">
             <h1 className="text-3xl font-bold w-[60%]">
-              know how everything works and why we work with{" "}
+              Know how everything works and why we work with{" "}
               <span className="text-[#FF006B]">BIM</span>
             </h1>
             <h1 className="font-bold text-blue-600">OUR MISSION</h1>

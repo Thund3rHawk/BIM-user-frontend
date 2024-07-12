@@ -101,7 +101,7 @@ const CourseLanding = () => {
       <Navbar />
       {/* hero section */}
 
-      <Slide arrows={false} autoplay={true} duration={3000}>
+      <Slide arrows={false} autoplay={true} duration={2000}>
         {slideImages.map((slideImage, index) => (
           <div key={index}>
             <div
@@ -164,7 +164,7 @@ const CourseLanding = () => {
         />
         <div className="absolute top-20 left-36 w-1/2 flex items-center gap-10 ">
           <div className="bg-white">
-            <img src={sideIcon} className="w-14 h-12" alt="sideIcon" />
+            <img src={sideIcon} className="my-1" alt="sideIcon" />
           </div>
           <div>
             <h1 className="text-lg">Our Impact</h1>
@@ -327,7 +327,7 @@ const CourseLanding = () => {
           />
           <div className="absolute top-20 left-36 w-1/2 flex items-center gap-10 ">
             <div className="bg-white">
-              <img src={sideIcon} className="w-14 h-12" alt="sideIcon" />
+              <img src={sideIcon} className="my-1" alt="sideIcon" />
             </div>
             <div>
               <div className="flex items-center gap-5">
@@ -416,7 +416,7 @@ const CourseLanding = () => {
         />
         <div className="absolute top-20 left-36 w-1/2 flex items-center gap-10 ">
           <div className="bg-white">
-            <img src={sideIcon} className="w-20 h-12" alt="sideIcon" />
+            <img src={sideIcon} className="my-1 w-16 h-10" alt="sideIcon" />
           </div>
           <div>
             <h1 className="text-lg">Innovative Learning</h1>
