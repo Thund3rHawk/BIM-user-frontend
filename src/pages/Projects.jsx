@@ -10,6 +10,9 @@ import bgImage from "../assets/projects/bgImage.png";
 import neom from "../assets/projects/neom.png";
 import africa from "../assets/projects/africa.png";
 import netherland from "../assets/projects/netherland.png";
+import project4 from "../assets/projects/project4.png";
+import project5 from "../assets/projects/project5.png";
+import project6 from "../assets/projects/project6.png";
 
 const projectData = [
   {
@@ -28,6 +31,24 @@ const projectData = [
     subtitle: "BIM",
     title: "Netherlands Housing Units Digital Twins",
     image: netherland,
+    courseLink: "#",
+  },
+  {
+    subtitle: "BIM",
+    title: "Etihad Rail Shelters",
+    image: project4,
+    courseLink: "#",
+  },
+  {
+    subtitle: "BIM",
+    title: "Test Project",
+    image: project5,
+    courseLink: "#",
+  },
+  {
+    subtitle: "BIM",
+    title: "Test Project",
+    image: project6,
     courseLink: "#",
   },
 ];
@@ -67,8 +88,8 @@ const Projects = () => {
         <h1 className="text-3xl font-bold mb-2">Our Top Projects</h1>
       </div>
 
-      <div className=" relative min-h-[70vh]  justify-center flex ">
-        <div className="flex space-x-8 absolute w-[75%] z-10 py-5 justify-between">
+      <div className=" relative min-h-[130vh]  justify-center flex ">
+        <div className=" absolute w-[75%] z-10 py-5 gap-6 grid grid-cols-3">
           {projectData.map((project) => (
             <ProjectCard
               subtitle={project.subtitle}

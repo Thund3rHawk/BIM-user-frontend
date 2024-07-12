@@ -12,9 +12,11 @@ import blog6 from "../assets/blogs/blog6.png";
 import { FiArrowRight } from "react-icons/fi";
 import { FiArrowLeft } from "react-icons/fi";
 import { GoArrowUpRight } from "react-icons/go";
+import { useNavigate } from "react-router-dom";
 
 const blogPosts = [
   {
+    id: "1",
     title: "What is BIM and why is it important",
     description:
       "lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsa expedita adipisci rem quibusdam voluptatibus, rerum in corrupti esse enim?",
@@ -24,6 +26,7 @@ const blogPosts = [
     topics: ["topic1", "topic2", "topic3"],
   },
   {
+    id: "2",
     title: "BIM standards and protocols",
     description:
       "lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatem dolorem excepturi molestiae alias ex similique necessitatibus, ratione officia nam.",
@@ -33,6 +36,7 @@ const blogPosts = [
     topics: ["topic1", "topic2", "topic3"],
   },
   {
+    id: "3",
     title: "BIM in construction",
     description:
       "lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, voluptate! Cumque nesciunt officiis soluta aliquid exercitationem adipisci doloribus labore distinctio!",
@@ -103,6 +107,7 @@ const recentBlogPost = blogPosts[0];
 const otherBlogPosts = blogPosts.slice(1);
 
 const Blogs = () => {
+  const navigate = useNavigate();
   return (
     <div className="overflow-x-hidden">
       <Navbar />
@@ -124,7 +129,12 @@ const Blogs = () => {
             <h1 className="font-bold text-blue-600 mt-2">
               {recentBlogPost.author} • {recentBlogPost.Date}
             </h1>
-            <div className="flex items-center gap-2 ">
+            <div
+              className="flex items-center gap-2 "
+              onClick={() => {
+                navigate(`/blogs/${recentBlogPost.id}`);
+              }}
+            >
               <h1 className="text-2xl font-bold mt-2">
                 {recentBlogPost.title}
               </h1>
@@ -152,7 +162,15 @@ const Blogs = () => {
                   <h1 className="font-bold text-blue-600 mt-2">
                     {post.author} • {post.Date}
                   </h1>
-                  <h2 className="text-xl font-bold">{post.title}</h2>
+                  <div
+                    className="flex gap-3 items-center"
+                    onClick={() => {
+                      navigate(`/blogs/${post.id}`);
+                    }}
+                  >
+                    <h2 className="text-xl font-bold">{post.title}</h2>
+                    <GoArrowUpRight color="black" size={18} className="mt-2" />
+                  </div>
                   <p className="text-md">{post.description}</p>
                   <div className="flex flex-wrap gap-2 mt-2">
                     {post.topics.map((topic, idx) => (

@@ -5,7 +5,7 @@ import laptop from "../assets/home/laptop.png";
 import info from "../assets/home/info.jpg";
 import wave from "../assets/home/wave.png";
 import avatars from "../assets/home/avatars.png";
-import { GoCheckCircleFill } from "react-icons/go";
+import { GoArrowUpRight, GoCheckCircleFill } from "react-icons/go";
 import { IoBookSharp } from "react-icons/io5";
 import CourseCard from "../components/CourseCard";
 import courses from "../assets/courses/courses.png";
@@ -47,6 +47,10 @@ import landscape from "../assets/home/landscape.png";
 import blog4 from "../assets/blogs/blog4.png";
 import blog5 from "../assets/blogs/blog5.png";
 import blog6 from "../assets/blogs/blog6.png";
+import review1 from "../assets/home/review1.png";
+import review2 from "../assets/home/review2.png";
+import review3 from "../assets/home/review3.png";
+import { useNavigate } from "react-router-dom";
 
 const spanStyle = {
   padding: "20px",
@@ -78,6 +82,7 @@ const slideImages = [
 
 const blogPosts = [
   {
+    id: "1",
     title: "What is BIM and why is it important",
     description:
       "lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsa expedita adipisci rem quibusdam voluptatibus, rerum in corrupti esse enim?",
@@ -87,6 +92,7 @@ const blogPosts = [
     topics: ["topic1", "topic2", "topic3"],
   },
   {
+    id: "2",
     title: "BIM standards and protocols",
     description:
       "lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatem dolorem excepturi molestiae alias ex similique necessitatibus, ratione officia nam.",
@@ -96,6 +102,7 @@ const blogPosts = [
     topics: ["topic1", "topic2", "topic3"],
   },
   {
+    id: "3",
     title: "BIM in construction",
     description:
       "lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, voluptate! Cumque nesciunt officiis soluta aliquid exercitationem adipisci doloribus labore distinctio!",
@@ -130,6 +137,7 @@ const courseData = [
 const recentBlogPost = blogPosts[0];
 const otherBlogPosts = blogPosts.slice(1);
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <div className="overflow-x-hidden">
       <Navbar />
@@ -615,7 +623,7 @@ const Home = () => {
       </div>
 
       {/* company details */}
-      <div className="p-10 px-20 relative">
+      <div className="pt-10 px-20 relative ">
         <div className="flex justify-end min-h-screen">
           <div className="w-1/2 flex flex-col gap-3 ">
             <h1 className="text-3xl font-bold w-[60%]">
@@ -658,7 +666,7 @@ const Home = () => {
 
       {/* testimonial */}
 
-      <div className="bg-[#0044ff1b] min-h-[80vh] flex p-20  m-10 rounded-lg">
+      {/* <div className="bg-[#0044ff1b] min-h-[80vh] flex p-20  m-10 rounded-lg">
         <div className="w-1/2 flex flex-col ml-20 gap-10">
           <FaQuoteLeft color="FF006B" size={30} />
 
@@ -690,6 +698,111 @@ const Home = () => {
         <div className="w-1/2 flex justify-center">
           <img src={testimonial} alt="testimonial" className="w-[50%]" />
         </div>
+      </div> */}
+
+      <div className="flex px-40 justify-between ">
+        <div className="w-[30%]">
+          <div className="flex gap-4">
+            <img
+              src={review1}
+              alt="review1"
+              className="w-14 h-14 rounded-full"
+            />
+            <div className="">
+              <h1 className="text-lg font-semibold">Mr BhimRao</h1>
+              <h1 className="text-gray-400">Head of Concrete RA-Tech Mumbai</h1>
+              <div className="flex items-center">
+                {[...Array(5)].map((_, index) => (
+                  <svg
+                    key={index}
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="gold"
+                    className="w-4 h-4"
+                  >
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.518 4.674a1 1 0 00.95.69h4.92c.969 0 1.371 1.24.588 1.81l-3.98 2.892a1 1 0 00-.364 1.118l1.518 4.674c.3.921-.755 1.688-1.54 1.118l-3.98-2.892a1 1 0 00-1.176 0l-3.98 2.892c-.784.57-1.838-.197-1.54-1.118l1.518-4.674a1 1 0 00-.364-1.118L2.49 10.1c-.783-.57-.38-1.81.588-1.81h4.92a1 1 0 00.95-.69L9.049 2.927z" />
+                  </svg>
+                ))}
+              </div>
+            </div>
+          </div>
+          <h1 className="text-lg mt-3">
+            "The BIM skills have a great teaching passion. Along with software
+            expertise, They also have in depth practical knowledge that help to
+            understand BIM Fundamentals. I really appreciate, sharing their
+            knowledge to keep update in BIM industry."
+          </h1>
+        </div>
+
+        <div className="w-[30%]">
+          <div className="flex gap-4">
+            <img
+              src={review2}
+              alt="review1"
+              className="w-14 h-14 rounded-full"
+            />
+            <div className="">
+              <h1 className="text-lg font-semibold">Mr. Wusat Hussain</h1>
+              <h1 className="text-gray-400">CAD Designer - USA</h1>
+              <div className="flex items-center">
+                {[...Array(5)].map((_, index) => (
+                  <svg
+                    key={index}
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="gold"
+                    className="w-4 h-4"
+                  >
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.518 4.674a1 1 0 00.95.69h4.92c.969 0 1.371 1.24.588 1.81l-3.98 2.892a1 1 0 00-.364 1.118l1.518 4.674c.3.921-.755 1.688-1.54 1.118l-3.98-2.892a1 1 0 00-1.176 0l-3.98 2.892c-.784.57-1.838-.197-1.54-1.118l1.518-4.674a1 1 0 00-.364-1.118L2.49 10.1c-.783-.57-.38-1.81.588-1.81h4.92a1 1 0 00.95-.69L9.049 2.927z" />
+                  </svg>
+                ))}
+              </div>
+            </div>
+          </div>
+          <h1 className="text-lg mt-3">
+            "I have been learning BIM from The BIM skills and it has been a
+            great experience. The BIM skills has very thoughtful and
+            knowledgeable instructors who puts lot of efforts into how they
+            present course material. Their lessons were engaging, useful and
+            very patient during training. Their skills and techniques of
+            communicating are very professional. I would recommend The BIM
+            skills to anyone interested in learning BIM."
+          </h1>
+        </div>
+
+        <div className="w-[30%]">
+          <div className="flex gap-4">
+            <img
+              src={review3}
+              alt="review1"
+              className="w-14 h-14 rounded-full"
+            />
+            <div className="">
+              <h1 className="text-lg font-semibold">Mr. Marwan Sufiyan</h1>
+              <h1 className="text-gray-400">Engineering Consultant</h1>
+              <div className="flex items-center">
+                {[...Array(5)].map((_, index) => (
+                  <svg
+                    key={index}
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="gold"
+                    className="w-4 h-4"
+                  >
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.518 4.674a1 1 0 00.95.69h4.92c.969 0 1.371 1.24.588 1.81l-3.98 2.892a1 1 0 00-.364 1.118l1.518 4.674c.3.921-.755 1.688-1.54 1.118l-3.98-2.892a1 1 0 00-1.176 0l-3.98 2.892c-.784.57-1.838-.197-1.54-1.118l1.518-4.674a1 1 0 00-.364-1.118L2.49 10.1c-.783-.57-.38-1.81.588-1.81h4.92a1 1 0 00.95-.69L9.049 2.927z" />
+                  </svg>
+                ))}
+              </div>
+            </div>
+          </div>
+          <h1 className="text-lg mt-3">
+            "BIM skills has excellent knowledge of BIM concepts, related
+            standards, tools. They have excellent skills in providing training
+            logically with easily understandable linguistic skills. I can
+            recommend this institute to any one who is expected to become an
+            expert in BIM skills and become successful in industry."
+          </h1>
+        </div>
       </div>
 
       {/* blogs */}
@@ -712,7 +825,17 @@ const Home = () => {
             <h1 className="font-bold text-blue-600 mt-2">
               {recentBlogPost.author} • {recentBlogPost.Date}
             </h1>
-            <h1 className="text-2xl font-bold mt-2">{recentBlogPost.title}</h1>
+            <div
+              className="flex items-center gap-2 "
+              onClick={() => {
+                navigate(`/blogs/${recentBlogPost.id}`);
+              }}
+            >
+              <h1 className="text-2xl font-bold mt-2">
+                {recentBlogPost.title}
+              </h1>
+              <GoArrowUpRight color="black" size={20} className="mt-2" />
+            </div>
             <p className="text-lg">{recentBlogPost.description}</p>
             <div className="flex flex-wrap gap-2 mt-2">
               {recentBlogPost.topics.map((topic, index) => (
@@ -735,7 +858,15 @@ const Home = () => {
                   <h1 className="font-bold text-blue-600 mt-2">
                     {post.author} • {post.Date}
                   </h1>
-                  <h2 className="text-xl font-bold">{post.title}</h2>
+                  <div
+                    className="flex gap-3 items-center"
+                    onClick={() => {
+                      navigate(`/blogs/${post.id}`);
+                    }}
+                  >
+                    <h2 className="text-xl font-bold">{post.title}</h2>
+                    <GoArrowUpRight color="black" size={18} className="mt-2" />
+                  </div>
                   <p className="text-md">{post.description}</p>
                   <div className="flex flex-wrap gap-2 mt-2">
                     {post.topics.map((topic, idx) => (

@@ -13,6 +13,7 @@ import ContactUs from "./pages/ContactUs.jsx";
 import Payment from "./pages/Payment.jsx";
 import Projects from "./pages/Projects.jsx";
 import CourseLanding from "./pages/CourseLanding.jsx";
+import SingleBlog from "./pages/SingleBlog.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
   {
     path: "/blogs",
     element: <Blogs />,
+  },
+  {
+    path: "/blogs/:id",
+    element: <SingleBlog />,
   },
   {
     path: "/about",
