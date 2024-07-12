@@ -114,8 +114,8 @@ const CourseLanding = () => {
                 backgroundImage: `url(${slideImage.url})`,
               }}
             >
-              <div className="flex justify-between p-20 relative">
-                <div className="w-[60%]  flex flex-col gap-6 ">
+              <div className="flex justify-between p-20 px-16  relative">
+                <div className="w-[75%]  flex flex-col gap-12 ">
                   <h1 className=" text-7xl font-extrabold text-transparent ">
                     Empowering <br /> next-gen architects and engineers towards
                     career success
@@ -127,15 +127,26 @@ const CourseLanding = () => {
                   </h1>
                   <div className="flex gap-10">
                     <button
-                      onClick={() => navigate("/allcourses")}
-                      className=" flex gap-2 items-center justify-center text-xl  text-[#FF006B] bg-white border border-[#FF006B] font-semibold p-2 rounded-md w-[250px]"
+                      className="flex gap-2 items-center justify-center text-xl text-white font-semibold px-4 py-2 rounded-md w-[300px]"
+                      style={{
+                        background:
+                          "linear-gradient(to top, black, black, white)",
+                        border: "1px solid #FF006B",
+                      }}
                     >
                       Explore Courses
-                      <GoArrowRight />
+                      <TfiArrowTopRight />
                     </button>
-                    <button className=" flex gap-2 items-center justify-center text-xl bg-[#FF006B] text-white border border-[#FF006B] font-semibold p-2 rounded-md w-[250px]">
+                    <button
+                      className="flex gap-2 items-center justify-center text-xl text-white font-semibold px-4 py-2 rounded-md w-[300px]"
+                      style={{
+                        background:
+                          "linear-gradient(to top, black, black, white)",
+                        border: "1px solid #FF006B",
+                      }}
+                    >
                       Request a Call Back
-                      <FiPhoneCall />
+                      <TfiArrowTopRight />
                     </button>
                   </div>
                 </div>
