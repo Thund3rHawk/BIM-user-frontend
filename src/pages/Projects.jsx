@@ -58,7 +58,12 @@ const Projects = () => {
     <div className="overflow-x-hidden">
       <Navbar />
       <div className="flex h-[90vh] my-10">
-        <div className="w-1/2 flex justify-center items-center bg-blue-600 relative">
+        <div
+          style={{
+            background: "linear-gradient(to bottom right, #0067BF, #DD2D66)",
+          }}
+          className="w-1/2 flex justify-center items-center  relative"
+        >
           <img src={bgImage} alt="logo" className="w-full h-full" />
           <div className="flex flex-col gap-5  m-16 absolute">
             <h1 className="text-5xl font-bold text-white">

@@ -247,13 +247,13 @@ const Home = () => {
               }}
             >
               <div className="w-full flex flex-col gap-5 ">
-                <h1 className="text-7xl font-normal text-white w-[60%]">
+                <h1 className="text-7xl font-normal text-white w-[53%]">
                   {slideImage.title}
                 </h1>
                 <h1 className="text-xl w-[50%] text-white">
                   {slideImage.desc}
                 </h1>
-                <div className=" flex gap-10  w-full">
+                <div className=" flex gap-10 mt-10  w-full">
                   <button
                     onClick={() => {
                       navigate("/courses");

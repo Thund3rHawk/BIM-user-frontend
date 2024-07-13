@@ -10,6 +10,9 @@ import building from "../assets/services/building.png";
 import Contact from "../components/Contact";
 import services1 from "../assets/services/services1.png";
 import services2 from "../assets/services/services2.png";
+import service1 from "../assets/services/service1.jpg";
+import service2 from "../assets/services/service2.jpg";
+import service3 from "../assets/services/service3.jpg";
 
 const Services = () => {
   return (
@@ -116,15 +119,27 @@ const Services = () => {
 
           <div className="flex gap-2">
             <div className="w-[30%] bg-white rounded-md">
-              <img src={courses} alt="courses" className="rounded-t-md" />
+              <img
+                src={service1}
+                alt="courses"
+                className="rounded-t-md h-40 w-48"
+              />
               <h1 className="font-bold p-2">Architectural BIM services</h1>
             </div>
             <div className="w-[30%] bg-white rounded-md">
-              <img src={courses} alt="courses" className="rounded-t-md" />
+              <img
+                src={service2}
+                alt="courses"
+                className="rounded-t-md h-40 w-48"
+              />
               <h1 className="font-bold p-2">Structural BIM services</h1>
             </div>
             <div className="w-[30%] bg-white rounded-md">
-              <img src={courses} alt="courses" className="rounded-t-md" />
+              <img
+                src={service3}
+                alt="courses"
+                className="rounded-t-md h-40 w-48"
+              />
               <h1 className="font-bold p-2">MEP BIM services</h1>
             </div>
           </div>

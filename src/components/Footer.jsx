@@ -112,7 +112,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="w-full h-10 pl-20 text-lg">
+      <div className="w-full h-10 pl-20 ">
         Design and Developed by Bits & Gigs
       </div>
     </div>

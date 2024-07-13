@@ -41,8 +41,8 @@ import review2 from "../assets/courses/review2.png";
 import review3 from "../assets/courses/review3.png";
 import review4 from "../assets/courses/review4.png";
 import bgImage from "../assets/courses/bgImage.png";
-import onlinetraining from "../assets/home/onlinetraining.jpg";
-import offlinetraining from "../assets/home/offlinetraining.jpg";
+import onlinetraining from "../assets/home/online.jpg";
+import offlinetraining from "../assets/home/offline.jpg";
 import { Slide } from "react-slideshow-image";
 import course3 from "../assets/courses/course3.png";
 import course4 from "../assets/courses/course4.png";
@@ -62,10 +62,14 @@ const divStyle = {
 };
 const slideImages = [
   {
+    title: "Offline BIM Certification Program!",
+    desc: "Our training dives deep into practical, real-world projects, providing you with in-depth experience and skills that employers value.",
     url: offlinetraining,
     caption: "Slide 2",
   },
   {
+    title: "Online BIM Certification Program!",
+    desc: "Our training dives deep into practical, real-world projects, providing you with in-depth experience and skills that employers value.",
     url: onlinetraining,
     caption: "Slide 3",
   },
@@ -111,108 +115,107 @@ const CourseLanding = () => {
         {slideImages.map((slideImage, index) => (
           <div key={index}>
             <div
-              className="min-h-[90vh] mt-10 mx-10 rounded-xl"
+              className="min-h-[90vh] relative p-20 flex justify-start m-10 rounded-xl "
               // style={{
-              //   background: `url(${bgImage}), linear-gradient(to right, #0666BD, #D92E68) `,
+              //   // background: "linear-gradient(to right, #0666BD, #D92E68)",
+              //   background: `url(${mainbg}) no-repeat center center/cover`,
               // }}
+
               style={{
                 ...divStyle,
                 backgroundImage: `url(${slideImage.url})`,
               }}
             >
-              <div className="flex justify-between p-20 px-16  relative">
-                <div className="w-[75%]  flex flex-col gap-12 ">
-                  <h1 className=" text-7xl font-extrabold text-transparent ">
-                    Empowering <br /> next-gen architects and engineers towards
-                    career success
-                  </h1>
-                  <h1 className=" text-2xl text-transparent">
-                    Online certification courses designed for success. Acquire
-                    industry-relevant skills through engaging cohort-based
-                    learning experiences.
-                  </h1>
-                  <div className="flex gap-10">
-                    <button
-                      onClick={() => {
-                        navigate("/allcourses");
-                      }}
-                      className="flex gap-2 items-center justify-center text-xl text-white font-semibold px-4 py-2 rounded-md w-[300px] bg-black"
-                      // style={{
-                      //   background:
-                      //     "linear-gradient(to top, black, black, white)",
-                      //   border: "1px solid #FF006B",
-                      // }}
-                    >
-                      Explore Courses
-                      <TfiArrowTopRight />
-                    </button>
-                    <button className="flex gap-2 items-center justify-center text-xl text-white font-semibold px-4 py-2 rounded-md w-[300px] bg-black">
-                      Request a Call Back
-                      <TfiArrowTopRight />
-                    </button>
-                  </div>
-                </div>
-                <div className="absolute right-10 ">
-                  <img src={group} alt="group" className="w-[100%]" />
-                </div>
-                <div className="absolute right-[30%] top-10 ">
-                  <img src={sticker1} alt="sticker" className="w-[100%]" />
-                </div>
-                <div className="absolute right-[30%] bottom-28 ">
-                  <img src={sticker2} alt="sticker" className="w-[100%]" />
+              <div className="w-full flex flex-col gap-5 ">
+                <h1 className="text-7xl font-normal text-white w-[53%]">
+                  {slideImage.title}
+                </h1>
+                <h1 className="text-xl w-[50%] text-white">
+                  {slideImage.desc}
+                </h1>
+                <div className=" flex gap-10 mt-10  w-full">
+                  <button
+                    onClick={() => {
+                      navigate("/courses");
+                    }}
+                    className="flex gap-2 items-center justify-center text-xl text-white font-semibold px-4 py-2 rounded-md w-[300px] bg-black"
+                    // style={{
+                    //   background: "linear-gradient(to top, black, black, white)",
+                    //   border: "1px solid #FF006B",
+                    // }}
+                  >
+                    Explore BIM Training
+                    <TfiArrowTopRight />
+                  </button>
+                  <button
+                    onClick={() => {
+                      navigate("/services");
+                    }}
+                    className="flex gap-2 items-center justify-center text-xl text-white font-semibold px-4 py-2 rounded-md w-[300px] bg-black"
+                  >
+                    Explore BIM Services
+                    <TfiArrowTopRight />
+                  </button>
                 </div>
               </div>
+
+              <img src={sticker1} className=" absolute right-[35%] top-20" />
             </div>
           </div>
         ))}
       </Slide>
 
       {/* impact section */}
-      <div className="h-[40vh]  pl-40 relative">
-        <div
+      <div className=" mb-20  pl-40 relative">
+        {/* <div
           className="h-full w-[3px] absolte left-36"
           style={{
             background: `linear-gradient(to bottom, #E5C360, #DA45C2, #6938EF)`,
           }}
-        />
-        <div className="absolute top-20 left-36 w-1/2 flex items-center gap-10 ">
-          <div className="bg-white">
+        /> */}
+        <div className=" top-20 left-36 w-[80%] text-center flex justify-center items-center gap-10 ">
+          {/* <div className="bg-white">
             <img src={sideIcon} className="my-1" alt="sideIcon" />
-          </div>
+          </div> */}
           <div>
-            <h1 className="text-lg">Our Impact</h1>
-            <h1 className="text-4xl font-bold">Moving the Needle with</h1>
+            {/* <h1 className="text-lg">Our Impact</h1>
+            <h1 className="text-4xl font-bold">Moving the Needle with</h1> */}
             <h1 className="text-4xl font-bold text-[#FF006B]">
-              Tech-First Education
+              Leading Innovation in AEC Education
             </h1>
             <h1 className="text-xl">
-              A world of opportunities awaits architecture, engineering, and
-              construction (AEC) professionals.
+              Leading Innovation in AEC Education At The BIM Skills Company, we
+              are revolutionizing the way architecture, engineering, and
+              construction (AEC) professionals learn and grow. Through our
+              advanced training programs, we empower individuals to harness the
+              latest technological advancements, driving innovation and
+              excellence in the industry. Discover endless possibilities and
+              elevate your career with our forward-thinking education solutions.
             </h1>
           </div>
         </div>
       </div>
 
       {/* achievements card */}
-      <div className="px-20 pb-20 flex gap-10">
+      <div className="px-40 pb-20 flex justify-between ">
         <div className="pr-14 pl-10 pb-5 pt-10 w-[300px] border border-blue-200  flex flex-col gap-6 shadow-xl rounded-xl">
-          <h1 className="text-7xl text-blue-600 ">45+</h1>
-          <h1 className="text-xl">Countries Represented</h1>
+          <h1 className="text-7xl text-blue-600 ">20+</h1>
+          <h1 className="text-xl">Countries Global Reach</h1>
           <HiOutlineGlobe size={30} color="FF006B" className="" />
         </div>
         <div className="pr-14 pl-10 pb-5 pt-10 w-[300px] border border-blue-200  flex flex-col gap-6 shadow-xl rounded-xl">
-          <h1 className="text-7xl text-blue-600 ">5000+</h1>
-          <h1 className="text-xl">Successful Graduates</h1>
+          <h1 className="text-7xl text-blue-600 ">1000+</h1>
+          <h1 className="text-xl">Career Transformations</h1>
           <GiGraduateCap size={30} color="FF006B" className="" />
         </div>
-        <div className="pr-14 pl-10 pb-5 pt-10 w-[300px] border border-blue-200  flex flex-col gap-6 shadow-xl rounded-xl">
+        {/* <div className="pr-14 pl-10 pb-5 pt-10 w-[300px] border border-blue-200  flex flex-col gap-6 shadow-xl rounded-xl">
           <h1 className="text-7xl text-blue-600 ">100+</h1>
           <h1 className="text-xl">Projects Completed</h1>
           <MdWorkOutline size={30} color="FF006B" className="" />
-        </div>
+        </div> */}
         <div className="pr-14 pl-10 pb-5 pt-10 w-[300px] border border-blue-200  flex flex-col gap-6 shadow-xl rounded-xl">
-          <h1 className="text-7xl text-blue-600 ">4.8/5</h1>
-          <h1 className="text-xl">Learner Rating</h1>
+          <h1 className="text-7xl text-blue-600 ">5/5</h1>
+          <h1 className="text-xl">Star rating from all over Globe</h1>
           <FaRegStar size={30} color="FF006B" className="" />
         </div>
       </div>
@@ -224,24 +227,32 @@ const CourseLanding = () => {
           <div className="flex gap-20">
             <div className="flex gap-5 items-center">
               <img src={seven} alt="one" className="w-10 h-10" />
-              <h1 className="text-blue-600 text-5xl font-bold">Acceleration</h1>
-            </div>
-            <div className="flex gap-5 items-center">
-              <img src={seven} alt="one" className="w-10 h-10" />
               <h1 className="text-blue-600 text-5xl font-bold">
-                Expert Mentors
+                Practical Knowledge
               </h1>
             </div>
             <div className="flex gap-5 items-center">
               <img src={seven} alt="one" className="w-10 h-10" />
               <h1 className="text-blue-600 text-5xl font-bold">
-                Industry Knowledge
+                Guidance from Industry Experts
               </h1>
             </div>
             <div className="flex gap-5 items-center">
               <img src={seven} alt="one" className="w-10 h-10" />
               <h1 className="text-blue-600 text-5xl font-bold">
-                Tech-first skills
+                Career Acceleration
+              </h1>
+            </div>
+            <div className="flex gap-5 items-center">
+              <img src={seven} alt="one" className="w-10 h-10" />
+              <h1 className="text-blue-600 text-5xl font-bold">
+                Continuous Support
+              </h1>
+            </div>
+            <div className="flex gap-5 items-center">
+              <img src={seven} alt="one" className="w-10 h-10" />
+              <h1 className="text-blue-600 text-5xl font-bold">
+                International Projects
               </h1>
             </div>
           </div>
@@ -251,13 +262,18 @@ const CourseLanding = () => {
       {/* our courses  */}
 
       <div className="flex flex-col gap-5 items-center">
-        <h1 className="text-xl text-blue-600 font-semibold">Our Courses</h1>
-        <h1 className="text-4xl font-bold text-[#FF006B]">
-          Your Future Starts Here
+        <h1 className="text-xl text-blue-600 font-semibold">
+          OUT TOP BIM COURSES
         </h1>
-        <h1 className="text-xl w-1/2 text-center">
-          Get closer to your professional goal with online certification courses
-          in architecture, engineering, and design.
+        <h1 className="text-4xl font-bold text-[#FF006B]">
+          Build a Brighter Future with The BIM skills
+        </h1>
+        <h1 className="text-xl w-2/3 text-center">
+          Join our comprehensive, live project-based International BIM
+          Coordinator Training & Internship Program designed for architects and
+          civil engineers. Starting from the 1st week of September 2024 at 9:30
+          PM, this program ensures you gain in-depth knowledge and hands-on
+          experience with international BIM standards.
         </h1>
       </div>
 
