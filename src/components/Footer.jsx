@@ -7,8 +7,8 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="bg-[#000D82] text-white p-8 py-20">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+    <div className="bg-[#000D82] text-white ">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 py-10">
         {/* Company Intro and Logo */}
         <div>
           <img src={logo} alt="Company Logo" className="w-48 mb-4" />
@@ -106,11 +106,14 @@ const Footer = () => {
             </li>
             <li>
               <a href="#" className="text-gray-200 hover:underline">
-                Free Course
+                Free Courses
               </a>
             </li>
           </ul>
         </div>
+      </div>
+      <div className="w-full h-10 pl-20 text-lg">
+        Design and Developed by Bits & Gigs
       </div>
     </div>
   );

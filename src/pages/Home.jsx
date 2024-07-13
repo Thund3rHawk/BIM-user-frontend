@@ -35,9 +35,9 @@ import four from "../assets/home/4.png";
 import five from "../assets/home/5.png";
 import six from "../assets/home/6.png";
 import seven from "../assets/home/7.png";
-import mainbg from "../assets/home/mainbg.jpg";
-import onlinetraining from "../assets/home/onlinetraining.jpg";
-import offlinetraining from "../assets/home/offlinetraining.jpg";
+import mainbg from "../assets/home/mainBg.jpg";
+import onlinetraining from "../assets/home/onlineBg.jpg";
+import offlinetraining from "../assets/home/offlineBg.jpg";
 import "react-slideshow-image/dist/styles.css";
 import { Slide } from "react-slideshow-image";
 import projectgroup from "../assets/home/projectgroup.png";
@@ -67,14 +67,20 @@ const divStyle = {
 };
 const slideImages = [
   {
+    title: "BIM Outsource & Consulting Services",
+    desc: "Join us as we harness the power of technology to create solutions that inspire, empower, and shape the world of tomorrow. Together, let's innovate, let's explore, and let's build a future where possibilites are limitless.",
     url: mainbg,
     caption: "Slide 1",
   },
   {
+    title: "Offline BIM Certification Program!",
+    desc: "Our training dives deep into practical, real-world projects, providing you with in-depth experience and skills that employers value.",
     url: offlinetraining,
     caption: "Slide 2",
   },
   {
+    title: "Online BIM Certification Program!",
+    desc: "Our training dives deep into practical, real-world projects, providing you with in-depth experience and skills that employers value.",
     url: onlinetraining,
     caption: "Slide 3",
   },
@@ -85,11 +91,26 @@ const blogPosts = [
     id: "1",
     title: "What is BIM and why is it important",
     description:
-      "lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsa expedita",
+      "Building Information Modeling (BIM) is a digital representation of the physical and functional characteristics of a facility. It is a shared knowledge resource for information about a facility,",
     image: blog4,
     author: "Syed Amaan Quadri",
     Date: "22 Jan, 2024",
-    content: `<div></div>`,
+    content: `<div>
+  <h2>What is BIM?</h2>
+  <p>Building Information Modeling (BIM) is a digital representation of the physical and functional characteristics of a facility. It is a shared knowledge resource for information about a facility, forming a reliable basis for decisions during its lifecycle from inception onward. BIM involves creating and managing digital models of buildings and infrastructure, incorporating not just geometry but also spatial relationships, geographic information, quantities and properties of building components, and much more.</p>
+  
+  <h3>Why is BIM Important?</h3>
+  <ul>
+    <li><strong>Enhanced Collaboration and Communication:</strong> BIM facilitates better collaboration among project stakeholders. It allows architects, engineers, contractors, and clients to work together more efficiently by providing a shared 3D model that can be accessed and modified in real-time. This reduces misunderstandings and ensures everyone is on the same page.</li>
+    <li><strong>Improved Visualization:</strong> With BIM, stakeholders can visualize the project in a detailed 3D model before construction begins. This helps in identifying potential issues early in the design phase, reducing costly changes and rework during construction.</li>
+    <li><strong>Accurate and Consistent Information:</strong> BIM provides a single source of truth for all project data. This means that all changes are automatically updated across the model, ensuring that everyone has access to the most accurate and up-to-date information. This reduces errors and inconsistencies in the project documentation.</li>
+    <li><strong>Cost and Time Savings:</strong> By improving coordination and reducing errors, BIM can significantly lower project costs and timelines. It allows for more efficient planning and resource management, leading to faster project completion and reduced waste.</li>
+    <li><strong>Better Project Outcomes:</strong> BIM enhances the overall quality of the project by providing detailed and accurate information. This leads to better decision-making, improved construction quality, and increased client satisfaction.</li>
+    <li><strong>Lifecycle Management:</strong> BIM is not just limited to the design and construction phases. It extends to the entire lifecycle of a building, including operation and maintenance. Facility managers can use BIM models to manage building performance, maintenance schedules, and renovations more effectively.</li>
+    <li><strong>Sustainability:</strong> BIM enables the integration of sustainable design practices by allowing for the analysis of energy performance, material usage, and environmental impact. This helps in creating more efficient and environmentally friendly buildings.</li>
+    <li><strong>Risk Management:</strong> BIM helps in identifying and mitigating risks early in the project lifecycle. By simulating different scenarios and analyzing potential impacts, project teams can develop strategies to avoid or minimize risks.</li>
+  </ul>
+</div>`,
   },
   {
     id: "2",
@@ -184,7 +205,7 @@ const courseData = [
   {
     id: 1,
     image: course4,
-    subtitle: "Architects & Civil",
+    subtitle: "For Architects & Civil Engineer",
     title: "International BIM Coordinator Training & Internship",
     rating: 5,
     reviews: 123,
@@ -194,7 +215,7 @@ const courseData = [
   {
     id: 2,
     image: course3,
-    subtitle: "Mechanical & Electrical",
+    subtitle: "For Mechanical & Electrical Engineer",
     title: "International BIM Coordinator Training & Internship",
     rating: 5,
     reviews: 123,
@@ -214,7 +235,7 @@ const Home = () => {
         {slideImages.map((slideImage, index) => (
           <div key={index}>
             <div
-              className="min-h-[90vh]  m-10 rounded-xl flex flex-col justify-end items-start"
+              className="min-h-[90vh] p-20 flex justify-start m-10 rounded-xl "
               // style={{
               //   // background: "linear-gradient(to right, #0666BD, #D92E68)",
               //   background: `url(${mainbg}) no-repeat center center/cover`,
@@ -225,33 +246,43 @@ const Home = () => {
                 backgroundImage: `url(${slideImage.url})`,
               }}
             >
-              <div className="flex justify-between p-10 relative ">
-                <div className="w-[55%] h-[60vh] bg-red-900  flex flex-col gap-6  "></div>
-                {/* <div className="absolute right-10 w-[60vw]">
-                  <img src={laptop} alt="laptop" className="w-[80%]" />
-                </div> */}
-              </div>
-              <div className="p-10 px-20 flex gap-10  w-full">
-                <button
-                  className="flex gap-2 items-center justify-center text-xl text-white font-semibold px-4 py-2 rounded-md w-[300px] bg-black"
-                  // style={{
-                  //   background: "linear-gradient(to top, black, black, white)",
-                  //   border: "1px solid #FF006B",
-                  // }}
-                >
-                  Explore BIM Training
-                  <TfiArrowTopRight />
-                </button>
-                <button className="flex gap-2 items-center justify-center text-xl text-white font-semibold px-4 py-2 rounded-md w-[300px] bg-black">
-                  Explore BIM Services
-                  <TfiArrowTopRight />
-                </button>
-                {/* <img src={avatars} alt="avatars" />
+              <div className="w-full flex flex-col gap-5 ">
+                <h1 className="text-7xl font-normal text-white w-[60%]">
+                  {slideImage.title}
+                </h1>
+                <h1 className="text-xl w-[50%] text-white">
+                  {slideImage.desc}
+                </h1>
+                <div className=" flex gap-10  w-full">
+                  <button
+                    onClick={() => {
+                      navigate("/courses");
+                    }}
+                    className="flex gap-2 items-center justify-center text-xl text-white font-semibold px-4 py-2 rounded-md w-[300px] bg-black"
+                    // style={{
+                    //   background: "linear-gradient(to top, black, black, white)",
+                    //   border: "1px solid #FF006B",
+                    // }}
+                  >
+                    Explore BIM Training
+                    <TfiArrowTopRight />
+                  </button>
+                  <button
+                    onClick={() => {
+                      navigate("/services");
+                    }}
+                    className="flex gap-2 items-center justify-center text-xl text-white font-semibold px-4 py-2 rounded-md w-[300px] bg-black"
+                  >
+                    Explore BIM Services
+                    <TfiArrowTopRight />
+                  </button>
+                  {/* <img src={avatars} alt="avatars" />
                 <div className="w-32">
                   <h1 className="text-white">
                     100+ <br /> satisfied clients
                   </h1>
                 </div> */}
+                </div>
               </div>
             </div>
           </div>
@@ -528,7 +559,7 @@ const Home = () => {
       </div>
 
       {/* online courses */}
-      <div className="p-10 py-20 relative min-h-screen  justify-center flex ">
+      <div className="p-10 py-20 mb-10 relative min-h-screen  justify-center flex ">
         <h1 className="text-5xl font-bold text-center ">
           TOP ONLINE <span className="text-[#FF006B]">COURSES</span>
         </h1>
@@ -549,7 +580,12 @@ const Home = () => {
             ))}
           </div>
           <div className="flex justify-center">
-            <button className="bg-[#FF006B] text-white font-semibold px-4 py-2 rounded-md w-[200px]">
+            <button
+              onClick={() => {
+                navigate("/courses");
+              }}
+              className="bg-[#FF006B] text-white font-semibold px-4 py-2 rounded-md w-[200px]"
+            >
               Explore More
             </button>
           </div>
@@ -906,7 +942,7 @@ const Home = () => {
             <p className="text-lg">{recentBlogPost.description}</p>
             <button
               onClick={() => {
-                navigate(`/blogs/${post.id}`);
+                navigate(`/blogs/${recentBlogPost.id}`);
               }}
               className="bg-blue-200 py-1 rounded-full w-32"
             >
@@ -969,7 +1005,12 @@ const Home = () => {
         </div>
       </div>
       <div className="flex justify-center mb-10">
-        <button className="bg-[#FF006B] text-white font-semibold px-4 py-2 rounded-md w-[200px]">
+        <button
+          onClick={() => {
+            navigate(`/blogs`);
+          }}
+          className="bg-[#FF006B] text-white font-semibold px-4 py-2 rounded-md w-[200px]"
+        >
           Explore More
         </button>
       </div>

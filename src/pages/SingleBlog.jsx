@@ -11,11 +11,26 @@ const blogPosts = [
     id: "1",
     title: "What is BIM and why is it important",
     description:
-      "lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsa expedita",
+      "Building Information Modeling (BIM) is a digital representation of the physical and functional characteristics of a facility. It is a shared knowledge resource for information about a facility,",
     image: blog4,
     author: "Syed Amaan Quadri",
     Date: "22 Jan, 2024",
-    content: `<div></div>`,
+    content: `<div>
+  <h2>What is BIM?</h2>
+  <p>Building Information Modeling (BIM) is a digital representation of the physical and functional characteristics of a facility. It is a shared knowledge resource for information about a facility, forming a reliable basis for decisions during its lifecycle from inception onward. BIM involves creating and managing digital models of buildings and infrastructure, incorporating not just geometry but also spatial relationships, geographic information, quantities and properties of building components, and much more.</p>
+  
+  <h3>Why is BIM Important?</h3>
+  <ul>
+    <li><strong>Enhanced Collaboration and Communication:</strong> BIM facilitates better collaboration among project stakeholders. It allows architects, engineers, contractors, and clients to work together more efficiently by providing a shared 3D model that can be accessed and modified in real-time. This reduces misunderstandings and ensures everyone is on the same page.</li>
+    <li><strong>Improved Visualization:</strong> With BIM, stakeholders can visualize the project in a detailed 3D model before construction begins. This helps in identifying potential issues early in the design phase, reducing costly changes and rework during construction.</li>
+    <li><strong>Accurate and Consistent Information:</strong> BIM provides a single source of truth for all project data. This means that all changes are automatically updated across the model, ensuring that everyone has access to the most accurate and up-to-date information. This reduces errors and inconsistencies in the project documentation.</li>
+    <li><strong>Cost and Time Savings:</strong> By improving coordination and reducing errors, BIM can significantly lower project costs and timelines. It allows for more efficient planning and resource management, leading to faster project completion and reduced waste.</li>
+    <li><strong>Better Project Outcomes:</strong> BIM enhances the overall quality of the project by providing detailed and accurate information. This leads to better decision-making, improved construction quality, and increased client satisfaction.</li>
+    <li><strong>Lifecycle Management:</strong> BIM is not just limited to the design and construction phases. It extends to the entire lifecycle of a building, including operation and maintenance. Facility managers can use BIM models to manage building performance, maintenance schedules, and renovations more effectively.</li>
+    <li><strong>Sustainability:</strong> BIM enables the integration of sustainable design practices by allowing for the analysis of energy performance, material usage, and environmental impact. This helps in creating more efficient and environmentally friendly buildings.</li>
+    <li><strong>Risk Management:</strong> BIM helps in identifying and mitigating risks early in the project lifecycle. By simulating different scenarios and analyzing potential impacts, project teams can develop strategies to avoid or minimize risks.</li>
+  </ul>
+</div>`,
   },
   {
     id: "2",
@@ -128,7 +143,9 @@ const SingleBlog = () => {
       <div className="flex flex-col gap-2 my-5 px-20 items-center">
         <h1 className="text-blue-600 font-semibold">Published 20 Jun, 2024</h1>
         <h1 className="text-5xl font-semibold">{blog.title}</h1>
-        <h1 className="text-xl text-gray-500">{blog.description}</h1>
+        <h1 className="text-xl text-gray-500 text-center">
+          {blog.description}
+        </h1>
         {/* <div className="flex gap-3">
           <div className="py-1 px-3 rounded-full bg-blue-50 text-blue-600 font-bold">
             topic 1
