@@ -64,7 +64,7 @@ const Projects = () => {
           }}
           className="w-1/2 flex justify-center items-center  relative"
         >
-          <img src={bgImage} alt="logo" className="w-full h-full" />
+          {/* <img src={bgImage} alt="logo" className="w-full h-full" /> */}
           <div className="flex flex-col gap-5  m-16 absolute">
             <h1 className="text-5xl font-bold text-white">
               NEOM - LOGISTICS PARK LANDSCAPE PROJECT
@@ -85,7 +85,7 @@ const Projects = () => {
           </div>
         </div>
         <div className=" w-1/2 flex  justify-end ">
-          <img src={projectsmain} alt="projectsmain" className="w-full" />
+          <img src={neom} alt="projectsmain" className="w-full" />
         </div>
       </div>
 

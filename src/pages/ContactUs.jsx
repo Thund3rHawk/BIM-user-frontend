@@ -5,20 +5,17 @@ import Footer from "../components/Footer";
 import { CiMail } from "react-icons/ci";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { FiPhone } from "react-icons/fi";
+import { PiDeviceMobileBold } from "react-icons/pi";
+import { GrMapLocation } from "react-icons/gr";
 
 const ContactUs = () => {
   return (
     <div className="overflow-x-hidden">
       <Navbar />
-      <div className="flex">
-        <div className="w-1/2">
-          <img src={img} alt="contact" className="h-[90vh] w-full" />
-        </div>
-        <div className="w-1/2 flex items-center justify-center">
-          <form className="w-3/4 max-w-md bg-white p-8 rounded">
-            <h1 className="text-4xl font-bold">
-              Let’s level up your brand, together
-            </h1>
+      <div className="flex h-[80vh] ">
+        <div className="w-[60%]  flex items-center justify-center">
+          <form className="w-[60%]   p-8 rounded">
+            <h1 className="text-4xl font-bold">We'd love to hear from you</h1>
             <h2 className="text-lg mb-6">
               You can reach us anytime via{" "}
               <a
@@ -29,12 +26,12 @@ const ContactUs = () => {
               </a>
             </h2>
             <div className="mb-4">
-              <label
+              {/* <label
                 className="block text-gray-700 text-sm font-bold mb-2"
                 htmlFor="name"
               >
                 Name
-              </label>
+              </label> */}
               <input
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="name"
@@ -43,12 +40,12 @@ const ContactUs = () => {
               />
             </div>
             <div className="mb-4">
-              <label
+              {/* <label
                 className="block text-gray-700 text-sm font-bold mb-2"
                 htmlFor="email"
               >
                 Email
-              </label>
+              </label> */}
               <input
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="email"
@@ -57,12 +54,12 @@ const ContactUs = () => {
               />
             </div>
             <div className="mb-4">
-              <label
+              {/* <label
                 className="block text-gray-700 text-sm font-bold mb-2"
                 htmlFor="phone"
               >
                 Phone Number
-              </label>
+              </label> */}
               <input
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="phone"
@@ -71,28 +68,54 @@ const ContactUs = () => {
               />
             </div>
             <div className="mb-6">
-              <label
+              {/* <label
                 className="block text-gray-700 text-sm font-bold mb-2"
                 htmlFor="message"
               >
                 Message
-              </label>
+              </label> */}
               <textarea
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="message"
                 placeholder="Your message"
-                rows="4"
+                rows="6"
               ></textarea>
             </div>
             <div className="flex items-center justify-between">
               <button
-                className="bg-blue-500 hover:bg-blue-700 w-full text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                className="bg-blue-950 w-60 hover:bg-blue-800  text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                 type="button"
               >
-                Submit
+                Send Message
               </button>
             </div>
           </form>
+        </div>
+        <div className="w-[50%] bg-gray-900 text-white p-20 pl-32 flex flex-col gap-5">
+          <h1 className="text-3xl font-semibold">Let's Get Started</h1>
+          <h1 className="text-white/[0.6]">
+            We eager to help you with BIM needs. Reach out today, and let's
+            discuss how we can support your project.
+          </h1>
+          <div className="flex gap-4 w-72">
+            <PiDeviceMobileBold size={30} />
+            <div className="flex flex-col gap-2">
+              <h1 className="font-bold">MAIL & PHONE</h1>
+              <h1>services@thebimskills.com</h1>
+              <h1>+91 98102 12345</h1>
+            </div>
+          </div>
+          <div className="flex gap-4 w-72">
+            <GrMapLocation size={30} className="w-20" />
+            <div className="flex flex-col gap-2">
+              <h1 className="font-bold">ADDRESS</h1>
+              <h1>
+                First Floor, RS Complex, Opp.Bombay Building, Near GND Eng.
+                College, Bidar - 585401, Karnataka(INDIA)
+              </h1>
+            </div>
+          </div>
+          {/* <img src={img} alt="contact" className="h-[80vh] w-full" /> */}
         </div>
       </div>
       {/* <div className="bg-gray-100 py-8 mt-8">
@@ -118,7 +141,7 @@ const ContactUs = () => {
           </div>
         </div>
       </div> */}
-      <div className="flex flex-col gap-3 justify-center items-center my-20">
+      {/* <div className="flex flex-col gap-3 justify-center items-center my-20">
         <h1 className="text-lg font-bold text-[#FB1351]">
           Any Problem Contact us
         </h1>
@@ -162,7 +185,7 @@ const ContactUs = () => {
           <h1 className="text-gray-400 text-xl">Mon-Fri from 8am to 5pm.</h1>
           <h1 className="text-[#FB1351] text-xl font-bold">+91 98102 12345</h1>
         </div>
-      </div>
+      </div> */}
 
       <Footer />
     </div>

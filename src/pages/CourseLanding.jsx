@@ -13,7 +13,7 @@ import { GiGraduateCap } from "react-icons/gi";
 import { MdWorkOutline } from "react-icons/md";
 import { FaRegStar } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import realWorldProject from "../assets/courses/real-world-projects.png";
+import realWorldProject from "../assets/courses/real-world-projects.jpg";
 import globeIcon from "../assets/courses/globe-icon.png";
 import remoteIcon from "../assets/courses/remote-icon.png";
 import sideIcon from "../assets/courses/side-icon.png";
@@ -159,7 +159,10 @@ const CourseLanding = () => {
                 </div>
               </div>
 
-              <img src={sticker1} className=" absolute right-[35%] top-20" />
+              <img
+                src={sticker1}
+                className=" absolute w-48 rounded-xl right-[20%] top-40"
+              />
             </div>
           </div>
         ))}
@@ -392,23 +395,27 @@ const CourseLanding = () => {
 
       <div className="flex shadow-lg">
         <div className="w-1/2 h-full">
-          <div className="px-32 py-20">
+          <div className="px-14 py-20">
             <div className="flex items-center gap-5">
               <h1 className="text-lg">Practical Training</h1>
               <div className="bg-black h-[2px] w-32" />
             </div>
             <h1 className="text-3xl font-semibold ">
-              Go Ahead with{" "}
+              Gain Global Experience with{" "}
               <span className="text-[#FF006B]">Real-World Project</span>
             </h1>
             <h1 className="text-xl">
-              How do you learn to build a building? By building a building! Our
-              courses include live projects that significantly enhance your
-              portfolio.
+              Want to become a BIM expert? The BIM Skills Company offers you the
+              unique opportunity to work on real-world projects from
+              international cities. Our courses are designed to provide hands-on
+              experience, significantly enhancing your portfolio and giving you
+              a competitive edge in the industry. By tackling diverse and
+              challenging projects, you'll gain practical skills and global
+              insights, preparing you to excel in the BIM field.
             </h1>
           </div>
 
-          <div className="flex px-32 ">
+          <div className="flex px-14 ">
             <div className="w-1/2 p-2">
               <img src={globeIcon} />
               <h1 className="text-xl font-semibold my-4">
@@ -433,7 +440,7 @@ const CourseLanding = () => {
             </div>
           </div>
         </div>
-        <img src={realWorldProject} />
+        <img src={realWorldProject} className="w-1/2" />
       </div>
 
       <div className="h-[40vh] pl-40 relative">
