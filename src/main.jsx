@@ -14,6 +14,8 @@ import Payment from "./pages/Payment.jsx";
 import Projects from "./pages/Projects.jsx";
 import CourseLanding from "./pages/CourseLanding.jsx";
 import SingleBlog from "./pages/SingleBlog.jsx";
+import CoursesEnquiry from "./pages/CoursesEnquiry.jsx";
+import Quote from "./pages/Quote.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -58,6 +60,14 @@ const router = createBrowserRouter([
   {
     path: "/payment",
     element: <Payment />,
+  },
+  {
+    path: "/enquiry",
+    element: <CoursesEnquiry />,
+  },
+  {
+    path: "/quote",
+    element: <Quote />,
   },
 ]);
 

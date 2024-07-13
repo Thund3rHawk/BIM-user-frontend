@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/navbar/bim-logo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
@@ -166,6 +166,7 @@ const LinkedinIcon = () => (
 );
 
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <div className="w-screen">
       <div className="flex justify-between items-center p-4 px-10">
@@ -216,11 +217,21 @@ const Navbar = () => {
             <h1 className="text-white">Hello</h1>
           </Link>
           <div className="flex items-center space-x-4">
-            <button className="bg-black text-white shadow-xl   rounded-md w-[200px]">
+            <button
+              onClick={() => {
+                navigate("/enquiry");
+              }}
+              className="bg-black text-white shadow-xl   rounded-md w-[200px]"
+            >
               <h1 className="text-lg font-semibold">Send Enquiry</h1>
             </button>
 
-            <button className=" bg-black text-white shadow-xl font-semibold  rounded-md w-[200px]">
+            <button
+              onClick={() => {
+                navigate("/quote");
+              }}
+              className=" bg-black text-white shadow-xl font-semibold  rounded-md w-[200px]"
+            >
               <h1 className="text-lg font-semibold">Request a Quote</h1>
             </button>
           </div>

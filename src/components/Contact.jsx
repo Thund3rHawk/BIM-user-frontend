@@ -8,7 +8,7 @@ const Contact = () => {
         backgroundImage: `url(${image})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        height: "100vh",
+        height: "120vh",
         width: "100%",
         display: "flex",
         alignItems: "center",
@@ -26,7 +26,7 @@ const Contact = () => {
           </button>
         </div>
         <div className="flex-1 flex flex-col items-start p-8 bg-white shadow-lg rounded-lg">
-          <h1 className="text-2xl font-bold mb-2">Contact Us</h1>
+          <h1 className="text-2xl font-bold mb-2">Course Enquiry Form</h1>
           <h2 className="text-lg mb-6">
             Our friendly team would love to hear from you
           </h2>
@@ -87,6 +87,48 @@ const Contact = () => {
                 id="phone"
                 type="text"
                 placeholder="Your phone number"
+              />
+            </div>
+            <div className="mb-4">
+              <label
+                className="block text-gray-700 text-sm font-bold mb-2"
+                htmlFor="phone"
+              >
+                Company Name
+              </label>
+              <input
+                className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="companyname"
+                type="text"
+                placeholder="Your Company Name"
+              />
+            </div>
+            <div className="mb-4">
+              <label
+                className="block text-gray-700 text-sm font-bold mb-2"
+                htmlFor="phone"
+              >
+                Position
+              </label>
+              <input
+                className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="phone"
+                type="text"
+                placeholder="Your Position at Company"
+              />
+            </div>
+            <div className="mb-4">
+              <label
+                className="block text-gray-700 text-sm font-bold mb-2"
+                htmlFor="phone"
+              >
+                Course of Interest
+              </label>
+              <input
+                className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="phone"
+                type="text"
+                placeholder="Your course of interest"
               />
             </div>
             <div className="mb-4">

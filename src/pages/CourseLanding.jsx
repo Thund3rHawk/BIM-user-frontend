@@ -79,7 +79,7 @@ const courseData = [
   {
     id: 1,
     image: course4,
-    subtitle: "Architects & Civil",
+    subtitle: "For Architects & Civil Engineer",
     title: "International BIM Coordinator Training & Internship",
     rating: 5,
     reviews: 123,
@@ -89,7 +89,7 @@ const courseData = [
   {
     id: 2,
     image: course3,
-    subtitle: "Mechanical & Electrical",
+    subtitle: "For Mechanical & Electrical Engineer",
     title: "International BIM Coordinator Training & Internship",
     rating: 5,
     reviews: 123,

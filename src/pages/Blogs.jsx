@@ -208,7 +208,6 @@ const Blogs = () => {
       </div>
 
       <div className="flex flex-col gap-5 pb-10 px-20">
-        <h1 className="text-2xl font-bold">Recent blog posts</h1>
         <div className="flex flex-col gap-5 pb-10">
           <h1 className="text-2xl font-bold">Recent blog posts</h1>
           <div className="flex   ">
@@ -342,7 +341,7 @@ const Blogs = () => {
         </div>
       </div>
 
-      <div className="flex justify-between items-center m-8">
+      {/* <div className="flex justify-between items-center m-8">
         <button className="text-blue-500 flex gap-2 items-center px-4 py-2 rounded hover:text-blue-600">
           <FiArrowLeft /> Previous
         </button>
@@ -370,7 +369,7 @@ const Blogs = () => {
         <button className="text-blue-500 flex gap-2 items-center px-4 py-2 rounded hover:text-blue-600">
           Next <FiArrowRight />
         </button>
-      </div>
+      </div> */}
 
       <Footer />
     </div>
