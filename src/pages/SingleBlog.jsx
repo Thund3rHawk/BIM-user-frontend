@@ -14,7 +14,7 @@ const blogPosts = [
       "Building Information Modeling (BIM) is a digital representation of the physical and functional characteristics of a facility. It is a shared knowledge resource for information about a facility,",
     image: blog4,
     author: "Syed Amaan Quadri",
-    Date: "22 Jan, 2024",
+    Date: "22 Jun, 2024",
     content: `<div>
   <h2>What is BIM?</h2>
   <p>Building Information Modeling (BIM) is a digital representation of the physical and functional characteristics of a facility. It is a shared knowledge resource for information about a facility, forming a reliable basis for decisions during its lifecycle from inception onward. BIM involves creating and managing digital models of buildings and infrastructure, incorporating not just geometry but also spatial relationships, geographic information, quantities and properties of building components, and much more.</p>
@@ -39,7 +39,7 @@ const blogPosts = [
       "Building Information Modeling (BIM) is transforming the construction industry by improving collaboration,",
     image: blog6,
     author: "Syed Amaan Quadri",
-    Date: "22 Jan, 2024",
+    Date: "22 Jun, 2024",
     content: `<div>
   <h2>Understanding BIM Standards and Protocols</h2>
   <p>Building Information Modeling (BIM) is transforming the construction industry by improving collaboration, accuracy, and efficiency. However, to fully leverage BIM’s potential, it's crucial to adhere to established standards and protocols. These guidelines ensure consistency, quality, and interoperability across projects.</p>
@@ -82,7 +82,7 @@ const blogPosts = [
       "Building Information Modeling (BIM) is reshaping the construction industry by enhancing project delivery,",
     image: blog5,
     author: "Syed Amaan Quadri",
-    Date: "22 Jan, 2024",
+    Date: "22 Jun, 2024",
     content: `<div>
   <h2>BIM in Construction: Revolutionizing the Industry</h2>
   <p>Building Information Modeling (BIM) is reshaping the construction industry by enhancing project delivery, improving collaboration, and driving innovation. As digital transformation sweeps through construction, BIM stands at the forefront, offering a powerful toolset for managing the entire lifecycle of a building.</p>
