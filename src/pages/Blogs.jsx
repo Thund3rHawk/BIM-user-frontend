@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 import blog1 from "../assets/blogs/blog1.png";
 import blog2 from "../assets/blogs/blog2.png";
 import blog3 from "../assets/blogs/blog3.png";
-import blog4 from "../assets/blogs/blog4.png";
+import blog4 from "../assets/blogs/blog4.jpg";
 import blog5 from "../assets/blogs/blog5.png";
 import blog6 from "../assets/blogs/blog6.png";
 import { FiArrowRight } from "react-icons/fi";

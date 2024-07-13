@@ -31,7 +31,7 @@ const Footer = () => {
           <ul className="space-y-2 pt-5">
             <li>
               <a href="#" className="text-gray-200 hover:underline">
-                Teach on The bim Skills
+                Teach on The BIM skills
               </a>
             </li>
             <li>

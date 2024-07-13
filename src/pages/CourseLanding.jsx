@@ -127,24 +127,20 @@ const CourseLanding = () => {
                   </h1>
                   <div className="flex gap-10">
                     <button
-                      className="flex gap-2 items-center justify-center text-xl text-white font-semibold px-4 py-2 rounded-md w-[300px]"
-                      style={{
-                        background:
-                          "linear-gradient(to top, black, black, white)",
-                        border: "1px solid #FF006B",
+                      onClick={() => {
+                        navigate("/allcourses");
                       }}
+                      className="flex gap-2 items-center justify-center text-xl text-white font-semibold px-4 py-2 rounded-md w-[300px] bg-black"
+                      // style={{
+                      //   background:
+                      //     "linear-gradient(to top, black, black, white)",
+                      //   border: "1px solid #FF006B",
+                      // }}
                     >
                       Explore Courses
                       <TfiArrowTopRight />
                     </button>
-                    <button
-                      className="flex gap-2 items-center justify-center text-xl text-white font-semibold px-4 py-2 rounded-md w-[300px]"
-                      style={{
-                        background:
-                          "linear-gradient(to top, black, black, white)",
-                        border: "1px solid #FF006B",
-                      }}
-                    >
+                    <button className="flex gap-2 items-center justify-center text-xl text-white font-semibold px-4 py-2 rounded-md w-[300px] bg-black">
                       Request a Call Back
                       <TfiArrowTopRight />
                     </button>
@@ -286,7 +282,7 @@ const CourseLanding = () => {
 
       {/* mentors section  */}
 
-      <div>
+      {/* <div>
         <div className="p-20">
           <div className="flex gap-4 items-center">
             <h1 className="text-xl">Expert Mentors</h1>
@@ -361,7 +357,7 @@ const CourseLanding = () => {
             <img src={review4} alt="logo1" className="rounded-md" />
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* training section  */}
 

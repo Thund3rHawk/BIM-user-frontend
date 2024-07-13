@@ -200,7 +200,11 @@ const About = () => {
       {/* solution section */}
       <div className="flex">
         <div className="w-1/3">
-          <img src={solution} alt="solution" className="w-full" />
+          <img
+            src={solution}
+            alt="solution"
+            className="w-full h-full object-cover"
+          />
         </div>
         <div className="w-2/3 p-16 flex flex-col gap-5 bg-[#1761B6]">
           <h1 className="text-4xl text-white font-bold w-96">
