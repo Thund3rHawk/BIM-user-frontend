@@ -14,6 +14,10 @@ import one from "../assets/about/1.png";
 import two from "../assets/about/2.png";
 import three from "../assets/about/3.png";
 import four from "../assets/about/4.png";
+import five from "../assets/about/5.png";
+import six from "../assets/about/6.png";
+import seven from "../assets/about/7.png";
+import eight from "../assets/about/8.png";
 import vision from "../assets/about/vision.png";
 import icon1 from "../assets/home/icon1.png";
 import icon2 from "../assets/home/icon2.png";
@@ -21,12 +25,16 @@ import icon3 from "../assets/home/icon3.png";
 import icon4 from "../assets/home/icon4.png";
 import icon5 from "../assets/home/icon5.png";
 import icon6 from "../assets/home/icon6.png";
+import mainbg from "../assets/about/mainbg.png";
+import hands from "../assets/about/hands.png";
+import icon from "../assets/home/7.png";
+import { FaRegCheckCircle } from "react-icons/fa";
 
 const About = () => {
   return (
     <div className="overflow-x-hidden">
       <Navbar />
-      <div className="flex flex-col justify-center items-center gap-3 my-10">
+      {/* <div className="flex flex-col justify-center items-center gap-3 my-10">
         <h1 className="text-lg font-bold text-blue-600">About Us</h1>
         <h1 className="text-4xl font-bold">
           About the <span className="text-[#FF006B]">Company</span>
@@ -34,7 +42,7 @@ const About = () => {
         <h1 className="text-xl text-gray-500">
           Learn more about the company and the team behind it.
         </h1>
-      </div>
+      </div> */}
       {/* <div className="px-10 pb-10 flex">
         <div className="w-1/2 flex justify-center items-center">
           <img src={image} alt="image" className="w-[70%]" />
@@ -69,7 +77,7 @@ const About = () => {
       </div> */}
 
       {/* first section */}
-      <div className="flex">
+      {/* <div className="flex">
         <div className="flex flex-col gap-10 justify-between w-60 px-16 pb-10 pt-5">
           <div className="">
             <h1 className="text-5xl font-medium">1,391</h1>
@@ -118,10 +126,10 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* services section */}
-      <div
+      {/* <div
         style={{
           backgroundImage: `url(${services})`,
           backgroundSize: "cover",
@@ -193,6 +201,163 @@ const About = () => {
               <FaArrowCircleRight color="white" />
               <h1 className="font-bold text-white text-lg">Request a Quote</h1>
             </button>
+          </div>
+        </div>
+      </div> */}
+
+      {/* main section  */}
+
+      <div
+        style={{
+          backgroundImage: `url(${mainbg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          height: "50vh",
+          width: "100%",
+        }}
+        className="flex flex-col gap-3 text-white justify-center items-center"
+      >
+        <h1 className="text-5xl font-semibold">About Us</h1>
+        <h1 className="text-lg">Get Solution for all your BIM requirements.</h1>
+      </div>
+
+      {/* who we are  */}
+      <div className="flex gap-6 p-20">
+        <img src={icon} className="w-10 h-10" />
+        <div className="flex flex-col gap-4">
+          <h1 className="text-3xl font-semibold">Who We Are</h1>
+          <h1 className="text-lg">
+            Advenser, a versatile engineering services company, brings
+            cutting-edge engineering solutions to the construction industry.
+            Derived from Advanced Engineering Services,our name Advenser
+            reflects our commitment to pushing the boundaries of innovation and
+            expertise. Since our establishment in 2007, we have become a trusted
+            provider,leveraging state-of-the-art tools like BIM to deliver
+            exceptional results.
+          </h1>
+        </div>
+      </div>
+
+      {/* our approach  */}
+
+      <div className="flex gap-6 px-20 pb-20">
+        <img src={icon} className="w-10 h-10" />
+        <div className="flex flex-col gap-4">
+          <h1 className="text-3xl font-semibold">Our Approach</h1>
+          <div className="flex mt-10 border-t-2 border-gray shadow-md">
+            <div className="p-8 flex flex-col gap-2 items-center ">
+              <img src={five} alt="one" className="w-20 h-20" />
+              <h1 className="text-xl font-bold  text-center">
+                Understanding Client Requirements
+              </h1>
+              <h1 className="text-lg text-center">
+                With every client, we understand that a different approach may
+                need to be employed with every project, bringing a new set of
+                skills and technology to the table. We devote the time needed to
+                study the objective of the project.
+              </h1>
+            </div>
+            <div className="p-8 border-l-2 border-gray  flex flex-col gap-2 items-center ">
+              <img src={six} alt="one" className="w-20 h-20" />
+              <h1 className="text-xl font-bold  text-center">
+                Delivering Solutions
+              </h1>
+              <h1 className="text-lg text-center">
+                To achieve the goals of the project, our engineers adopt the
+                most appropriate methods, outdoing themselves. Our work is to
+                follow a data driven process incorporating the latest methods in
+                the BIM industry which ensures .....
+              </h1>
+            </div>
+            <div className="p-8  border-l-2 border-gray  flex flex-col gap-2 items-center ">
+              <img src={seven} alt="one" className="w-20 h-20" />
+              <h1 className="text-xl font-bold  text-center">
+                Continuous Improvement
+              </h1>
+              <h1 className="text-lg text-center">
+                The engineering team, led by highly capable and seasoned project
+                managers tirelessly learn, research and update themselves to
+                meet the ever-changing and dynamic demands of the AEC industry.
+                Systematic....
+              </h1>
+            </div>
+            <div className="p-8  border-l-2 border-gray  flex flex-col gap-2 items-center ">
+              <img src={eight} alt="one" className="w-20 h-20" />
+              <h1 className="text-xl font-bold  text-center">Our Promise</h1>
+              <h1 className="text-lg text-center">
+                Client satisfaction is a promise we assure and we measure our
+                successes on par with that of our client’s. We take pride in our
+                past glory & achievements but at the same time strive to make
+                them nothing more .....
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* our key values  */}
+
+      <div className="flex gap-6 px-20 pb-20 ">
+        <img src={icon} className="w-10 h-10" />
+        <div className="flex flex-col gap-4 w-full">
+          <h1 className="text-3xl font-semibold">Our Key Values</h1>
+          <div className="w-full flex">
+            <div className="w-1/2  flex flex-col gap-6 p-16">
+              <div className="flex  gap-4">
+                <FaRegCheckCircle size={20} className="mt-1" />
+                <div className="flex flex-col gap-1">
+                  <h1 className="text-2xl font-semibold">
+                    Customer Satisfaction
+                  </h1>
+                  <h1 className="text-lg text-gray-500">
+                    To surpass client expectations consistently
+                  </h1>
+                </div>
+              </div>
+              <div className="flex  gap-4">
+                <FaRegCheckCircle size={20} className="mt-1" />
+                <div className="flex flex-col gap-1">
+                  <h1 className="text-2xl font-semibold">Standards</h1>
+                  <h1 className="text-lg text-gray-500">
+                    To set laudable standards in all our business and
+                    transactions
+                  </h1>
+                </div>
+              </div>
+              <div className="flex  gap-4">
+                <FaRegCheckCircle size={20} className="mt-1 " />
+                <div className="flex flex-col gap-1">
+                  <h1 className="text-2xl font-semibold">Integrity</h1>
+                  <h1 className="text-lg text-gray-500">
+                    To be sincere, ethical and transparent in all our
+                    transactions
+                  </h1>
+                </div>
+              </div>
+              <div className="flex  gap-4">
+                <FaRegCheckCircle size={20} className="mt-1 w-7 h-7" />
+                <div className="flex flex-col gap-1">
+                  <h1 className="text-2xl font-semibold">Fairness</h1>
+                  <h1 className="text-lg text-gray-500">
+                    To accommodate all clients, whether its big business houses
+                    or small business entities, equally
+                  </h1>
+                </div>
+              </div>
+              <div className="flex  gap-4">
+                <FaRegCheckCircle size={20} className="mt-1 w-8 h-8" />
+                <div className="flex flex-col gap-1">
+                  <h1 className="text-2xl font-semibold">Technology update</h1>
+                  <h1 className="text-lg text-gray-500">
+                    To continuously update our skill-set and technology matrix
+                    with the changing times to become the best.
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div className="w-1/2  bg-red-400">
+              <img src={hands} className="w-full h-full object-cover" />
+            </div>
           </div>
         </div>
       </div>
