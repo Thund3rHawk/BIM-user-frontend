@@ -98,18 +98,18 @@ const ContactUs = () => {
             discuss how we can support your project.
           </h1>
           <div className="flex gap-4 w-72">
-            <PiDeviceMobileBold size={30} />
+            <PiDeviceMobileBold className="text-white/[0.6]" size={30} />
             <div className="flex flex-col gap-2">
               <h1 className="font-bold">MAIL & PHONE</h1>
-              <h1>services@thebimskills.com</h1>
-              <h1>+91 98102 12345</h1>
+              <h1 className="text-white/[0.4]">services@thebimskills.com</h1>
+              <h1 className="text-white/[0.4]">+91 98102 12345</h1>
             </div>
           </div>
           <div className="flex gap-4 w-72">
-            <GrMapLocation size={30} className="w-20" />
+            <GrMapLocation className="text-white/[0.6] w-20" size={30} />
             <div className="flex flex-col gap-2">
               <h1 className="font-bold">ADDRESS</h1>
-              <h1>
+              <h1 className="text-white/[0.4]">
                 First Floor, RS Complex, Opp.Bombay Building, Near GND Eng.
                 College, Bidar - 585401, Karnataka(INDIA)
               </h1>
