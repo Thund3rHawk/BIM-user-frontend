@@ -161,7 +161,7 @@ const Services = () => {
 
       <div className="flex mt-10">
         <img src={services2} alt="building" className="w-1/2" />
-        <div className="bg-[#FF006B] flex flex-col w-1/2  gap-10 justify-center px-20 ">
+        <div className="bg-[#FF006B] flex flex-col w-1/2  gap-28  p-10 ">
           {/* <h1 className="text-white text-4xl font-bold">
             Sustainable BIM Services
           </h1>
@@ -181,29 +181,29 @@ const Services = () => {
               Explore our Design Services
             </h1>
           </button> */}
-          <h1 className="text-5xl font-semibold text-white">
+          <h1 className="text-6xl font-semibold text-white">
             Our <span className="text-blue-600">Values :</span>
           </h1>
-          <div className="flex gap-8 flex-wrap">
+          <div className="flex gap-8 flex-wrap justify-center">
             <div className="flex gap-4">
               <img src={seven} className="" />
-              <h1 className="text-3xl font-semibold text-white">Honesty</h1>
+              <h1 className="text-4xl font-semibold text-white">Honesty</h1>
             </div>
             <div className="flex gap-4">
               <img src={seven} className="" />
-              <h1 className="text-3xl font-semibold text-white">Excellence</h1>
+              <h1 className="text-4xl font-semibold text-white">Excellence</h1>
             </div>
             <div className="flex gap-4">
               <img src={seven} className="" />
-              <h1 className="text-3xl font-semibold text-white">Team Work</h1>
+              <h1 className="text-4xl font-semibold text-white">Team Work</h1>
             </div>
             <div className="flex gap-4">
               <img src={seven} className="" />
-              <h1 className="text-3xl font-semibold text-white">Reliability</h1>
+              <h1 className="text-4xl font-semibold text-white">Reliability</h1>
             </div>
             <div className="flex gap-4">
               <img src={seven} className="" />
-              <h1 className="text-3xl font-semibold text-white">Agility</h1>
+              <h1 className="text-4xl font-semibold text-white">Agility</h1>
             </div>
           </div>
         </div>
