@@ -27,6 +27,7 @@ import icon5 from "../assets/home/icon5.png";
 import icon6 from "../assets/home/icon6.png";
 import mainbg from "../assets/about/mainbg.png";
 import hands from "../assets/about/hands.png";
+import main from "../assets/about/main.png";
 import icon from "../assets/home/7.png";
 import { FaRegCheckCircle } from "react-icons/fa";
 
@@ -226,15 +227,29 @@ const About = () => {
         <img src={icon} className="w-10 h-10" />
         <div className="flex flex-col gap-4">
           <h1 className="text-3xl font-semibold">Who We Are</h1>
-          <h1 className="text-lg">
-            Advenser, a versatile engineering services company, brings
-            cutting-edge engineering solutions to the construction industry.
-            Derived from Advanced Engineering Services,our name Advenser
-            reflects our commitment to pushing the boundaries of innovation and
-            expertise. Since our establishment in 2007, we have become a trusted
-            provider,leveraging state-of-the-art tools like BIM to deliver
-            exceptional results.
-          </h1>
+          <div className="flex gap-6">
+            <img src={main} />
+            <h1 className="text-xl">
+              At The BIM skills, our founder, Syed Amaan Quadri, is a
+              trailblazer in Building Information Modeling (BIM), renowned not
+              only for his groundbreaking projects but also for his
+              transformative training initiatives that have impacted
+              professionals worldwide. With a passion for innovation and a
+              commitment to education, Syed Amaan Quadri has led our team in
+              implementing BIM solutions across a diverse range of projects,
+              including the iconic NEOM Logistics Park landscape, pioneering
+              digital twin housing projects in the Netherlands, and warehouse
+              improvement initiatives in South Africa, Residential Projects in
+              Dubai, Sharjah, Commercial Projects in India. Through his
+              visionary leadership and dedication to education, Syed Amaan
+              Quadri has not only transformed organizations through
+              groundbreaking projects but has also equipped professionals with
+              the experience needed to drive innovation and excellence in their
+              respective fields. At The BIM Skills, we're proud to be guided by
+              a leader whose impact extends far beyond projects, leaving an
+              enduring legacy of knowledge, empowerment, and transformation."
+            </h1>
+          </div>
         </div>
       </div>
 
