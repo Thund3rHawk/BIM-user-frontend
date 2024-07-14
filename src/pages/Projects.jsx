@@ -12,7 +12,7 @@ import africa from "../assets/projects/africa.png";
 import netherland from "../assets/projects/netherland.png";
 import project4 from "../assets/projects/project4.png";
 import project5 from "../assets/projects/project5.png";
-import project6 from "../assets/projects/project6.png";
+import project6 from "../assets/projects/project6.jpg";
 
 const projectData = [
   {
@@ -41,13 +41,13 @@ const projectData = [
   },
   {
     subtitle: "BIM",
-    title: "Test Project",
+    title: "USA  story Country House",
     image: project5,
     courseLink: "#",
   },
   {
     subtitle: "BIM",
-    title: "Test Project",
+    title: "Facade project",
     image: project6,
     courseLink: "#",
   },
@@ -64,7 +64,7 @@ const Projects = () => {
           }}
           className="w-1/2 flex justify-center items-center  relative"
         >
-          <img src={bgImage} alt="logo" className="w-full h-full" />
+          {/* <img src={bgImage} alt="logo" className="w-full h-full" /> */}
           <div className="flex flex-col gap-5  m-16 absolute">
             <h1 className="text-5xl font-bold text-white">
               NEOM - LOGISTICS PARK LANDSCAPE PROJECT
@@ -85,7 +85,7 @@ const Projects = () => {
           </div>
         </div>
         <div className=" w-1/2 flex  justify-end ">
-          <img src={projectsmain} alt="projectsmain" className="w-full" />
+          <img src={neom} alt="projectsmain" className="w-full" />
         </div>
       </div>
 

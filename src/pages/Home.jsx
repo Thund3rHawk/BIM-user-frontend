@@ -613,7 +613,7 @@ const Home = () => {
             <img
               src={landscape}
               alt="projectgroup"
-              className="w-[80%] h-full "
+              className="w-[90%] h-full rounded-md "
             />
           </div>
           <div className="w-1/2 flex flex-col justify-end gap-5 mr-20">

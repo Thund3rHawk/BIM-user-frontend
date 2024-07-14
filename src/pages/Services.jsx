@@ -13,6 +13,7 @@ import services2 from "../assets/services/services2.png";
 import service1 from "../assets/services/service1.jpg";
 import service2 from "../assets/services/service2.jpg";
 import service3 from "../assets/services/service3.jpg";
+import seven from "../assets/home/7.png";
 
 const Services = () => {
   return (
@@ -160,8 +161,8 @@ const Services = () => {
 
       <div className="flex mt-10">
         <img src={services2} alt="building" className="w-1/2" />
-        <div className="bg-[#FF006B] flex flex-col gap-3 justify-center px-20 ">
-          <h1 className="text-white text-4xl font-bold">
+        <div className="bg-[#FF006B] flex flex-col w-1/2 pl-60 gap-8 justify-center px-20 ">
+          {/* <h1 className="text-white text-4xl font-bold">
             Sustainable BIM Services
           </h1>
           <h1 className="text-white text-lg">
@@ -179,7 +180,27 @@ const Services = () => {
             <h1 className="text-white font-bold">
               Explore our Design Services
             </h1>
-          </button>
+          </button> */}
+          <div className="flex gap-4">
+            <img src={seven} className="" />
+            <h1 className="text-3xl font-semibold text-white">Honesty</h1>
+          </div>
+          <div className="flex gap-4">
+            <img src={seven} className="" />
+            <h1 className="text-3xl font-semibold text-white">Excellence</h1>
+          </div>
+          <div className="flex gap-4">
+            <img src={seven} className="" />
+            <h1 className="text-3xl font-semibold text-white">Team Work</h1>
+          </div>
+          <div className="flex gap-4">
+            <img src={seven} className="" />
+            <h1 className="text-3xl font-semibold text-white">Reliability</h1>
+          </div>
+          <div className="flex gap-4">
+            <img src={seven} className="" />
+            <h1 className="text-3xl font-semibold text-white">Agility</h1>
+          </div>
         </div>
       </div>
       <Contact />
