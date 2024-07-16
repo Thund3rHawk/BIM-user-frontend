@@ -14,6 +14,7 @@ import service1 from "../assets/services/service1.jpg";
 import service2 from "../assets/services/service2.jpg";
 import service3 from "../assets/services/service3.jpg";
 import seven from "../assets/home/7.png";
+import pinkIcon from "../assets/services/pink-icon.png";
 
 const Services = () => {
   return (
@@ -161,49 +162,30 @@ const Services = () => {
 
       <div className="flex mt-10">
         <img src={services2} alt="building" className="w-1/2" />
-        <div className="bg-[#FF006B] flex flex-col w-1/2  gap-28  p-10 ">
-          {/* <h1 className="text-white text-4xl font-bold">
-            Sustainable BIM Services
-          </h1>
-          <h1 className="text-white text-lg">
-            We provide sustainable BIM services that are developed using
-            environmentally conscious and energy-efficient design principles. We
-            cover the entire project lifecycle with energy modeling and
-            sustainability consulting. We move forward with customized solutions
-            to meet each project's specific sustainability goals, such as LEED
-            certification, Net-Zero Energy, and the Living Building Challenge.
-            Our team maintains up-to-date knowledge on the latest industry
-            standards and technologies to provide innovative and cost-effective
-            solutions that result in high-performance and sustainable buildings.
-          </h1>
-          <button className="border border-white rounded-md p-2 w-52">
-            <h1 className="text-white font-bold">
-              Explore our Design Services
-            </h1>
-          </button> */}
+        <div className="bg-gradient-to-r from-[#0B64BA] to-[#D1306B] flex flex-col w-1/2  gap-28  p-10 ">
           <h1 className="text-6xl font-semibold text-white">
-            Our <span className="text-blue-600">Values :</span>
+            Our <span className="text-[#D1306B]">Values :</span>
           </h1>
           <div className="flex gap-8 flex-wrap justify-center">
             <div className="flex gap-4">
-              <img src={seven} className="" />
+              <img src={pinkIcon} className="" />
               <h1 className="text-4xl font-semibold text-white">Honesty</h1>
             </div>
             <div className="flex gap-4">
-              <img src={seven} className="" />
+              <img src={pinkIcon} className="" />
               <h1 className="text-4xl font-semibold text-white">Excellence</h1>
             </div>
             <div className="flex gap-4">
               <img src={seven} className="" />
-              <h1 className="text-4xl font-semibold text-white">Team Work</h1>
+              <h1 className="text-4xl font-semibold text-white">Agility</h1>
             </div>
             <div className="flex gap-4">
-              <img src={seven} className="" />
+              <img src={pinkIcon} className="" />
               <h1 className="text-4xl font-semibold text-white">Reliability</h1>
             </div>
             <div className="flex gap-4">
               <img src={seven} className="" />
-              <h1 className="text-4xl font-semibold text-white">Agility</h1>
+              <h1 className="text-4xl font-semibold text-white">TeamWork</h1>
             </div>
           </div>
         </div>
