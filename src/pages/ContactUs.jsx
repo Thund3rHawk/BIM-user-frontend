@@ -83,7 +83,7 @@ const ContactUs = () => {
             </div>
             <div className="flex items-center justify-between">
               <button
-                className="bg-blue-950 w-60 hover:bg-blue-800  text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                className="bg-[#FF006B] w-60 hover:bg-blue-800  text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                 type="button"
               >
                 Send Message
@@ -91,7 +91,7 @@ const ContactUs = () => {
             </div>
           </form>
         </div>
-        <div className="w-[50%] bg-gray-900 text-white p-20 pl-32 flex flex-col gap-5">
+        <div className="w-[50%] bg-gradient-to-r from-[#0B64BA] to-[#D1306B] text-white p-20 pl-32 flex flex-col gap-5">
           <h1 className="text-3xl font-semibold">Let's Get Started</h1>
           <h1 className="text-white/[0.6]">
             We eager to help you with BIM needs. Reach out today, and let's

@@ -255,7 +255,7 @@ const About = () => {
 
       {/* our approach  */}
 
-      <div className="flex gap-6 px-20 pb-20">
+      {/* <div className="flex gap-6 px-20 pb-20">
         <img src={icon} className="w-10 h-10" />
         <div className="flex flex-col gap-4">
           <h1 className="text-3xl font-semibold">Our Approach</h1>
@@ -308,7 +308,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* our key values  */}
 
@@ -321,28 +321,25 @@ const About = () => {
               <div className="flex  gap-4">
                 <FaRegCheckCircle size={20} className="mt-1" />
                 <div className="flex flex-col gap-1">
-                  <h1 className="text-2xl font-semibold">
-                    Customer Satisfaction
-                  </h1>
+                  <h1 className="text-2xl font-semibold">HONESTY</h1>
                   <h1 className="text-lg text-gray-500">
-                    To surpass client expectations consistently
+                    Honesty builds trust and respect.
                   </h1>
                 </div>
               </div>
               <div className="flex  gap-4">
                 <FaRegCheckCircle size={20} className="mt-1" />
                 <div className="flex flex-col gap-1">
-                  <h1 className="text-2xl font-semibold">Standards</h1>
+                  <h1 className="text-2xl font-semibold">EXCELENCE</h1>
                   <h1 className="text-lg text-gray-500">
-                    To set laudable standards in all our business and
-                    transactions
+                    Excellence drives success and innovation.
                   </h1>
                 </div>
               </div>
               <div className="flex  gap-4">
                 <FaRegCheckCircle size={20} className="mt-1 " />
                 <div className="flex flex-col gap-1">
-                  <h1 className="text-2xl font-semibold">Integrity</h1>
+                  <h1 className="text-2xl font-semibold">AGILITY</h1>
                   <h1 className="text-lg text-gray-500">
                     To be sincere, ethical and transparent in all our
                     transactions
@@ -352,7 +349,7 @@ const About = () => {
               <div className="flex  gap-4">
                 <FaRegCheckCircle size={20} className="mt-1 w-7 h-7" />
                 <div className="flex flex-col gap-1">
-                  <h1 className="text-2xl font-semibold">Fairness</h1>
+                  <h1 className="text-2xl font-semibold">RELABILITY</h1>
                   <h1 className="text-lg text-gray-500">
                     To accommodate all clients, whether its big business houses
                     or small business entities, equally
@@ -362,7 +359,7 @@ const About = () => {
               <div className="flex  gap-4">
                 <FaRegCheckCircle size={20} className="mt-1 w-8 h-8" />
                 <div className="flex flex-col gap-1">
-                  <h1 className="text-2xl font-semibold">Technology update</h1>
+                  <h1 className="text-2xl font-semibold">TEAM WORK</h1>
                   <h1 className="text-lg text-gray-500">
                     To continuously update our skill-set and technology matrix
                     with the changing times to become the best.
@@ -512,7 +509,7 @@ const About = () => {
       </div>
 
       {/* work section */}
-      <div className="p-16 ">
+      {/* <div className="p-16 ">
         <h1 className="text-4xl font-bold">How we work</h1>
         <h1 className="text-xl font-bold text-[#4B4B4B] w-[60%]">
           Our work is our Pride. We assist the project holders in knowing the
@@ -553,7 +550,7 @@ const About = () => {
             </h1>
           </div>
         </div>
-      </div>
+      </div> */}
       <Footer />
     </div>
   );

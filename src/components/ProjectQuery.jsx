@@ -1,14 +1,14 @@
 import React from "react";
 import image from "../assets/contact.png";
 
-const Contact = () => {
+const ProjectQuery = () => {
   return (
     <div
       style={{
         backgroundImage: `url(${image})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        height: "120vh",
+        height: "130vh",
         width: "100%",
         display: "flex",
         alignItems: "center",
@@ -18,7 +18,7 @@ const Contact = () => {
       <div className="flex w-4/5  bg-opacity-75">
         <div className="flex-1 flex flex-col justify-center items-start p-8 text-white">
           <h1 className="text-6xl font-bold mb-4">
-            Send Your Requirements For Training.
+            Send Your BIM Requirements For Your Next Project.
           </h1>
           <p className="text-xl font-bold mb-3">Connect with our BIM team!</p>
           <button className="p-2 px-3 bg-[#FF006B] rounded-md">
@@ -26,7 +26,7 @@ const Contact = () => {
           </button>
         </div>
         <div className="flex-1 flex flex-col items-start p-8 bg-white shadow-lg rounded-lg">
-          <h1 className="text-2xl font-bold mb-2">Course Enquiry Form</h1>
+          <h1 className="text-2xl font-bold mb-2">Project Enquiry Form</h1>
           <h2 className="text-lg mb-6">
             Our friendly team would love to hear from you
           </h2>
@@ -94,13 +94,13 @@ const Contact = () => {
                 className="block text-gray-700 text-sm font-bold mb-2"
                 htmlFor="phone"
               >
-                Company Name
+                Project Name
               </label>
               <input
                 className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="companyname"
                 type="text"
-                placeholder="Your Company Name"
+                placeholder="Your Project Name"
               />
             </div>
             <div className="mb-4">
@@ -108,13 +108,13 @@ const Contact = () => {
                 className="block text-gray-700 text-sm font-bold mb-2"
                 htmlFor="phone"
               >
-                Position
+                Project Loaction
               </label>
               <input
                 className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="phone"
                 type="text"
-                placeholder="Your Position at Company"
+                placeholder="Your Project Loaction"
               />
             </div>
             <div className="mb-4">
@@ -122,13 +122,27 @@ const Contact = () => {
                 className="block text-gray-700 text-sm font-bold mb-2"
                 htmlFor="phone"
               >
-                Course of Interest
+                Project Type
               </label>
               <input
                 className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="phone"
                 type="text"
-                placeholder="Your course of interest"
+                placeholder="Your Project Type"
+              />
+            </div>
+            <div className="mb-4">
+              <label
+                className="block text-gray-700 text-sm font-bold mb-2"
+                htmlFor="phone"
+              >
+                Service Required
+              </label>
+              <input
+                className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="phone"
+                type="text"
+                placeholder="Your Service Required"
               />
             </div>
             <div className="mb-4">
@@ -136,7 +150,7 @@ const Contact = () => {
                 className="block text-gray-700 text-sm font-bold mb-2"
                 htmlFor="message"
               >
-                Message
+                Additional Information
               </label>
               <textarea
                 className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -160,4 +174,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ProjectQuery;

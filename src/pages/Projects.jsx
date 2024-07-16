@@ -13,6 +13,7 @@ import netherland from "../assets/projects/netherland.png";
 import project4 from "../assets/projects/project4.png";
 import project5 from "../assets/projects/project5.png";
 import project6 from "../assets/projects/project6.jpg";
+import ProjectQuery from "../components/ProjectQuery";
 
 const projectData = [
   {
@@ -23,13 +24,13 @@ const projectData = [
   },
   {
     subtitle: "BIM",
-    title: "KWA-ZULU NATAL DEPARTMENT OF WORKS South Africa",
+    title: "Netherlands Housing Units Digital Twins",
     image: africa,
     courseLink: "#",
   },
   {
     subtitle: "BIM",
-    title: "Netherlands Housing Units Digital Twins",
+    title: "KWA-ZULU NATAL DEPARTMENT OF WORKS South Africa",
     image: netherland,
     courseLink: "#",
   },
@@ -132,7 +133,7 @@ const Projects = () => {
 
         <div className="w-[60%] z-0 -right-10 top-36 absolute h-12 bg-[#FF006B] transform -rotate-6" />
       </div> */}
-      <Contact />
+      <ProjectQuery />
       <Footer />
     </div>
   );

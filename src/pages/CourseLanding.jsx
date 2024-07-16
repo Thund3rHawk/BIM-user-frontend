@@ -16,6 +16,8 @@ import { useNavigate } from "react-router-dom";
 import realWorldProject from "../assets/courses/real-world-projects.jpg";
 import globeIcon from "../assets/courses/globe-icon.png";
 import remoteIcon from "../assets/courses/remote-icon.png";
+import wayIcon from "../assets/courses/way-icon.png";
+import computerIcon from "../assets/courses/computer-icon.png";
 import sideIcon from "../assets/courses/side-icon.png";
 import courses from "../assets/courses/courses.png";
 import CourseCard from "../components/CourseCard";
@@ -100,12 +102,12 @@ const courseData = [
 
 const CourseLanding = () => {
   const navigate = useNavigate();
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: "smooth",
+  //   });
+  // }, []);
   return (
     <div className="overflow-x-hidden">
       <Navbar />
@@ -395,7 +397,7 @@ const CourseLanding = () => {
 
       <div className="flex shadow-lg">
         <div className="w-1/2 h-full">
-          <div className="px-14 py-20">
+          <div className="px-14 pt-20">
             <div className="flex items-center gap-5">
               <h1 className="text-lg">Practical Training</h1>
               <div className="bg-black h-[2px] w-32" />
@@ -405,11 +407,11 @@ const CourseLanding = () => {
               <span className="text-[#FF006B]">Real-World Project</span>
             </h1>
             <h1 className="text-xl">
-              Want to become a BIM expert? The BIM Skills Company offers you the
-              unique opportunity to work on real-world projects from
-              international cities. Our courses are designed to provide hands-on
-              experience, significantly enhancing your portfolio and giving you
-              a competitive edge in the industry. By tackling diverse and
+              Want to become a BIM expert? The BIM skills offers you the unique
+              opportunity to work on real-world projects from international
+              cities. Our courses are designed to provide hands-on experience,
+              significantly enhancing your portfolio and giving you a
+              competitive edge in the industry. By tackling diverse and
               challenging projects, you'll gain practical skills and global
               insights, preparing you to excel in the BIM field.
             </h1>
@@ -419,7 +421,7 @@ const CourseLanding = () => {
             <div className="w-1/2 p-2">
               <img src={globeIcon} />
               <h1 className="text-xl font-semibold my-4">
-                International Exposure
+                International Project
               </h1>
               <div className="h-[1px] w-full bg-gray-400" />
               <h1>
@@ -429,13 +431,33 @@ const CourseLanding = () => {
             </div>
             <div className="w-1/2 p-2">
               <img src={remoteIcon} />
+              <h1 className="text-xl font-semibold my-4">Practical Approach</h1>
+              <div className="h-[1px] w-full bg-gray-400" />
+              <h1>
+                Experience project management and innovation in a dynamic
+                virtual simulation environment.
+              </h1>
+            </div>
+          </div>
+          <div className="flex px-14 pb-10">
+            <div className="w-1/2 p-2">
+              <img src={computerIcon} />
+              <h1 className="text-xl font-semibold my-4">In-depth Sessions</h1>
+              <div className="h-[1px] w-full bg-gray-400" />
+              <h1>
+                Engage in immersive, detailed sessions to master project
+                management and innovative solutions.
+              </h1>
+            </div>
+            <div className="w-1/2 p-2">
+              <img src={wayIcon} />
               <h1 className="text-xl font-semibold my-4">
-                Gamified Experience
+                High Level of BIM Standards
               </h1>
               <div className="h-[1px] w-full bg-gray-400" />
               <h1>
-                Take instructions from a client, pitch innovative solutions, and
-                see your project unfold – all in a virtual simulation.
+                Achieve excellence with top-tier BIM standards in all project
+                phases and details.
               </h1>
             </div>
           </div>
@@ -443,26 +465,32 @@ const CourseLanding = () => {
         <img src={realWorldProject} className="w-1/2" />
       </div>
 
-      <div className="h-[40vh] pl-40 relative">
-        <div
+      <div className=" pl-40 relative my-16">
+        {/* <div
           className="h-full w-[3px] absolte left-36"
           style={{
             background: `linear-gradient(to bottom, #E5C360, #DA45C2, #6938EF)`,
           }}
-        />
-        <div className="absolute top-20 left-36 w-1/2 flex items-center gap-10 ">
-          <div className="bg-white">
-            <img src={sideIcon} className="my-1 w-16 h-10" alt="sideIcon" />
+        /> */}
+        <div className=" top-20 left-36 w-1/2 flex  gap-10 ">
+          <div className=" w-[100%] ">
+            <img src={sideIcon} className="my-1 w-14 h-14 " alt="sideIcon" />
           </div>
           <div>
-            <h1 className="text-lg">Innovative Learning</h1>
+            <h1 className="text-lg">Mastering BIM</h1>
             <h1 className="text-4xl font-semibold">
-              An Unforgettable Experience
+              A Transformative Learning Journey
             </h1>
             <h1 className="text-xl">
-              Traditional teaching methods have no place in the modern world.
-              That's why we infuse digital tools with new-age pedagogies to
-              enhance your learning.
+              At The BIM skills, we revolutionize learning by integrating
+              cutting-edge digital tools with modern pedagogies. Our training
+              program in Building Information Modeling (BIM) goes beyond
+              traditional methods, ensuring a transformative educational
+              experience. Through hands-on modules and real-world projects,
+              participants gain proficiency in leading BIM software and
+              collaborative workflows. This approach not only enhances technical
+              skills but also prepares individuals to innovate and excel in
+              today's dynamic AEC industry.
             </h1>
           </div>
         </div>
