@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import quoteImage from "../assets/contact/quote.jpg";
 
 const Quote = () => {
   return (
@@ -10,10 +11,12 @@ const Quote = () => {
         style={{
           background: "linear-gradient(to bottom right, #0067BF, #DD2D66)",
         }}
-        className="w-full px-[20%] py-40"
+        className="w-full flex "
       >
-        <div className="flex-1 flex flex-col items-start p-8 bg-white shadow-lg rounded-lg">
-          <h1 className="text-2xl font-bold mb-2">Quotation Form</h1>
+        <div className="flex-1 flex flex-col items-start p-8 bg-white px-40 py-20">
+          <h1 className="text-2xl font-bold mb-2">
+            Request Quotation For Our Courses
+          </h1>
           <h2 className="text-lg mb-6">
             Are you an architect or engineer looking to enhance your skills with
             our industry-leading BIM training programs? Please fill out the form
@@ -222,6 +225,10 @@ const Quote = () => {
             </div>
           </form>
         </div>
+
+        {/* image  */}
+
+        <img src={quoteImage} className="w-[35%] object-cover" />
       </div>
 
       <Footer />

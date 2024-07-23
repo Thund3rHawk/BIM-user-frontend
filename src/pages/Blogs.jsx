@@ -312,7 +312,7 @@ const Blogs = () => {
               <img
                 src={blog.image}
                 alt="blogs"
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-contain"
               />
               <div className="flex-1">
                 <h4 className="text-sm text-blue-600 font-bold">

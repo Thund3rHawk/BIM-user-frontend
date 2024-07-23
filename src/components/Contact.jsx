@@ -8,7 +8,7 @@ const Contact = () => {
         backgroundImage: `url(${image})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        height: "120vh",
+        height: "125vh",
         width: "100%",
         display: "flex",
         alignItems: "center",

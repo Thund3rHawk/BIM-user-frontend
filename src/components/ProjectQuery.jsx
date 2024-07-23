@@ -8,7 +8,7 @@ const ProjectQuery = () => {
         backgroundImage: `url(${image})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        height: "130vh",
+        height: "135vh",
         width: "100%",
         display: "flex",
         alignItems: "center",

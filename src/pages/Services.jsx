@@ -84,7 +84,7 @@ const Services = () => {
             <h1 className="text-white text-4xl">50+</h1>
             <h1 className="text-white text-4xl">Organizations</h1>
             <h1 className="text-white text-lg font-bold">
-              reply on BIM Services for their BIM needs
+              rely on BIM Services for their BIM needs
             </h1>
           </div>
         </div>

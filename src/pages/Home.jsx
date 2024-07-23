@@ -20,6 +20,8 @@ import icon3 from "../assets/home/icon3.png";
 import icon4 from "../assets/home/icon4.png";
 import icon5 from "../assets/home/icon5.png";
 import icon6 from "../assets/home/icon6.png";
+import icon7 from "../assets/home/icon7.png";
+import icon8 from "../assets/home/icon8.png";
 import peoplegroup from "../assets/home/peoplegroup.png";
 import peoplegroup2 from "../assets/home/peoplegroup2.png";
 import { FaQuoteLeft } from "react-icons/fa";
@@ -702,7 +704,7 @@ const Home = () => {
             </div>
           </div>
           <div className="flex w-[30%] gap-5">
-            <img src={icon5} alt="wave" className="h-10 w-10" />
+            <img src={icon7} alt="wave" className="h-10 w-10" />
             <div className="flex flex-col gap-3">
               <h1 className="text-xl font-bold">Better Visualization</h1>
               <h1>
@@ -712,7 +714,7 @@ const Home = () => {
             </div>
           </div>
           <div className="flex w-[30%] gap-5">
-            <img src={icon6} alt="wave" className="h-10 w-10" />
+            <img src={icon8} alt="wave" className="h-10 w-10" />
             <div className="flex flex-col gap-3">
               <h1 className="text-xl font-bold">Enhanced Quality Control</h1>
               <h1>
