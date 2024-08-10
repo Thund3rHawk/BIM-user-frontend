@@ -237,34 +237,25 @@ const Home = () => {
         {slideImages.map((slideImage, index) => (
           <div key={index}>
             <div
-              className="min-h-[90vh] p-20 flex justify-start m-10 rounded-xl "
-              // style={{
-              //   // background: "linear-gradient(to right, #0666BD, #D92E68)",
-              //   background: `url(${mainbg}) no-repeat center center/cover`,
-              // }}
-
+              className="min-h-[70vh] md:min-h-[90vh] p-10 md:p-20 flex justify-start m-5 md:m-10 rounded-xl"
               style={{
                 ...divStyle,
                 backgroundImage: `url(${slideImage.url})`,
               }}
             >
-              <div className="w-full flex flex-col gap-5 ">
-                <h1 className="text-7xl font-normal text-white w-[53%]">
+              <div className="w-full flex flex-col gap-5">
+                <h1 className="text-3xl md:text-7xl font-normal text-white w-full md:w-[53%]">
                   {slideImage.title}
                 </h1>
-                <h1 className="text-xl w-[50%] text-white">
+                <h1 className="text-base md:text-xl text-white w-full md:w-[50%]">
                   {slideImage.desc}
                 </h1>
-                <div className=" flex gap-10 mt-10  w-full">
+                <div className="flex flex-col md:flex-row gap-5 md:gap-10 mt-10 w-full">
                   <button
                     onClick={() => {
                       navigate("/courses");
                     }}
-                    className="flex gap-2 items-center justify-center text-xl text-white font-semibold px-4 py-2 rounded-md w-[300px] bg-black"
-                    // style={{
-                    //   background: "linear-gradient(to top, black, black, white)",
-                    //   border: "1px solid #FF006B",
-                    // }}
+                    className="flex gap-2 items-center justify-center text-base md:text-xl text-white font-semibold px-4 py-2 rounded-md w-full md:w-[300px] bg-black"
                   >
                     Explore BIM Training
                     <TfiArrowTopRight />
@@ -273,17 +264,11 @@ const Home = () => {
                     onClick={() => {
                       navigate("/services");
                     }}
-                    className="flex gap-2 items-center justify-center text-xl text-white font-semibold px-4 py-2 rounded-md w-[300px] bg-black"
+                    className="flex gap-2 items-center justify-center text-base md:text-xl text-white font-semibold px-4 py-2 rounded-md w-full md:w-[300px] bg-black"
                   >
                     Explore BIM Services
                     <TfiArrowTopRight />
                   </button>
-                  {/* <img src={avatars} alt="avatars" />
-                <div className="w-32">
-                  <h1 className="text-white">
-                    100+ <br /> satisfied clients
-                  </h1>
-                </div> */}
                 </div>
               </div>
             </div>
@@ -389,55 +374,55 @@ const Home = () => {
           </button>
         </div>
       </div> */}
-      <div className="p-10 px-20">
-        <h1 className="text-4xl font-bold">
+      <div className="p-5 md:p-10 md:px-20">
+        <h1 className="text-3xl md:text-4xl font-bold">
           <span className="text-[#FF006B]">Top BIM</span> Services
         </h1>
-        <div className="flex justify-between my-10 mt-16">
-          <div className="flex gap-5 items-center w-[20%]">
+        <div className="flex flex-wrap justify-between my-10 mt-16 gap-5">
+          <div className="flex gap-5 items-center w-full md:w-[20%]">
             <img src={one} alt="one" className="w-6 h-6" />
-            <h1 className="text-2xl text-[#FF006B] font-bold ">
+            <h1 className="text-lg md:text-2xl text-[#FF006B] font-bold">
               BIM <span className="text-black">TRAINING</span>
             </h1>
           </div>
-          <div className="flex gap-5 w-[25%]  items-center">
+          <div className="flex gap-5 items-center w-full md:w-[25%]">
             <img src={two} alt="one" className="w-6 h-6" />
-            <h1 className="text-2xl text-[#FF006B] font-bold ">
+            <h1 className="text-lg md:text-2xl text-[#FF006B] font-bold">
               BIM <span className="text-black">CONSULTING</span>
             </h1>
           </div>
-          <div className="flex gap-5 items-center  w-[30%]">
+          <div className="flex gap-5 items-center w-full md:w-[30%]">
             <img src={three} alt="one" className="w-6 h-6" />
-            <h1 className="text-2xl font-bold ">
+            <h1 className="text-lg md:text-2xl font-bold">
               ARCHITECTURE <span className="text-[#FF006B]">BIM</span> SERVICES
             </h1>
           </div>
         </div>
 
-        <div className="flex justify-between">
-          <div className="flex gap-5 items-center w-[20%]">
+        <div className="flex flex-wrap justify-between gap-5">
+          <div className="flex gap-5 items-center w-full md:w-[20%]">
             <img src={four} alt="one" className="w-6 h-6" />
-            <h1 className="text-2xl font-bold text-[#FF006B]">
+            <h1 className="text-lg md:text-2xl font-bold text-[#FF006B]">
               BIM <span className="text-black">SERVICES</span>
             </h1>
           </div>
-          <div className="flex gap-5 w-[25%] items-center">
+          <div className="flex gap-5 items-center w-full md:w-[25%]">
             <img src={five} alt="one" className="w-6 h-6" />
-            <h1 className="text-2xl font-bold text-[#FF006B]">
+            <h1 className="text-lg md:text-2xl font-bold text-[#FF006B]">
               CAD <span className="text-black">SERVICES</span>
             </h1>
           </div>
-          <div className="flex gap-5 items-center w-[30%]">
+          <div className="flex gap-5 items-center w-full md:w-[30%]">
             <img src={six} alt="one" className="w-6 h-6" />
-            <h1 className="text-2xl font-bold  ">
+            <h1 className="text-lg md:text-2xl font-bold">
               STRUCTURE <span className="text-[#FF006B]">BIM</span> SERVICES
             </h1>
           </div>
         </div>
-        <div className="mt-10 flex justify-center">
-          <div className="flex gap-5  items-center  w-[35%] ">
+        <div className="flex justify-center mt-10">
+          <div className="flex gap-5 items-center w-full md:w-[35%]">
             <img src={seven} alt="one" className="w-6 h-6" />
-            <h1 className="text-2xl text-[#FF006B] font-bold ">
+            <h1 className="text-lg md:text-2xl text-[#FF006B] font-bold">
               VISUALIZATION <span className="text-black">SERVICES</span>
             </h1>
           </div>
@@ -445,62 +430,68 @@ const Home = () => {
       </div>
 
       {/* target audience */}
-      <div className="p-10 px-20">
-        <h1 className="text-4xl font-bold">
+      <div className="p-5 md:p-10 md:px-20">
+        <h1 className="text-3xl md:text-4xl font-bold">
           Who Can Learn <span className="text-[#FF006B]">BIM?</span>
         </h1>
-        <h1 className="text-blue-600 text-xl font-bold">
+        <h1 className="text-blue-600 text-lg md:text-xl font-bold">
           Prerequisites for BIM!
         </h1>
-        <div className="my-10 flex justify-between">
-          <div className="flex gap-2 items-center w-[300px]">
+        <div className="my-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="flex gap-2 items-center">
             <IoBookSharp size={25} color="blue" />
-
-            <h1 className="text-xl font-bold">Civil Engineers</h1>
+            <h1 className="text-lg md:text-xl font-bold">Civil Engineers</h1>
           </div>
-          <div className="flex gap-2 items-center w-[300px] ">
+          <div className="flex gap-2 items-center">
             <IoBookSharp size={25} color="blue" />
-            <h1 className="text-xl font-bold">Architects</h1>
+            <h1 className="text-lg md:text-xl font-bold">Architects</h1>
           </div>
-          <div className="flex gap-2 items-center w-[300px]">
+          <div className="flex gap-2 items-center">
             <IoBookSharp size={25} color="blue" />
-            <h1 className="text-xl font-bold">Mehanical Engineers</h1>
+            <h1 className="text-lg md:text-xl font-bold">
+              Mechanical Engineers
+            </h1>
           </div>
-          <div className="flex gap-2 items-center w-[300px]">
+          <div className="flex gap-2 items-center">
             <IoBookSharp size={25} color="blue" />
-            <h1 className="text-xl font-bold">Interior Designers</h1>
+            <h1 className="text-lg md:text-xl font-bold">Interior Designers</h1>
           </div>
         </div>
-        <div className="my-10 flex justify-between">
-          <div className="flex gap-2 items-center w-[300px]">
+        <div className="my-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="flex gap-2 items-center">
             <IoBookSharp size={25} color="blue" />
-            <h1 className="text-xl font-bold">Electrical Engineers</h1>
+            <h1 className="text-lg md:text-xl font-bold">
+              Electrical Engineers
+            </h1>
           </div>
-          <div className="flex gap-2 items-center w-[300px]">
+          <div className="flex gap-2 items-center">
             <IoBookSharp size={25} color="blue" />
-            <h1 className="text-xl font-bold">Structural Engineers</h1>
+            <h1 className="text-lg md:text-xl font-bold">
+              Structural Engineers
+            </h1>
           </div>
-          <div className="flex gap-2 items-center w-[300px]">
+          <div className="flex gap-2 items-center">
             <IoBookSharp size={25} color="blue" />
-            <h1 className="text-xl font-bold">Site Engineers</h1>
+            <h1 className="text-lg md:text-xl font-bold">Site Engineers</h1>
           </div>
-          <div className="flex gap-2 items-center w-[300px]">
+          <div className="flex gap-2 items-center">
             <IoBookSharp size={25} color="blue" />
-            <h1 className="text-xl font-bold">Quantity Surveyors</h1>
+            <h1 className="text-lg md:text-xl font-bold">Quantity Surveyors</h1>
           </div>
         </div>
       </div>
+
       {/* why learn bim */}
-      <div className="p-10 flex">
-        <div className="w-1/2 flex justify-center items-center">
-          <img src={info} alt="info" className="w-[70%]" />
+      <div className="p-5 md:p-10 flex flex-col md:flex-row">
+        <div className="w-full md:w-1/2 flex justify-center items-center">
+          <img src={info} alt="info" className="w-[70%] md:w-[90%]" />
         </div>
-        <div className="w-1/2 flex flex-col gap-5">
-          <h1 className="text-6xl font-bold">
+        <div className="w-full md:w-1/2 flex flex-col gap-5">
+          <h1 className="text-3xl md:text-6xl font-bold">
             Why Learn <br />
             <span className="text-[#FF006B]">BIM?</span>
           </h1>
-          <h1>
+          <h1 className="text-sm md:text-lg">
             Unlock unparalleled opportunities in the architecture, engineering,
             and construction (AEC) industry by mastering Building Information
             Modeling (BIM). As the industry's leading-edge technology, BIM
@@ -511,45 +502,45 @@ const Home = () => {
             expertise—where efficiency meets excellence. Join the BIM revolution
             and build a brighter, more prosperous professional journey.
           </h1>
-          <div className="flex flex-wrap ">
-            <div className="flex w-[50%] gap-5 mb-5">
+          <div className="flex flex-wrap gap-5">
+            <div className="flex gap-3 items-center w-full md:w-[45%] mb-5">
               <img src={wave} alt="wave" className="h-10 w-10" />
               <div>
-                <h1 className="text-2xl font-bold">High Demand</h1>
-                <h1>
+                <h1 className="text-xl font-bold">High Demand</h1>
+                <h1 className="text-sm md:text-base">
                   BIM skills are highly sought after, making you a valuable
                   asset in the competitive AEC job market.
                 </h1>
               </div>
             </div>
-            <div className="flex w-[50%] gap-5 mb-5">
+            <div className="flex gap-3 items-center w-full md:w-[45%] mb-5">
               <img src={wave} alt="wave" className="h-10 w-10" />
               <div>
-                <h1 className="text-2xl font-bold">Accelerated Growth</h1>
-                <h1>
+                <h1 className="text-xl font-bold">Accelerated Growth</h1>
+                <h1 className="text-sm md:text-base">
                   Fast-track your career with BIM expertise, opening doors to
                   advanced roles and higher earning potential.
                 </h1>
               </div>
             </div>
-            <div className="flex w-[50%] gap-5">
+            <div className="flex gap-3 items-center w-full md:w-[45%]">
               <img src={wave} alt="wave" className="h-10 w-10" />
               <div>
-                <h1 className="text-2xl font-bold">Innovation Leadership</h1>
-                <h1>
+                <h1 className="text-xl font-bold">Innovation Leadership</h1>
+                <h1 className="text-sm md:text-base">
                   Lead the charge in innovative design and construction
                   practices, leveraging advanced BIM tools for superior,
                   sustainable project outcomes.
                 </h1>
               </div>
             </div>
-            <div className="flex w-[50%] gap-5">
+            <div className="flex gap-3 items-center w-full md:w-[45%]">
               <img src={wave} alt="wave" className="h-10 w-10" />
               <div>
-                <h1 className="text-2xl font-bold">
+                <h1 className="text-xl font-bold">
                   Enhanced Project Management
                 </h1>
-                <h1>
+                <h1 className="text-sm md:text-base">
                   Improve collaboration and efficiency across all project
                   stages, reducing errors and ensuring high-quality, timely
                   project delivery.
@@ -561,71 +552,70 @@ const Home = () => {
       </div>
 
       {/* online courses */}
-      <div className="p-10 py-20 mb-10 relative min-h-screen  justify-center flex ">
-        <h1 className="text-5xl font-bold text-center ">
+      <div className="relative p-10 py-20 mb-10 min-h-screen flex flex-col items-center">
+        <h1 className="text-3xl md:text-5xl font-bold text-center">
           TOP ONLINE <span className="text-[#FF006B]">COURSES</span>
         </h1>
 
-        <div className="flex flex-col gap-12  z-10 w-[50%] py-10 absolute top-40">
-          <div className="flex justify-between">
-            {courseData.map((course, index) => (
-              <CourseCard
-                image={course.image}
-                subtitle={course.subtitle}
-                title={course.title}
-                rating={course.rating}
-                reviews={course.reviews}
-                price={course.price}
-                oldPrice={course.oldPrice}
-                id={course.id}
-              />
-            ))}
-          </div>
-          <div className="flex justify-center">
-            <button
-              onClick={() => {
-                navigate("/courses");
-              }}
-              className="bg-[#FF006B] text-white font-semibold px-4 py-2 rounded-md w-[200px]"
-            >
-              Explore More
-            </button>
-          </div>
+        <div className="relative z-10 grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-10 py-10 w-full md:w-[45%]">
+          {courseData.map((course, index) => (
+            <CourseCard
+              key={index}
+              image={course.image}
+              subtitle={course.subtitle}
+              title={course.title}
+              rating={course.rating}
+              reviews={course.reviews}
+              price={course.price}
+              oldPrice={course.oldPrice}
+              id={course.id}
+            />
+          ))}
         </div>
 
-        <div className="w-[30%] z-0 -left-10 bottom-[32%] absolute h-12 bg-blue-600 transform -rotate-6" />
-        <div className="w-[30%] z-0 -left-10 bottom-[24%] absolute h-12 bg-blue-600 transform -rotate-6" />
+        <div className="relative z-10 flex justify-center mt-8">
+          <button
+            onClick={() => {
+              navigate("/courses");
+            }}
+            className="bg-[#FF006B] text-white font-semibold px-4 py-2 rounded-md w-[200px]"
+          >
+            Explore More
+          </button>
+        </div>
 
-        <div className="w-[30%] z-0 -right-10 top-60 absolute h-12 bg-blue-600 transform -rotate-6" />
-        <div className="w-[30%] z-0 -right-10 top-[45%] absolute h-12 bg-blue-600 transform -rotate-6" />
-
-        <div className="w-[60%] z-0 -right-10 top-[42%] absolute h-12 bg-[#FF006B] transform -rotate-6" />
+        {/* Background elements for visual interest */}
+        <div className="hidden md:block absolute top-[30%] left-[-5%] w-[35%] h-12 bg-blue-600 transform -rotate-6 z-0" />
+        <div className="hidden md:block absolute top-[40%] left-[-10%] w-[35%] h-12 bg-blue-600 transform -rotate-6 z-0" />
+        <div className="hidden md:block absolute top-[20%] right-[-5%] w-[35%] h-12 bg-blue-600 transform -rotate-6 z-0" />
+        <div className="hidden md:block absolute top-[28%] right-[-10%] w-[35%] h-12 bg-blue-600 transform -rotate-6 z-0" />
+        <div className="hidden md:block absolute top-[40%] right-[-15%] w-[60%] h-12 bg-[#FF006B] transform -rotate-6 z-0" />
       </div>
 
       {/* out top projects  */}
-      <div className="p-10 px-20 min-h-[120vh] relative">
-        <h1 className="text-4xl font-bold">
+      <div className="p-5 md:p-10 min-h-[70vh] relative">
+        <h1 className="text-3xl md:text-4xl font-bold">
           OUR TOP <span className="text-[#FF006B]">PROJECTS</span>
         </h1>
-        <h1 className="text-blue-600 text-xl font-bold">
+        <h1 className="text-blue-600 text-lg md:text-xl font-bold">
           WHAT PROJECTS WE DO!
         </h1>
-        <div className="flex justify-end mt-10  h-[75vh] absolute z-10 ">
-          <div className="flex gap-5 w-1/2  flex-wrap  z-10">
+        <div className="flex flex-col md:flex-row justify-between items-center mt-10">
+          <div className="w-full md:w-1/2">
             <img
               src={landscape}
               alt="projectgroup"
-              className="w-[90%] h-full rounded-md "
+              className="w-full h-auto rounded-md"
             />
           </div>
-          <div className="w-1/2 flex flex-col justify-end gap-5 mr-20">
-            <h1 className="text-3xl font-bold w-[70%]">
+          <div className="w-full md:w-1/2 flex flex-col justify-center gap-5 mt-5 md:mt-0">
+            <h1 className="text-2xl md:text-3xl font-bold">
               NEOM - LOGISTICS PARK LANDSCAPE PROJECT
             </h1>
-            <h1 className="text-lg font-bold text-blue-600 ">
+            <h1 className="text-lg md:text-xl font-bold text-blue-600">
               A Benchmark in Advanced BIM Implementation
             </h1>
-            <h1 className="pt-5 text-xl">
+            <h1 className="pt-5 text-sm md:text-xl">
               The NEOM Logistics Park project stands as a testament to our
               expertise in handling complex and challenging projects with
               precision and excellence. The successful implementation of
@@ -637,87 +627,82 @@ const Home = () => {
             </h1>
           </div>
         </div>
-
-        {/* <div className="flex gap-5 w-1/2  flex-wrap absolute top-40 z-10">
-          <img src={project1} alt="project1" className="w-60 h-80" />
-          <img src={project2} alt="project2" className="w-60 h-80" />
-          <img src={project3} alt="project3" className="w-60 h-80" />
-          <img src={project4} alt="project4" className="w-60 h-80" />
-        </div> */}
-        {/* <div className="absolute bottom-[30%] left-[15%] z-20 ">
-          <img src={project5} alt="project5" className="w-60 h-80" />
-        </div> */}
-        <div className="w-[110%] z-0 -left-10 top-60 absolute h-12 bg-blue-600 transform -rotate-6" />
-        <div className="w-[20%] z-0 -left-10 top-[62%] absolute h-12 bg-[#FF006B] transform -rotate-6" />
-
-        <div className="w-[20%] z-0 -left-10 top-[70%] absolute h-12 bg-[#FF006B] transform -rotate-6" />
       </div>
 
       {/* advantages of bim */}
-      <div className="p-10 px-20">
-        <h1 className="text-4xl font-bold">
+      <div className="p-5 md:p-10">
+        <h1 className="text-3xl md:text-4xl font-bold">
           ADVANTAGES OF <span className="text-[#FF006B]">BIM</span>
         </h1>
-        <h1 className="text-blue-600 text-xl font-bold">
+        <h1 className="text-blue-600 text-lg md:text-xl font-bold">
           WHAT'S YOU GET FROM BIM!
         </h1>
-        <div className="flex flex-wrap gap-16 my-16">
-          <div className="flex w-[30%] gap-5">
+        <div className="flex flex-wrap gap-5 md:gap-16 my-10 md:my-16">
+          <div className="flex w-full md:w-[30%] gap-5">
             <img src={icon1} alt="wave" className="h-10 w-10" />
-
             <div className="flex flex-col gap-3">
-              <h1 className="text-xl font-bold">Enhanced Collaboration</h1>
-              <h1>
+              <h1 className="text-lg md:text-xl font-bold">
+                Enhanced Collaboration
+              </h1>
+              <h1 className="text-sm md:text-base">
                 BIM facilitates better communication and coordination among
                 project stakeholders.
               </h1>
             </div>
           </div>
-          <div className="flex w-[30%] gap-5">
+          <div className="flex w-full md:w-[30%] gap-5">
             <img src={icon2} alt="wave" className="h-10 w-10" />
             <div className="flex flex-col gap-3">
-              <h1 className="text-xl font-bold">Increased Efficiency</h1>
-              <h1>
+              <h1 className="text-lg md:text-xl font-bold">
+                Increased Efficiency
+              </h1>
+              <h1 className="text-sm md:text-base">
                 BIM streamlines workflows by integrating various aspects of the
                 design and construction process.
               </h1>
             </div>
           </div>
-          <div className="flex w-[30%] gap-5">
+          <div className="flex w-full md:w-[30%] gap-5">
             <img src={icon3} alt="wave" className="h-10 w-10" />
             <div className="flex flex-col gap-3">
-              <h1 className="text-xl font-bold">Lifecycle Management</h1>
-              <h1>
-                BIM supports the ensure lifecycle of a building, from initial
+              <h1 className="text-lg md:text-xl font-bold">
+                Lifecycle Management
+              </h1>
+              <h1 className="text-sm md:text-base">
+                BIM supports the entire lifecycle of a building, from initial
                 design and construction to maintenance.
               </h1>
             </div>
           </div>
-          <div className="flex w-[30%] gap-5">
+          <div className="flex w-full md:w-[30%] gap-5">
             <img src={icon4} alt="wave" className="h-10 w-10" />
             <div className="flex flex-col gap-3">
-              <h1 className="text-xl font-bold">Cost Savings</h1>
-              <h1>
+              <h1 className="text-lg md:text-xl font-bold">Cost Savings</h1>
+              <h1 className="text-sm md:text-base">
                 BIM helps in accurate cost estimation and budget management by
                 providing detailed quantity take-offs.
               </h1>
             </div>
           </div>
-          <div className="flex w-[30%] gap-5">
+          <div className="flex w-full md:w-[30%] gap-5">
             <img src={icon7} alt="wave" className="h-10 w-10" />
             <div className="flex flex-col gap-3">
-              <h1 className="text-xl font-bold">Better Visualization</h1>
-              <h1>
+              <h1 className="text-lg md:text-xl font-bold">
+                Better Visualization
+              </h1>
+              <h1 className="text-sm md:text-base">
                 The 3D models generated by BIM provide a clear and detailed
                 visual representation of the project.
               </h1>
             </div>
           </div>
-          <div className="flex w-[30%] gap-5">
+          <div className="flex w-full md:w-[30%] gap-5">
             <img src={icon8} alt="wave" className="h-10 w-10" />
             <div className="flex flex-col gap-3">
-              <h1 className="text-xl font-bold">Enhanced Quality Control</h1>
-              <h1>
+              <h1 className="text-lg md:text-xl font-bold">
+                Enhanced Quality Control
+              </h1>
+              <h1 className="text-sm md:text-base">
                 BIM ensures higher quality construction by enabling precise
                 planning and execution, minimizing errors.
               </h1>
@@ -727,18 +712,22 @@ const Home = () => {
       </div>
 
       {/* company details */}
-      <div className="py-10 pb-20 px-20 relative ">
-        <div className="flex justify-end min-h-[80vh] ">
-          <div className="flex justify-center w-1/2 z-10">
-            <img src={peoplegroup2} alt="peoplegroup" className="w-[70%]" />
+      <div className="p-5 md:p-10 relative">
+        <div className="flex flex-col md:flex-row justify-between min-h-[60vh]">
+          <div className="flex justify-center w-full md:w-1/2">
+            <img
+              src={peoplegroup2}
+              alt="peoplegroup"
+              className="w-[70%] md:w-[90%]"
+            />
           </div>
-          <div className="w-1/2 flex flex-col gap-3 ">
-            <h1 className="text-3xl font-bold w-[60%]">
+          <div className="w-full md:w-1/2 flex flex-col gap-5">
+            <h1 className="text-2xl md:text-3xl font-bold">
               Know how everything works and why we work with{" "}
               <span className="text-[#FF006B]">BIM</span>
             </h1>
             <h1 className="font-bold text-blue-600">OUR MISSION</h1>
-            <h1 className="text-lg">
+            <h1 className="text-sm md:text-lg">
               At The BIM skills, we're dedicated to revolutionizing the
               construction landscape through innovative BIM services and expert
               consulting. Our mission is simple yet profound: to empower our
@@ -750,9 +739,9 @@ const Home = () => {
               industries.
             </h1>
             <h1 className="font-bold text-[#FF006B]">OUR VISION</h1>
-            <h1 className="text-lg">
+            <h1 className="text-sm md:text-lg">
               Our vision at The BIM skills is clear: to lead the way in BIM
-              services and consulting, seeing new standards of excellence and
+              services and consulting, setting new standards of excellence and
               innovation. We see a future where every project, large or small,
               benefits from the power of BIM to drive efficiency,
               sustainability, and impact. By harnessing technology, fostering
@@ -764,9 +753,6 @@ const Home = () => {
             </h1>
           </div>
         </div>
-
-        <div className="w-[38%] z-0 -left-10 top-72 absolute h-12 bg-[#FF006B] transform -rotate-6" />
-        <div className="w-[35%] z-0 -left-10 top-96 absolute h-12 bg-[#FF006B] transform -rotate-6" />
       </div>
 
       {/* testimonial */}
@@ -805,123 +791,72 @@ const Home = () => {
         </div>
       </div> */}
 
-      <div className="flex px-40 justify-between ">
-        <div className="w-[30%]">
-          <div className="flex gap-4">
-            <img
-              src={review1}
-              alt="review1"
-              className="w-14 h-14 rounded-full"
-            />
-            <div className="">
-              <h1 className="text-lg font-semibold">Mr BhimRao</h1>
-              <h1 className="text-gray-400">Head of Concrete RA-Tech Mumbai</h1>
-              <div className="flex items-center">
-                {[...Array(5)].map((_, index) => (
-                  <svg
-                    key={index}
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="gold"
-                    className="w-4 h-4"
-                  >
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.518 4.674a1 1 0 00.95.69h4.92c.969 0 1.371 1.24.588 1.81l-3.98 2.892a1 1 0 00-.364 1.118l1.518 4.674c.3.921-.755 1.688-1.54 1.118l-3.98-2.892a1 1 0 00-1.176 0l-3.98 2.892c-.784.57-1.838-.197-1.54-1.118l1.518-4.674a1 1 0 00-.364-1.118L2.49 10.1c-.783-.57-.38-1.81.588-1.81h4.92a1 1 0 00.95-.69L9.049 2.927z" />
-                  </svg>
-                ))}
+      <div className="flex flex-col lg:flex-row justify-between px-5 md:px-20 gap-10">
+        {[
+          {
+            imgSrc: review1,
+            name: "Mr BhimRao",
+            title: "Head of Concrete RA-Tech Mumbai",
+            review:
+              "The BIM skills have a great teaching passion. Along with software expertise, They also have in depth practical knowledge that help to understand BIM Fundamentals. I really appreciate, sharing their knowledge to keep update in BIM industry.",
+          },
+          {
+            imgSrc: review2,
+            name: "Mr. Wusat Hussain",
+            title: "CAD Designer - USA",
+            review:
+              "I have been learning BIM from The BIM skills and it has been a great experience. The BIM skills has very thoughtful and knowledgeable instructors who put a lot of effort into how they present course material. Their lessons were engaging, useful, and very patient during training. Their skills and techniques of communicating are very professional. I would recommend The BIM skills to anyone interested in learning BIM.",
+          },
+          {
+            imgSrc: review3,
+            name: "Mr. Marwan Sufiyan",
+            title: "Engineering Consultant",
+            review:
+              "BIM skills has excellent knowledge of BIM concepts, related standards, tools. They have excellent skills in providing training logically with easily understandable linguistic skills. I can recommend this institute to anyone who is expected to become an expert in BIM skills and become successful in the industry.",
+          },
+        ].map((testimonial, index) => (
+          <div key={index} className="w-full md:w-1/3 flex flex-col gap-4">
+            <div className="flex gap-4 items-center">
+              <img
+                src={testimonial.imgSrc}
+                alt={testimonial.name}
+                className="w-14 h-14 rounded-full"
+              />
+              <div className="">
+                <h1 className="text-lg font-semibold">{testimonial.name}</h1>
+                <h1 className="text-gray-400">{testimonial.title}</h1>
+                <div className="flex items-center">
+                  {[...Array(5)].map((_, idx) => (
+                    <svg
+                      key={idx}
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="gold"
+                      className="w-4 h-4"
+                    >
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.518 4.674a1 1 0 00.95.69h4.92c.969 0 1.371 1.24.588 1.81l-3.98 2.892a1 1 0 00-.364 1.118l1.518 4.674c.3.921-.755 1.688-1.54 1.118l-3.98-2.892a1 1 0 00-1.176 0l-3.98 2.892c-.784.57-1.838-.197-1.54-1.118l1.518-4.674a1 1 0 00-.364-1.118L2.49 10.1c-.783-.57-.38-1.81.588-1.81h4.92a1 1 0 00.95-.69L9.049 2.927z" />
+                    </svg>
+                  ))}
+                </div>
               </div>
             </div>
+            <h1 className="text-sm md:text-lg mt-3">{testimonial.review}</h1>
           </div>
-          <h1 className="text-lg mt-3">
-            "The BIM skills have a great teaching passion. Along with software
-            expertise, They also have in depth practical knowledge that help to
-            understand BIM Fundamentals. I really appreciate, sharing their
-            knowledge to keep update in BIM industry."
-          </h1>
-        </div>
-
-        <div className="w-[30%]">
-          <div className="flex gap-4">
-            <img
-              src={review2}
-              alt="review1"
-              className="w-14 h-14 rounded-full"
-            />
-            <div className="">
-              <h1 className="text-lg font-semibold">Mr. Wusat Hussain</h1>
-              <h1 className="text-gray-400">CAD Designer - USA</h1>
-              <div className="flex items-center">
-                {[...Array(5)].map((_, index) => (
-                  <svg
-                    key={index}
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="gold"
-                    className="w-4 h-4"
-                  >
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.518 4.674a1 1 0 00.95.69h4.92c.969 0 1.371 1.24.588 1.81l-3.98 2.892a1 1 0 00-.364 1.118l1.518 4.674c.3.921-.755 1.688-1.54 1.118l-3.98-2.892a1 1 0 00-1.176 0l-3.98 2.892c-.784.57-1.838-.197-1.54-1.118l1.518-4.674a1 1 0 00-.364-1.118L2.49 10.1c-.783-.57-.38-1.81.588-1.81h4.92a1 1 0 00.95-.69L9.049 2.927z" />
-                  </svg>
-                ))}
-              </div>
-            </div>
-          </div>
-          <h1 className="text-lg mt-3">
-            "I have been learning BIM from The BIM skills and it has been a
-            great experience. The BIM skills has very thoughtful and
-            knowledgeable instructors who puts lot of efforts into how they
-            present course material. Their lessons were engaging, useful and
-            very patient during training. Their skills and techniques of
-            communicating are very professional. I would recommend The BIM
-            skills to anyone interested in learning BIM."
-          </h1>
-        </div>
-
-        <div className="w-[30%]">
-          <div className="flex gap-4">
-            <img
-              src={review3}
-              alt="review1"
-              className="w-14 h-14 rounded-full"
-            />
-            <div className="">
-              <h1 className="text-lg font-semibold">Mr. Marwan Sufiyan</h1>
-              <h1 className="text-gray-400">Engineering Consultant</h1>
-              <div className="flex items-center">
-                {[...Array(5)].map((_, index) => (
-                  <svg
-                    key={index}
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="gold"
-                    className="w-4 h-4"
-                  >
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.518 4.674a1 1 0 00.95.69h4.92c.969 0 1.371 1.24.588 1.81l-3.98 2.892a1 1 0 00-.364 1.118l1.518 4.674c.3.921-.755 1.688-1.54 1.118l-3.98-2.892a1 1 0 00-1.176 0l-3.98 2.892c-.784.57-1.838-.197-1.54-1.118l1.518-4.674a1 1 0 00-.364-1.118L2.49 10.1c-.783-.57-.38-1.81.588-1.81h4.92a1 1 0 00.95-.69L9.049 2.927z" />
-                  </svg>
-                ))}
-              </div>
-            </div>
-          </div>
-          <h1 className="text-lg mt-3">
-            "BIM skills has excellent knowledge of BIM concepts, related
-            standards, tools. They have excellent skills in providing training
-            logically with easily understandable linguistic skills. I can
-            recommend this institute to any one who is expected to become an
-            expert in BIM skills and become successful in industry."
-          </h1>
-        </div>
+        ))}
       </div>
 
       {/* blogs */}
-      <div className="p-10">
-        <h1 className="text-4xl font-bold text-[#FF006B]">BLOGS</h1>
-        <h1 className="text-blue-600 text-xl font-bold">
+      <div className="p-5 md:p-10">
+        <h1 className="text-3xl md:text-4xl font-bold text-[#FF006B]">BLOGS</h1>
+        <h1 className="text-blue-600 text-lg md:text-xl font-bold">
           WHAT BLOGS ARE IN BIM!
         </h1>
       </div>
-      <div className="flex flex-col gap-5 pb-10 px-20">
-        <h1 className="text-2xl font-bold">Recent blog posts</h1>
-        <div className="flex   ">
-          {/* large card */}
-          <div className="w-1/2 flex flex-col ">
+      <div className="flex flex-col gap-5 pb-10 px-5 md:px-20">
+        <h1 className="text-xl md:text-2xl font-bold">Recent blog posts</h1>
+        <div className="flex flex-wrap md:flex-nowrap gap-5">
+          {/* Large card */}
+          <div className="w-full md:w-1/2 flex flex-col">
             <img
               src={recentBlogPost.image}
               alt={recentBlogPost.title}
@@ -931,17 +866,17 @@ const Home = () => {
               {recentBlogPost.author} • {recentBlogPost.Date}
             </h1>
             <div
-              className="flex items-center gap-2 "
+              className="flex items-center gap-2 cursor-pointer"
               onClick={() => {
                 navigate(`/blogs/${recentBlogPost.id}`);
               }}
             >
-              <h1 className="text-2xl font-bold mt-2">
+              <h1 className="text-xl md:text-2xl font-bold mt-2">
                 {recentBlogPost.title}
               </h1>
               <GoArrowUpRight color="black" size={20} className="mt-2" />
             </div>
-            <p className="text-lg">{recentBlogPost.description}</p>
+            <p className="text-sm md:text-lg">{recentBlogPost.description}</p>
             <button
               onClick={() => {
                 navigate(`/blogs/${recentBlogPost.id}`);
@@ -950,48 +885,30 @@ const Home = () => {
             >
               Read More
             </button>
-            {/* <div className="flex flex-wrap gap-2 mt-2">
-              {recentBlogPost.topics.map((topic, index) => (
-                <span
-                  key={index}
-                  className="bg-blue-50 text-blue-800 text-sm px-4 py-1 rounded-full"
-                >
-                  {topic}
-                </span>
-              ))}
-            </div> */}
           </div>
-          {/* small cards */}
-          <div className="w-1/2 flex flex-col pl-10 justify-between ">
+
+          {/* Small cards */}
+          <div className="w-full md:w-1/2 flex flex-col pl-0 md:pl-10 justify-between gap-5">
             {otherBlogPosts.map((post, index) => (
-              <div key={index} className="flex items-start ">
+              <div key={index} className="flex items-start">
                 <img src={post.image} alt={post.title} className="w-[40%]" />
 
-                <div className="pl-4 h-full flex flex-col justify-between  ">
+                <div className="pl-4 flex flex-col justify-between">
                   <h1 className="font-bold text-blue-600">
                     {post.author} • {post.Date}
                   </h1>
                   <div
-                    className="flex gap-3 items-center"
+                    className="flex gap-3 items-center cursor-pointer"
                     onClick={() => {
                       navigate(`/blogs/${post.id}`);
                     }}
                   >
-                    <h2 className="text-xl font-bold">{post.title}</h2>
+                    <h2 className="text-lg md:text-xl font-bold">
+                      {post.title}
+                    </h2>
                     <GoArrowUpRight color="black" size={18} className="mt-2" />
                   </div>
-                  <p className="text-md">{post.description}</p>
-                  {/* <div className="flex flex-wrap gap-2 mt-2">
-                    {post.topics.map((topic, idx) => (
-                      <span
-                        key={idx}
-                        className="bg-blue-50 text-blue-800 text-sm px-4 py-1 rounded-full"
-                      >
-                        {topic}
-                      </span>
-                    ))}
-                  </div> */}
-
+                  <p className="text-sm md:text-md">{post.description}</p>
                   <button
                     onClick={() => {
                       navigate(`/blogs/${post.id}`);
@@ -1019,85 +936,55 @@ const Home = () => {
 
       {/* FAQ */}
 
-      <div className="flex flex-col justify-center items-center gap-3 mb-20">
+      <div className="flex flex-col justify-center items-center gap-3 mb-20 px-5 md:px-20">
         <h1 className="text-lg font-bold text-blue-600">FAQs</h1>
-        <h1 className="text-4xl font-bold">Frequently asked questions</h1>
+        <h1 className="text-2xl md:text-4xl font-bold text-center">
+          Frequently Asked Questions
+        </h1>
 
-        <h1 className="text-xl text-gray-400">
+        <h1 className="text-md md:text-xl text-gray-400 text-center">
           Have questions? We’re here to help.
         </h1>
 
-        <div className="flex justify-between gap-10 px-20">
-          <div className="w-1/3 flex flex-col items-center text-center gap-5">
-            <div className="bg-[#F9F5FF] h-10 w-10 flex justify-center items-center rounded-full">
-              <FaRegHeart color="FF006B" size={20} />
+        <div className="flex flex-wrap justify-between gap-10 w-full">
+          {[
+            {
+              question: "What services does The BIM Skills Company provide?",
+              answer:
+                "We offer a wide range of services including BIM training and certification, consulting, custom BIM development, BIM coordination and management, digital twins and data management, outsourcing and support services, as well as VR and AR integration.",
+            },
+            {
+              question: "Are your courses suitable for professionals?",
+              answer:
+                "Yes, our courses are designed for both students and professionals in the AEC (Architecture, Engineering, and Construction) industry. We offer practical, project-based training to enhance real-world skills.",
+            },
+            {
+              question: "Do you provide certification upon course completion?",
+              answer:
+                "Yes, we provide official certification for various BIM competencies and software proficiencies upon successful completion of our courses.",
+            },
+            {
+              question: "What support services do you offer?",
+              answer:
+                "We provide ongoing support for BIM software and models, including updates, troubleshooting, and maintenance. We also offer modeling services for architectural, structural, and MEP aspects of projects.",
+            },
+            {
+              question: "Do you offer online courses?",
+              answer:
+                "Yes, we offer both live and recorded online courses to provide flexible learning options for our students.",
+            },
+          ].map((faq, index) => (
+            <div
+              key={index}
+              className="w-full md:w-[45%] flex flex-col items-center text-center gap-5"
+            >
+              <div className="bg-[#F9F5FF] h-10 w-10 flex justify-center items-center rounded-full">
+                <FaRegHeart color="FF006B" size={20} />
+              </div>
+              <h1 className="font-semibold text-lg">{faq.question}</h1>
+              <h1 className="text-sm md:text-base">{faq.answer}</h1>
             </div>
-            <h1 className="font-semibold text-lg">
-              What services does The BIM Skills Company provide?
-            </h1>
-            <h1>
-              We offer a wide range of services including BIM training and
-              certification, consulting, custom BIM development, BIM
-              coordination and management, digital twins and data management,
-              outsourcing and support services, as well as VR and AR
-              integration. 
-            </h1>
-          </div>
-          <div className="w-1/3 flex flex-col items-center text-center gap-5">
-            <div className="bg-[#F9F5FF] h-10 w-10 flex justify-center items-center rounded-full">
-              <FaRegHeart color="FF006B" size={20} />
-            </div>
-            <h1 className="font-semibold text-lg">
-              Are your courses suitable for professionals?
-            </h1>
-            <h1>
-              Yes, our courses are designed for both students and professionals
-              in the AEC (Architecture, Engineering, and Construction) industry.
-              We offer practical, project-based training to enhance real-world
-              skills.
-            </h1>
-          </div>
-          <div className="w-1/3 flex flex-col items-center text-center gap-5">
-            <div className="bg-[#F9F5FF] h-10 w-10 flex justify-center items-center rounded-full">
-              <FaRegHeart color="FF006B" size={20} />
-            </div>
-            <h1 className="font-semibold text-lg">
-               Do you provide certification upon course completion?
-            </h1>
-            <h1>
-              Yes, we provide official certification for various BIM
-              competencies and software proficiencies upon successful completion
-              of our courses.
-            </h1>
-          </div>
-        </div>
-        <div className="flex justify-between gap-10 px-20 mt-10">
-          <div className="w-1/2 flex flex-col items-center text-center gap-5">
-            <div className="bg-[#F9F5FF] h-10 w-10 flex justify-center items-center rounded-full">
-              <FaRegHeart color="FF006B" size={20} />
-            </div>
-            <h1 className="font-semibold text-lg">
-               What support services do you offer?
-            </h1>
-            <h1>
-              We provide ongoing support for BIM software and models, including
-              updates, troubleshooting, and maintenance. We also offer modeling
-              services for architectural, structural, and MEP (mechanical,
-              electrical, and plumbing) aspects of projects.
-            </h1>
-          </div>
-          <div className="w-1/2 flex flex-col items-center text-center gap-5">
-            <div className="bg-[#F9F5FF] h-10 w-10 flex justify-center items-center rounded-full">
-              <FaRegHeart color="FF006B" size={20} />
-            </div>
-            <h1 className="font-semibold text-lg">
-              Do you offer online courses?
-            </h1>
-            <h1>
-              Yes, we offer both live and recorded online courses to provide
-              flexible learning options for our students.
-            </h1>
-          </div>
+          ))}
         </div>
       </div>
 

@@ -4,31 +4,58 @@ import { FaYoutube } from "react-icons/fa";
 import { ImFacebook2 } from "react-icons/im";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="bg-[#000D82] text-white ">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 py-10">
+    <div className="bg-[#000D82] text-white">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 py-10 px-5 sm:px-10">
         {/* Company Intro and Logo */}
         <div>
-          <img src={logo} alt="Company Logo" className="w-48 mb-4" />
-          <p className="text-gray-400">
+          <img src={logo} alt="Company Logo" className="w-32 sm:w-48 mb-4" />
+          <p className="text-gray-400 text-base sm:text-lg">
             The BIM skills is an innovative, Value driven, Real-Time Project
             Oriented, Quality Based BIM Training & Consulting Company. Copyright
             © 2024 . All rights reserved | The BIM skills
           </p>
-          <div className="flex items-center gap-2 my-2">
-            <FaYoutube color="white" className="h-5 w-5" />
-            <ImFacebook2 color="white" className="h-4 w-4" />
-            <FaInstagram color="white" className="h-5 w-5" />
-            <FaLinkedin color="white" className="h-5 w-5" />
+          <div className="flex items-center gap-4 my-4">
+            <Link
+              target="blank"
+              to="https://www.youtube.com/@thebimskills814"
+              className="hover:text-gray-400"
+            >
+              <FaYoutube className="h-6 w-6" />
+            </Link>
+            <Link
+              target="blank"
+              to="https://www.facebook.com/thebimskills"
+              className="hover:text-gray-400"
+            >
+              <ImFacebook2 className="h-5 w-5" />
+            </Link>
+            <Link
+              target="blank"
+              to="https://www.instagram.com/thebimskills/"
+              className="hover:text-gray-400"
+            >
+              <FaInstagram className="h-6 w-6" />
+            </Link>
+            <Link
+              to="https://www.linkedin.com/company/the-bim-skills-tbs/"
+              target="blank"
+              className="hover:text-gray-400"
+            >
+              <FaLinkedin className="h-6 w-6" />
+            </Link>
           </div>
         </div>
 
-        {/* Short Links Column 1 */}
-        <div className="">
-          <h3 className="text-xl font-bold text-white mb-2">Quick Links</h3>
-          <ul className="space-y-2 pt-5">
+        {/* Quick Links */}
+        <div className="sm:col-span-1">
+          <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">
+            Quick Links
+          </h3>
+          <ul className="space-y-2 pt-5 text-base sm:text-lg">
             <li>
               <a href="#" className="text-gray-200 hover:underline">
                 Teach on The BIM skills
@@ -52,10 +79,12 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Short Links Column 2 */}
-        <div>
-          <h3 className="text-xl font-bold text-white mb-2">Support</h3>
-          <ul className="space-y-2 pt-5">
+        {/* Support */}
+        <div className="sm:col-span-1">
+          <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">
+            Support
+          </h3>
+          <ul className="space-y-2 pt-5 text-base sm:text-lg">
             <li>
               <a href="#" className="text-gray-200 hover:underline">
                 Sitemap
@@ -75,10 +104,12 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Short Links Column 3 */}
-        <div>
-          <h3 className="text-xl font-bold text-white mb-2">Services</h3>
-          <ul className="space-y-2 pt-5">
+        {/* Services */}
+        <div className="sm:col-span-1">
+          <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">
+            Services
+          </h3>
+          <ul className="space-y-2 pt-5 text-base sm:text-lg">
             <li>
               <a href="#" className="text-gray-200 hover:underline">
                 Careers
@@ -112,7 +143,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="w-full h-10 pl-20 ">
+      <div className="bg-[#000D82] text-center py-3 text-sm sm:text-base">
         Design and Developed by Bits & Gigs
       </div>
     </div>

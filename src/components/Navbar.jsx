@@ -1,12 +1,216 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../assets/navbar/bim-logo.png";
 import { Link, useNavigate } from "react-router-dom";
-import { IoLogoWhatsapp } from "react-icons/io";
-import { FaPhoneVolume } from "react-icons/fa6";
-import { FaFacebook } from "react-icons/fa";
-import "../index.css";
-import { IoSearch } from "react-icons/io5";
+import { IoSearch, IoCloseSharp } from "react-icons/io5";
+import { GiHamburgerMenu } from "react-icons/gi";
 
+const Navbar = () => {
+  const navigate = useNavigate();
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  return (
+    <div className="w-full">
+      {/* Top section with logo and actions */}
+      <div className="relative z-50 flex justify-between items-center p-4 px-2 md:px-10 bg-white">
+        <Link to="/">
+          <img src={logo} alt="logo" className="h-10" />
+        </Link>
+        <div className="flex items-center space-x-4">
+          <div className="flex gap-2 border border-gray-300 bg-[#EBEDFF] items-center pr-2 pl-1 rounded-md">
+            <input
+              type="text"
+              placeholder="Search..."
+              className="px-4 py-2 bg-transparent outline-none w-[120px] md:w-[200px]"
+            />
+            <IoSearch size={20} />
+          </div>
+
+          {/* Login and Signup buttons hidden on mobile */}
+          <button className="bg-[#FF006B] text-white hidden md:block py-2 rounded-md w-[150px]">
+            Login
+          </button>
+
+          <button className="text-[#FF006B] border border-[#FF006B] hidden md:block font-semibold px-4 py-2 rounded-md w-[150px]">
+            Signup
+          </button>
+
+          {/* Hamburger Menu for Mobile */}
+          <button onClick={toggleMenu} className="md:hidden">
+            {menuOpen ? (
+              <IoCloseSharp size={30} color="gray" />
+            ) : (
+              <GiHamburgerMenu size={30} color="gray" />
+            )}
+          </button>
+        </div>
+      </div>
+
+      {/* Desktop Navigation Links */}
+      <div className="hidden md:flex justify-between items-center p-1 px-10 border-t border-b border-slate-300 bg-white relative z-50">
+        <div className="flex space-x-4">
+          <Link to="/services">
+            <h1 className="font-bold text-lg">BIM Services</h1>
+          </Link>
+          <Link to="/courses">
+            <h1 className="font-bold text-lg">BIM Courses</h1>
+          </Link>
+          <Link to="/projects">
+            <h1 className="font-bold text-lg">Projects</h1>
+          </Link>
+          <Link to="/blogs">
+            <h1 className="font-bold text-lg">Blogs</h1>
+          </Link>
+          <Link to="/about">
+            <h1 className="font-bold text-lg">About Us</h1>
+          </Link>
+          <Link to="/contact">
+            <h1 className="font-bold text-lg">Contact</h1>
+          </Link>
+        </div>
+        <div className="flex gap-4">
+          <div className="flex items-center space-x-4 ">
+            <button
+              onClick={() => {
+                navigate("/enquiry");
+              }}
+              className="bg-black text-white shadow-xl rounded-md w-[200px] py-2"
+            >
+              <h1 className="text-lg font-semibold">Send Enquiry</h1>
+            </button>
+            <button
+              onClick={() => {
+                navigate("/quote");
+              }}
+              className="bg-black text-white shadow-xl font-semibold rounded-md w-[200px] py-2"
+            >
+              <h1 className="text-lg font-semibold">Request a Quote</h1>
+            </button>
+          </div>
+          <div className="flex items-center space-x-4">
+            <a
+              href="https://wa.me/918197029799"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <WhatsappIcon />
+            </a>
+            <a href="tel:+918197029799">
+              <CallIcon />
+            </a>
+            <a
+              href="https://www.youtube.com/@thebimskills814"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <YoutubeIcon />
+            </a>
+            <a
+              href="https://www.instagram.com/thebimskills/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <InstagramIcon />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/the-bim-skills-tbs/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkedinIcon />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Animated Drawer for Mobile Navigation */}
+      <div
+        className={`transform transition-transform duration-300 ease-in-out ${
+          menuOpen ? "translate-y-0" : "-translate-y-full"
+        } md:hidden fixed top-16 left-0 right-0 z-40 bg-white shadow-lg p-4`}
+      >
+        <div className="flex flex-col space-y-4">
+          <Link to="/services" onClick={toggleMenu}>
+            <h1 className="font-bold text-lg">BIM Services</h1>
+          </Link>
+          <Link to="/courses" onClick={toggleMenu}>
+            <h1 className="font-bold text-lg">BIM Courses</h1>
+          </Link>
+          <Link to="/projects" onClick={toggleMenu}>
+            <h1 className="font-bold text-lg">Projects</h1>
+          </Link>
+          <Link to="/blogs" onClick={toggleMenu}>
+            <h1 className="font-bold text-lg">Blogs</h1>
+          </Link>
+          <Link to="/about" onClick={toggleMenu}>
+            <h1 className="font-bold text-lg">About Us</h1>
+          </Link>
+          <Link to="/contact" onClick={toggleMenu}>
+            <h1 className="font-bold text-lg">Contact</h1>
+          </Link>
+          <button
+            onClick={() => {
+              navigate("/enquiry");
+              toggleMenu(); // Close menu after navigation
+            }}
+            className="bg-black text-white shadow-xl rounded-md w-full py-2"
+          >
+            <h1 className="text-lg font-semibold">Send Enquiry</h1>
+          </button>
+          <button
+            onClick={() => {
+              navigate("/quote");
+              toggleMenu(); // Close menu after navigation
+            }}
+            className="bg-black text-white shadow-xl font-semibold rounded-md w-full py-2"
+          >
+            <h1 className="text-lg font-semibold">Request a Quote</h1>
+          </button>
+
+          {/* Social Media Icons for Smaller Screens */}
+          <div className="flex justify-around items-center space-x-4">
+            <a
+              href="https://wa.me/918197029799"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <WhatsappIcon />
+            </a>
+            <a href="tel:+918197029799">
+              <CallIcon />
+            </a>
+            <a
+              href="https://www.youtube.com/@thebimskills814"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <YoutubeIcon />
+            </a>
+            <a
+              href="https://www.instagram.com/thebimskills/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <InstagramIcon />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/the-bim-skills-tbs/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkedinIcon />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;
 const WhatsappIcon = () => (
   <svg
     width="34"
@@ -164,91 +368,3 @@ const LinkedinIcon = () => (
     </defs>
   </svg>
 );
-
-const Navbar = () => {
-  const navigate = useNavigate();
-  return (
-    <div className="w-screen">
-      <div className="flex justify-between items-center p-4 px-10">
-        <Link to="/">
-          <img src={logo} alt="logo" className="h-10" />
-        </Link>
-        <div className="flex items-center space-x-4">
-          <div className="flex gap-2 border border-gray-300 bg-[#EBEDFF]  items-center pr-2 pl-1  rounded-md ">
-            <input
-              type="text"
-              placeholder="Search..."
-              className="px-4 py-2 bg-transparent outline-none  w-[200px]"
-            />
-            <IoSearch size={20} />
-          </div>
-
-          <button className="bg-[#FF006B] text-white  py-2 rounded-md w-[150px]">
-            Login
-          </button>
-
-          <button className=" text-[#FF006B] border border-[#FF006B] font-semibold px-4 py-2 rounded-md w-[150px]">
-            Signup
-          </button>
-        </div>
-      </div>
-      <div className="border flex justify-between  border-slate-300">
-        <div className="flex justify-between items-center p-1 px-10 w-[80%]">
-          <Link to="/services">
-            <h1 className="font-bold text-lg">BIM Services</h1>
-          </Link>
-          <Link to="/courses">
-            <h1 className="font-bold text-lg">BIM Courses</h1>
-          </Link>
-          <Link to="/projects">
-            <h1 className="font-bold text-lg">Projects</h1>
-          </Link>
-          <Link to="/blogs">
-            <h1 className="font-bold text-lg">Blogs</h1>
-          </Link>
-          <Link to="/about">
-            <h1 className="font-bold text-lg">About Us</h1>
-          </Link>
-
-          <Link to="/contact">
-            <h1 className="font-bold text-lg">Contact</h1>
-          </Link>
-          <Link className="w-5" to="/">
-            <h1 className="text-white">Hello</h1>
-          </Link>
-          <div className="flex items-center space-x-4">
-            <button
-              onClick={() => {
-                navigate("/enquiry");
-              }}
-              className="bg-black text-white shadow-xl   rounded-md w-[200px]"
-            >
-              <h1 className="text-lg font-semibold">Send Enquiry</h1>
-            </button>
-
-            <button
-              onClick={() => {
-                navigate("/quote");
-              }}
-              className=" bg-black text-white shadow-xl font-semibold  rounded-md w-[200px]"
-            >
-              <h1 className="text-lg font-semibold">Request a Quote</h1>
-            </button>
-          </div>
-        </div>
-        {/* <div className="flex items-center justify-center relative">
-          <div className="transform rotate-45 bg-blue-500 w-14 h-14 absolute top-3  left-2"></div>
-        </div> */}
-        <div className=" px-14 w-80 flex justify-between items-center">
-          <WhatsappIcon />
-          <CallIcon />
-          <YoutubeIcon />
-          <InstagramIcon />
-          <LinkedinIcon />
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default Navbar;
