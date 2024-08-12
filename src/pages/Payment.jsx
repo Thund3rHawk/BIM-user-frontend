@@ -85,7 +85,7 @@ const Payment = () => {
                 <h3 className="text-lg font-bold">Product Name</h3>
                 <p className="text-gray-600">Quantity: 1</p>
               </div>
-              <p className="text-lg">$50.00</p>
+              <p className="text-lg">Rs 100000</p>
             </div>
             {/* Add more cart items as needed */}
           </div>
@@ -103,15 +103,15 @@ const Payment = () => {
           <div className="border-t border-gray-200 pt-4">
             <div className="flex justify-between mb-2">
               <p className="text-gray-600">Subtotal</p>
-              <p className="text-lg">$50.00</p>
+              <p className="text-lg">Rs 100000</p>
             </div>
             <div className="flex justify-between mb-2">
               <p className="text-gray-600">Discount</p>
-              <p className="text-lg">-$10.00</p>
+              <p className="text-lg">-Rs 70001</p>
             </div>
             <div className="flex justify-between font-bold">
               <p className="text-lg">Total</p>
-              <p className="text-lg">$40.00</p>
+              <p className="text-lg">Rs 29999</p>
             </div>
           </div>
         </div>
