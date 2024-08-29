@@ -3,6 +3,15 @@ import logo from "../assets/navbar/bim-logo.png";
 import { Link, useNavigate } from "react-router-dom";
 import { IoSearch, IoCloseSharp } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
+import AuthCard from "./AuthCard";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -27,16 +36,17 @@ const Navbar = () => {
               className="px-4 py-2 bg-transparent outline-none w-[120px] md:w-[200px]"
             />
             <IoSearch size={20} />
-          </div>
-
+          </div>          
+          
           {/* Login and Signup buttons hidden on mobile */}
-          <button className="bg-[#FF006B] text-white hidden md:block py-2 rounded-md w-[150px]">
+          {/* <button className="bg-[#FF006B] text-white hidden md:block py-2 rounded-md w-[150px]">
             Login
           </button>
 
           <button className="text-[#FF006B] border border-[#FF006B] hidden md:block font-semibold px-4 py-2 rounded-md w-[150px]">
             Signup
-          </button>
+          </button> */}
+          <AuthCard />
 
           {/* Hamburger Menu for Mobile */}
           <button onClick={toggleMenu} className="md:hidden">
@@ -128,9 +138,8 @@ const Navbar = () => {
 
       {/* Animated Drawer for Mobile Navigation */}
       <div
-        className={`transform transition-transform duration-300 ease-in-out ${
-          menuOpen ? "translate-y-0" : "-translate-y-full"
-        } md:hidden fixed top-16 left-0 right-0 z-40 bg-white shadow-lg p-4`}
+        className={`transform transition-transform duration-300 ease-in-out ${menuOpen ? "translate-y-0" : "-translate-y-full"
+          } md:hidden fixed top-16 left-0 right-0 z-40 bg-white shadow-lg p-4`}
       >
         <div className="flex flex-col space-y-4">
           <Link to="/services" onClick={toggleMenu}>
@@ -263,8 +272,8 @@ const CallIcon = () => (
         y2="31.1787"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0067BF" />
-        <stop offset="1" stop-color="#DD2D66" />
+        <stop stopColor="#0067BF" />
+        <stop offset="1" stopColor="#DD2D66" />
       </linearGradient>
       <linearGradient
         id="paint1_linear_8_1038"
@@ -274,8 +283,8 @@ const CallIcon = () => (
         y2="16.5888"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0067BF" />
-        <stop offset="1" stop-color="#DD2D66" />
+        <stop stopColor="#0067BF" />
+        <stop offset="1" stopColor="#DD2D66" />
       </linearGradient>
     </defs>
   </svg>
@@ -290,8 +299,8 @@ const YoutubeIcon = () => (
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M17 0C18.4535 0 19.9444 0.0371252 21.3894 0.0978751L23.0962 0.178875L24.7299 0.275063L26.2599 0.378L27.6573 0.486C29.174 0.600567 30.6014 1.24273 31.6879 2.29939C32.7745 3.35605 33.4506 4.75942 33.5971 6.26231L33.6651 6.9795L33.7926 8.51512C33.9116 10.1064 34 11.8412 34 13.5C34 15.1588 33.9116 16.8936 33.7926 18.4849L33.6651 20.0205L33.5971 20.7377C33.4505 22.2408 32.7742 23.6444 31.6873 24.7011C30.6004 25.7578 29.1726 26.3998 27.6556 26.514L26.2616 26.6203L24.7316 26.7249L23.0962 26.8211L21.3894 26.9021C19.9271 26.965 18.4637 26.9976 17 27C15.5363 26.9976 14.0729 26.965 12.6106 26.9021L10.9038 26.8211L9.2701 26.7249L7.7401 26.6203L6.3427 26.514C4.82598 26.3994 3.39864 25.7573 2.31207 24.7006C1.22551 23.644 0.549424 22.2406 0.4029 20.7377L0.3349 20.0205L0.2074 18.4849C0.0779157 16.8263 0.00873739 15.1636 0 13.5C0 11.8412 0.0884 10.1064 0.2074 8.51512L0.3349 6.9795L0.4029 6.26231C0.549367 4.75968 1.22521 3.35653 2.31143 2.2999C3.39764 1.24328 4.82459 0.600946 6.341 0.486L7.7367 0.378L9.2667 0.275063L10.9021 0.178875L12.6089 0.0978751C14.0718 0.0349771 15.5358 0.00234492 17 0ZM13.6 9.40781V17.5922C13.6 18.3718 14.45 18.8578 15.13 18.4697L22.27 14.3775C22.4254 14.2887 22.5544 14.1609 22.6442 14.0068C22.7339 13.8528 22.7811 13.678 22.7811 13.5C22.7811 13.322 22.7339 13.1472 22.6442 12.9932C22.5544 12.8391 22.4254 12.7113 22.27 12.6225L15.13 8.532C14.9749 8.44311 14.7989 8.39632 14.6198 8.39635C14.4407 8.39638 14.2648 8.44322 14.1097 8.53216C13.9546 8.6211 13.8259 8.74901 13.7364 8.90302C13.6469 9.05703 13.5999 9.23171 13.6 9.4095V9.40781Z"
       fill="url(#paint0_linear_1_13135)"
     />
@@ -304,8 +313,8 @@ const YoutubeIcon = () => (
         y2="26.9835"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0067BF" />
-        <stop offset="1" stop-color="#DD2D66" />
+        <stop stopColor="#0067BF" />
+        <stop offset="1" stopColor="#DD2D66" />
       </linearGradient>
     </defs>
   </svg>
@@ -332,8 +341,8 @@ const InstagramIcon = () => (
         y2="29.9652"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0067BF" />
-        <stop offset="1" stop-color="#DD2D66" />
+        <stop stopColor="#0067BF" />
+        <stop offset="1" stopColor="#DD2D66" />
       </linearGradient>
     </defs>
   </svg>
@@ -348,8 +357,8 @@ const LinkedinIcon = () => (
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M25 0C26.3261 0 27.5979 0.526784 28.5355 1.46447C29.4732 2.40215 30 3.67392 30 5V25C30 26.3261 29.4732 27.5979 28.5355 28.5355C27.5979 29.4732 26.3261 30 25 30H5C3.67392 30 2.40215 29.4732 1.46447 28.5355C0.526784 27.5979 0 26.3261 0 25V5C0 3.67392 0.526784 2.40215 1.46447 1.46447C2.40215 0.526784 3.67392 0 5 0H25ZM8.33333 11.6667C7.89131 11.6667 7.46738 11.8423 7.15482 12.1548C6.84226 12.4674 6.66667 12.8913 6.66667 13.3333V21.6667C6.66667 22.1087 6.84226 22.5326 7.15482 22.8452C7.46738 23.1577 7.89131 23.3333 8.33333 23.3333C8.77536 23.3333 9.19928 23.1577 9.51184 22.8452C9.8244 22.5326 10 22.1087 10 21.6667V13.3333C10 12.8913 9.8244 12.4674 9.51184 12.1548C9.19928 11.8423 8.77536 11.6667 8.33333 11.6667ZM13.3333 10C12.8913 10 12.4674 10.1756 12.1548 10.4882C11.8423 10.8007 11.6667 11.2246 11.6667 11.6667V21.6667C11.6667 22.1087 11.8423 22.5326 12.1548 22.8452C12.4674 23.1577 12.8913 23.3333 13.3333 23.3333C13.7754 23.3333 14.1993 23.1577 14.5118 22.8452C14.8244 22.5326 15 22.1087 15 21.6667V18.4388C15 16.5884 15.6203 14.6391 17.3217 13.9117V13.9117C17.8767 13.675 18.7117 13.5783 19.2917 13.7617C19.4841 13.8105 19.6554 13.9204 19.78 14.075C19.8667 14.1917 20 14.4517 20 15V21.6667C20 22.1087 20.1756 22.5326 20.4882 22.8452C20.8007 23.1577 21.2246 23.3333 21.6667 23.3333C22.1087 23.3333 22.5326 23.1577 22.8452 22.8452C23.1577 22.5326 23.3333 22.1087 23.3333 21.6667V15C23.3333 13.8833 23.05 12.89 22.46 12.0933C21.9171 11.3709 21.1573 10.8412 20.2917 10.5817C18.7883 10.11 17.1233 10.3717 16.0117 10.8483V10.8483C15.4926 11.0716 14.8352 10.7489 14.4013 10.3869V10.3869C14.1016 10.1369 13.7237 9.99994 13.3333 10ZM8.33333 6.66667C7.89131 6.66667 7.46738 6.84226 7.15482 7.15482C6.84226 7.46738 6.66667 7.89131 6.66667 8.33333C6.66667 8.77536 6.84226 9.19928 7.15482 9.51184C7.46738 9.8244 7.89131 10 8.33333 10C8.77536 10 9.19928 9.8244 9.51184 9.51184C9.8244 9.19928 10 8.77536 10 8.33333C10 7.89131 9.8244 7.46738 9.51184 7.15482C9.19928 6.84226 8.77536 6.66667 8.33333 6.66667Z"
       fill="url(#paint0_linear_77_972)"
     />
@@ -362,8 +371,8 @@ const LinkedinIcon = () => (
         y2="29.9652"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0067BF" />
-        <stop offset="1" stop-color="#DD2D66" />
+        <stop stopColor="#0067BF" />
+        <stop offset="1" stopColor="#DD2D66" />
       </linearGradient>
     </defs>
   </svg>

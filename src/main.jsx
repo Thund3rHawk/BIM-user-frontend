@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home.jsx";
@@ -16,6 +15,8 @@ import CourseLanding from "./pages/CourseLanding.jsx";
 import SingleBlog from "./pages/SingleBlog.jsx";
 import CoursesEnquiry from "./pages/CoursesEnquiry.jsx";
 import Quote from "./pages/Quote.jsx";
+import VideoClass from "./pages/VideoClass.jsx";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -69,7 +70,12 @@ const router = createBrowserRouter([
     path: "/quote",
     element: <Quote />,
   },
+  {
+    path: '/video-class',
+    element: <VideoClass />,
+  },
 ]);
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
